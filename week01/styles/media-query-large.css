@@ -1,0 +1,14 @@
+
+/* Apply styles when viewport width is 500px or greater */
+@media screen and (min-width: 500px) {
+    /* Change header to black background with white text */
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    /* Change main grid to two equal columns */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
