@@ -35,7 +35,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
-    background-color: var(--coffee); /* Silver background for header */
+    background-color: var(--coffee); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -51,7 +51,7 @@ header img {
 header span {
     font-size: 4rem; /* Large font size for name */
     font-weight: 400;
-    color: var(--silver); /* Dark text for name */
+    color: var(--whiteish); /* Dark text for name */
 }
 
 /* Navigation styling */
