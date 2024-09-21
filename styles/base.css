@@ -1,10 +1,11 @@
 /* Color palette variables */
 :root {
-    --beaver: #957f70;
-    --licorice: #0E0501;
-    --coffee: #4F301E;
-    --silver: #aca7a2;
-    --white: #ffffff;
+    --beaver: #2C2121;
+    --beaverligt: #533F3C;
+    --licorice: #171717;
+    --coffee: #4C4139;
+    --silver: #EDEDED;
+    --whiteish:#DDDADA;
 }
 
 * {
@@ -16,15 +17,15 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    color: var(--licorice); /* Default text color */
-    background-color: var(--silver); /* Body background */
+    color: #A8978A; /* Default text color */
+    background-color: var(--licorice) /* Body background */
 }
 
 h1 {
     font-weight: 400;
     text-align: center;
     margin: 20px 0;
-    color: var(--white); /* Dark text for headings */
+    color: var(--whiteish); 
     font-size: 2rem;
 
 }
@@ -34,7 +35,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: left;
-    background-color: var(--silver); /* Silver background for header */
+    background-color: var(--coffee); /* Silver background for header */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -50,12 +51,12 @@ header img {
 header span {
     font-size: 4rem; /* Large font size for name */
     font-weight: 400;
-    color: var(--licorice); /* Dark text for name */
+    color: var(--silver); /* Dark text for name */
 }
 
 /* Navigation styling */
 nav {
-    background-color: var(--licorice); 
+    background-color: var(--coffee); 
     text-align: center;
     padding: 10px;
     
@@ -70,19 +71,19 @@ nav ul {
 
 nav a {
     display: block;
-    color: var(--white); /* white text for navigation links */
+    color: var(--whiteish); /* white text for navigation links */
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
 }
 
 nav a:hover {
-    border: 1px solid var(--white); /* Beaver border on hover */
+    border: 1px solid var(--whiteish); 
 }
 
 .active {
-    background-color: var(--beaver); /* Active state background */
-    color: var(--persian-orange); /* Persian-orange text for active state */
+    background-color: var(--licorice); /* Active state background */
+    color: var(--whiteish); 
 }
 
 /* Main content layout for mobile */
@@ -91,18 +92,19 @@ main {
     margin: 0 auto;
     padding: 2rem 0;
     display: grid;
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 
  /* Full width title box */
  .title-box {
-    background-color: var(--coffee); /* persian-orange background for title box */
+    background-color: var(--beaver); /* persian-orange background for title box */
     padding: 0.5rem;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    color: var(--white); /* Dark text for title */
+    color: var(--whiteish); /* Dark text for title */
     font-size: 2.5rem;
     font-family: "Roboto", system-ui;
     font-weight: 400;
@@ -113,20 +115,21 @@ main {
 /* Card section styling */
 section.card {
     padding: 1rem;
-    background-color: var(--beaver); /* Beaver background for cards */
+    background-color: var(--whiteish); 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    color: var(--white); 
+    color: var(--licorice); 
     justify-content: space-between;
     margin-bottom: 1.5rem; /* Adds space between sections */
-    font-weight: 300;
+    font-weight: 500;
+    justify-content: space-between;
 }
     
 
 section.card h2 {
-    background-color: var(--coffee); /* Background for the card title */
-    color: var(--white); /* Contrasting text color for the title */
+    background-color: var(--beaverligt); /* Background for the card title */
+    color: var(--whiteish); /* Contrasting text color for the title */
     padding: 0.5rem;
     margin-top: -1rem; /* Adjust margin to remove the gap caused by padding */
     margin-left: -1rem;
@@ -135,6 +138,7 @@ section.card h2 {
     border-top-right-radius: 10px;
     text-align: center; /* Center the title text */
     font-weight: 200;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); 
 }
    
 
@@ -144,15 +148,15 @@ ul {
 }
 
 ul li {
-    color: var(--white); /* Dark text for list items */
+    color: var(--licorice); 
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--licorice); /* Coffee background for footer */
-    color: var(--white); /* White text */
+    background-color: var(--coffee); 
+    color: var(--whiteish); /* White text */
 }
 
 footer p {
