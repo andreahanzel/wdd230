@@ -1,0 +1,154 @@
+/* Color palette variables */
+:root {
+    --beaver: #957f70;
+    --licorice: #0E0501;
+    --persian-orange: #8A583A;
+    --coffee: #4F301E;
+    --silver: #aca7a2;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: var(--licorice); /* Default text color */
+    background-color: var(--silver); /* Body background */
+}
+
+h1 {
+    font-weight: 100;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--licorice); /* Dark text for headings */
+    font-size: 2rem;
+}
+
+/* Header with image and name alignment */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: var(--); /* Silver background for header */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header img {
+    border-radius: 10px;
+    margin-right: 20px; /* Space between image and name */
+    width: 200px;
+    height: auto;
+}
+
+header span {
+    font-size: 4rem; /* Large font size for name */
+    font-weight: 400;
+    color: var(--licorice); /* Dark text for name */
+}
+
+/* Navigation styling */
+nav {
+    background-color: var(--licorice); /* Persian Orange for nav background */
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: var(--persian-orange); /* persian-orange text for navigation links */
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid var(--beaver); /* Beaver border on hover */
+}
+
+.active {
+    background-color: var(--beaver); /* Active state background */
+    color: var(--persian-orange); /* Persian-orange text for active state */
+}
+
+/* Main content layout for mobile */
+main {
+    max-width: auto;
+    margin: 0 auto;
+    padding: auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+ /* Full width title box */
+ .title-box {
+    background-color: var(--persian-orange); /* persian-orange background for title box */
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    color: var(--licorice); /* Dark text for title */
+    font-size: 2.5rem;
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    margin-top: 1.5rem; /* Adds space above the title box */
+}
+
+/* Card section styling */
+section.card {
+    padding: 1rem;
+    background-color: var(--beaver); /* Beaver background for cards */
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: var(--licorice); /* Dark text for card content */
+    justify-content: space-between;
+    margin-bottom: 1.5rem; /* Adds space between sections */
+}
+    
+
+section.card h2 {
+    background-color: var(--licorice); /* Background for the card title */
+    color: var(--persian-orange); /* Contrasting text color for the title */
+    padding: 0.5rem;
+    margin-top: -1rem; /* Adjust margin to remove the gap caused by padding */
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 0.2rem 0.2rem 0 0; /* Rounded top corners */
+    text-align: center; /* Center the title text */
+}
+   
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    color: var(--licorice); /* Dark text for list items */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--licorice); /* Coffee background for footer */
+    color: var(--beaver); /* White text */
+}
+
+footer p {
+    margin: px 0;
+}

@@ -1,0 +1,94 @@
+/* Color palette variables */
+:root {
+    --beaver: #957f70;
+    --licorice: #0E0501;
+    --persian-orange: #8A583A;
+    --coffee: #4F301E;
+    --silver: #aca7a2;
+    --white: #ffffff;
+}
+
+/* Larger screen styling */
+@media (min-width: 640px) {
+
+    /* Flex Navigation for Larger Screens */
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+    /* Center the main element */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    /* Use CSS Grid for the section layout */
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;  /* Learning Activities 2x larger than Information */
+        gap: 2rem;  /* Space between the two boxes */
+        align-items: stretch;  /* Make both boxes the same height */
+    }
+
+    /* Full width title box */
+    .title-box {
+        background-color: var(--persian-orange); /* Silver background for title box */
+        padding: 0.5rem;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        color: var(--licorice); /* Dark text for title */
+        font-size: 1.5rem;
+        font-family: "Roboto", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Box styling */
+    section.card {
+        padding: 1rem;
+        background-color: var(--beaver); /* Beaver background for cards */
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        text-align: left;
+        color: var(--licorice); /* Dark text for card content */
+        justify-content: space-between;
+        
+    }
+    
+    section.card h2 {
+        background-color: var(--licorice); /* Background for the card title */
+        color: var(--persian-orange); /* Contrasting text color for the title */
+        padding: 0.5rem;
+        margin-top: -1rem; /* Adjust margin to remove the gap caused by padding */
+        margin-left: -1rem;
+        margin-right: -1rem;
+        border-radius: 0.2rem 0.2rem 0 0; /* Rounded top corners */
+        text-align: center; /* Center the title text */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for the title */
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--licorice); /* Coffee background for footer */
+        color: var(--beaver); /* White text */
+    }
+
+    footer p {
+        margin: 0;
+    }
+}

@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development | Andrea Toreki | course assignment portal">
     <meta name="author" content="Andrea Toreki">
     <title>Andrea Toreki - WDD 230 - Web Frontend Development</title>
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="images/profile.png" alt="Andrea Toreki profile picture">
+        <img src="images/profile.jpg" alt="Andrea Toreki profile" width="250" height="333">
         <span>Andrea Toreki</span>
     </header>
 
@@ -23,31 +33,41 @@
     </nav>
 
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="week01/holygrail.html">Activity 1 Week 1</a></li>
-                <li><a href="week01/media-query.html">Activity 2 Week 1</a></li>
-                <li><a href="https://codepen.io/Andrea-Toreki/pen/NWZQLee">Activity 3 Week 1</a></li>
-          
-            </ul>
-        </section>
+        <!-- Full width title box -->
+        <div class="title-box">
+            <h1>WDD 230: Web Frontend Development</h1>
+        </div>
 
-     
-        <section class="card">
-            <h2>Information</h2>
-            <p>Weather: Not implemented yet.</p>
-            <p>Visits: Not implemented yet.</p>
-        </section>
+        <!-- Grid layout for Learning Activities and Information -->
+        <div class="grid-layout">
+            <!-- Learning Activities Section -->
+            <section class="card">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 01 <a href="week01/holygrail.html">Lesson 1</a> | <a href="week01/media-query.html">Lesson 2</a> | <a href="https://codepen.io/Andrea-Toreki/pen/NWZQLee">Lesson 3</a></li>
+                    <li>Week 02 <a href=""></a></li>
+                    <li>Week 03 <a href=""></a></li>
+                    <li>Week 04 <a href=""></a></li>
+                    <li>Week 05 <a href=""></a></li>
+                    <li>Week 06 <a href=""></a></li>
+                </ul>
+            </section>
+
+            <!-- Information Section -->
+            <section class="card">
+                <h2>Information</h2>
+                <p>Weather: Not implemented yet.</p>
+                <p>Visits: Not implemented yet.</p>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Andrea Toreki, Hungary.</p>
+        <p>&copy; <span id="currentYear"></span> Andrea Toreki, Hungary</p>
         <p id="lastModified">Last modified: <span id="modDate"></span></p>
     </footer>
 
     <script src="scripts/getDates.js"></script>
 </body>
+
 </html>
