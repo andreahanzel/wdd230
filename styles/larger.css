@@ -56,7 +56,7 @@
         background-color: var(--coffee); /* Silver background for title box */
         padding: 0.5rem;
         text-align: center;
-        border-radius: 5px;
+        border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
         color: var(--white); /* Dark text for title */
         font-size: 1.5rem;
@@ -69,7 +69,7 @@
     section.card {
         padding: 1rem;
         background-color: var(--beaver); /* Beaver background for cards */
-        border-radius: 0.5rem;
+        border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
         text-align: left;
         color: var(--white); /* Dark text for card content */
@@ -84,7 +84,8 @@
         margin-top: -1rem; /* Adjust margin to remove the gap caused by padding */
         margin-left: -1rem;
         margin-right: -1rem;
-        border-radius: 0.2rem 0.2rem 0 0; /* Rounded top corners */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; /* Rounded top corners */
         text-align: center; /* Center the title text */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for the title */
     }
