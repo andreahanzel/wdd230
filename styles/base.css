@@ -2,7 +2,6 @@
 :root {
     --beaver: #957f70;
     --licorice: #0E0501;
-    --persian-orange: #8A583A;
     --coffee: #4F301E;
     --silver: #aca7a2;
     --white: #ffffff;
@@ -22,11 +21,12 @@ body {
 }
 
 h1 {
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
     margin: 20px 0;
-    color: var(--licorice); /* Dark text for headings */
+    color: var(--white); /* Dark text for headings */
     font-size: 2rem;
+
 }
 
 /* Header with image and name alignment */
@@ -55,9 +55,10 @@ header span {
 
 /* Navigation styling */
 nav {
-    background-color: var(--licorice); /* Persian Orange for nav background */
+    background-color: var(--licorice); 
     text-align: center;
     padding: 10px;
+    
 }
 
 nav ul {
@@ -68,13 +69,13 @@ nav ul {
 
 nav a {
     display: block;
-    color: var(--persian-orange); /* persian-orange text for navigation links */
+    color: var(--white); /* white text for navigation links */
     padding: 10px;
     text-decoration: none;
 }
 
 nav a:hover {
-    border: 1px solid var(--beaver); /* Beaver border on hover */
+    border: 1px solid var(--white); /* Beaver border on hover */
 }
 
 .active {
@@ -94,12 +95,12 @@ main {
 
  /* Full width title box */
  .title-box {
-    background-color: var(--persian-orange); /* persian-orange background for title box */
+    background-color: var(--coffee); /* persian-orange background for title box */
     padding: 0.5rem;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    color: var(--licorice); /* Dark text for title */
+    color: var(--white); /* Dark text for title */
     font-size: 2.5rem;
     font-family: "Roboto", system-ui;
     font-weight: 400;
@@ -114,15 +115,15 @@ section.card {
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
-    color: var(--licorice); /* Dark text for card content */
+    color: var(--white); 
     justify-content: space-between;
     margin-bottom: 1.5rem; /* Adds space between sections */
 }
     
 
 section.card h2 {
-    background-color: var(--licorice); /* Background for the card title */
-    color: var(--persian-orange); /* Contrasting text color for the title */
+    background-color: var(--coffee); /* Background for the card title */
+    color: var(--white); /* Contrasting text color for the title */
     padding: 0.5rem;
     margin-top: -1rem; /* Adjust margin to remove the gap caused by padding */
     margin-left: -1rem;
@@ -138,7 +139,7 @@ ul {
 }
 
 ul li {
-    color: var(--licorice); /* Dark text for list items */
+    color: var(--white); /* Dark text for list items */
 }
 
 /* Footer styling */
@@ -146,7 +147,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: var(--licorice); /* Coffee background for footer */
-    color: var(--beaver); /* White text */
+    color: var(--white); /* White text */
 }
 
 footer p {
