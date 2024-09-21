@@ -16,6 +16,8 @@
         display: flex;
         justify-content: space-around;
         padding: 0;
+        background-color: var(--beaver);
+        border-radius: 10px;
 
     }
 
