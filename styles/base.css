@@ -84,9 +84,9 @@ nav a:hover {
 
 /* Main content layout for mobile */
 main {
-    max-width: auto;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: auto;
+    padding: 2rem 0;
     display: grid;
     gap: 1.5rem;
 }
@@ -103,7 +103,7 @@ main {
     font-size: 2.5rem;
     font-family: "Roboto", system-ui;
     font-weight: 400;
-    font-style: bold;
+    font-style: normal;
     margin-top: 1.5rem; /* Adds space above the title box */
 }
 
@@ -150,5 +150,5 @@ footer {
 }
 
 footer p {
-    margin: px 0;
+    margin: 0;
 }
