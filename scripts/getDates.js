@@ -1,36 +1,56 @@
-// Get the current year
+// Set current year in the footer
+const currentYearElement = document.getElementById("currentYear");
 const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
+if (currentYearElement) {
+    currentYearElement.textContent = currentYear;
+}
+// Set last modified date with time
+const lastModifiedElement = document.getElementById("modDate");
+const lastModified = new Date(document.lastModified);
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = lastModified.toLocaleString(); // Show date and time
+}
+const myButton = document.getElementById('myButton');
+const menuLinks = document.querySelector('ul.menuLinks');
 
-// Get the last modified date of the document
-const lastModified = document.lastModified;
-document.getElementById("modDate").textContent = lastModified;
-
-// Hamburger menu toggle
-const hamburgerElement = document.querySelector('#myButton');
-const navElement = document.querySelector('.menuLinks');
-
-hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle('open');
-    hamburgerElement.classList.toggle('open');
-
-    // Toggle between three lines and 'X'
-    if (hamburgerElement.classList.contains('open')) {
-        hamburgerElement.innerHTML = 'X'; // Change to X when menu is open
+// Toggle the 'open' class when the hamburger button is clicked
+myButton.addEventListener('click', () => {
+    menuLinks.classList.toggle('open');
+    
+    // Toggle the button content between hamburger and "X"
+    if (myButton.textContent === '\u2630') { // Unicode for hamburger (three lines)
+        myButton.textContent = '\u2715'; // Unicode for 'X'
     } else {
-        hamburgerElement.innerHTML = '&#9776;'; // Change back to ≡ when menu is closed
+        myButton.textContent = '\u2630'; // Unicode for hamburger (three lines)
     }
 });
 
-// Dark mode toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+// Function to toggle between dark and light mode
+const toggleButton = document.getElementById('darkModeToggle');
 
-    // Change button text based on current mode
-    if (document.body.classList.contains('dark-mode')) {
-        darkModeToggle.textContent = 'Toggle Light Mode'; // Set button to light mode
+toggleButton.addEventListener('click', () => {
+    const currentTheme = document.body.dataset.theme;
+    
+    // Toggle between light and dark modes
+    document.body.dataset.theme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    // Update button text based on the current theme
+    if (document.body.dataset.theme === 'dark') {
+        toggleButton.textContent = 'Switch to Light Mode';
     } else {
-        darkModeToggle.textContent = 'Toggle Dark Mode'; // Set button to dark mode
+        toggleButton.textContent = 'Switch to Dark Mode';
     }
 });
+
+// Initialize button text based on the current theme on page load
+window.addEventListener('DOMContentLoaded', () => {
+    if (document.body.dataset.theme === 'dark') {
+        toggleButton.textContent = 'Switch to Light Mode';
+    } else {
+        toggleButton.textContent = 'Switch to Dark Mode';
+    }
+
+    // Initialize the hamburger menu button with the correct symbol
+    myButton.textContent = '\u2630'; // Unicode for hamburger (three lines)
+});
+
