@@ -5,13 +5,12 @@
     --licorice: #171717;
     --coffee: #4C4139;
     --silver: #EDEDED;
-    --whiteish:#DDDADA;
+    --whiteish: #DDDADA;
 }
 
 /* Larger screen styling */
-@media (min-width: 640px) {
+@media (min-width: 768px) {
 
-    
     header {
         background-color: var(--coffee); 
         padding: 10px; 
@@ -25,10 +24,11 @@
     nav ul {
         display: flex;
         justify-content: space-around;
-        padding: 0;
+        padding: 10px;
         background-color: var(--beaver);
         border-radius: 10px;
-
+        width: 100%;
+        box-sizing: border-box;
     }
 
     nav ul li {
@@ -41,9 +41,22 @@
         padding: 10px;
         text-decoration: none;
     }
-    
+
     nav a:hover {
         border: 1px solid var(--whiteish); 
+    }
+
+    #myButton {
+        display: none; /* Hide hamburger button on larger screens */
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255,255,255,0.2);
     }
 
     /* Center the main element */
@@ -92,9 +105,8 @@
         justify-content: space-between;
         margin-bottom: 1.5rem; /* Adds space between sections */
         font-weight: 500;
-        
     }
-    
+
     section.card h2 {
         background-color: var(--beaverligt); /* Background for the card title */
         color: var(--whiteish); /* Contrasting text color for the title */

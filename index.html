@@ -30,18 +30,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="light-mode"> <!-- Added class to manage light/dark mode -->
     <!-- Image -->
     <header>
         <img src="images/profile.jpg" alt="Andrea Toreki profile" width="250" height="333">
         <span>Andrea Toreki</span>
+        <button id="darkModeToggle">Toggle Dark Mode</button> <!-- Added dark mode toggle button -->
     </header>
 
     <!-- Menu HTML Links -->
     <nav>
-        <ul>
+        <button id="myButton">&#9776;</button> <!-- Hamburger button -->
+        <ul class="menuLinks">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="chamber.html">Chamber</a></li>
+            <li class="current-menu-item"><a href="chamber.html">Chamber</a></li>
             <li><a href="chamber-site-plan.html">Site Plan</a></li>
             <li><a href="form.html">Form</a></li>
         </ul>
@@ -83,7 +85,7 @@
         <p id="lastModified">Last modified: <span id="modDate"></span></p>
     </footer>
 
-    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getDates.js"></script> <!-- Existing script for dates -->
 </body>
 
 </html>

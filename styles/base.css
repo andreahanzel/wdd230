@@ -5,7 +5,7 @@
     --licorice: #171717;
     --coffee: #4C4139;
     --silver: #EDEDED;
-    --whiteish:#DDDADA;
+    --whiteish: #DDDADA;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     color: #A8978A; /* Default text color */
-    background-color: var(--licorice) /* Body background */
+    background-color: var(--licorice); /* Body background */
 }
 
 h1 {
@@ -27,14 +27,13 @@ h1 {
     margin: 20px 0;
     color: var(--whiteish); 
     font-size: 2rem;
-
 }
 
-/* Header with image and name alignment */
+/* Header with image, name, and dark mode button alignment */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Vertically align the image and text */
+    justify-content: space-between; /* Space between name and dark mode button */
     background-color: var(--coffee); 
     padding: 20px;
     border-radius: 10px;
@@ -48,35 +47,51 @@ header img {
     margin-right: 20px; /* Space between image and name */
     width: 200px;
     height: auto;
-    
 }
 
 header span {
     font-size: 3rem; /* Large font size for name */
     font-weight: 400;
     color: var(--whiteish); /* Dark text for name */
+    margin-right: 20px; /* Add space between name and button */
+}
+
+/* Dark mode button styling */
+#darkModeToggle {
+    background-color: var(--whiteish); /* Use whiteish color */
+    color: var(--licorice); /* Dark text for the button */
+    border: none; /* Remove border */
+    padding: 0.5rem 1rem; /* Add padding for the button */
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add some space from the edge */
+}
+
+#darkModeToggle:hover {
+    background-color: var(--silver); /* Slightly lighter background on hover */
+    color: var(--beaver); /* Darker text on hover */
 }
 
 /* Navigation styling */
 nav {
-    background-color: var(--coffee); 
+    background-color: var(--beaver); 
     text-align: center;
     padding: 10px;
     width: 100%; /* Ensure navigation takes the full width */
     box-sizing: border-box; /* Include padding in the width */
-    
+    transition: 0.5s ease-out;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
 }
 
 nav a {
     display: block;
-    color: var(--whiteish); /* white text for navigation links */
+    color: var(--whiteish); /* White text for navigation links */
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
@@ -101,10 +116,9 @@ main {
     gap: 2rem;
 }
 
-
- /* Full width title box */
- .title-box {
-    background-color: var(--beaver); /* persian-orange background for title box */
+/* Full width title box */
+.title-box {
+    background-color: var(--beaver); /* Background for title box */
     padding: 0.5rem;
     text-align: center;
     border-radius: 10px;
@@ -114,8 +128,7 @@ main {
     font-family: "Roboto", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-top: 1.5rem; /* Adds space above the title box */
-    
+    margin-top: 1.5rem;
 }
 
 /* Card section styling */
@@ -129,32 +142,6 @@ section.card {
     justify-content: space-between;
     margin-bottom: 1.5rem; /* Adds space between sections */
     font-weight: 500;
-    justify-content: space-between;
-}
-    
-
-section.card h2 {
-    background-color: var(--beaverligt); /* Background for the card title */
-    color: var(--whiteish); /* Contrasting text color for the title */
-    padding: 0.5rem;
-    margin-top: -1rem; /* Adjust margin to remove the gap caused by padding */
-    margin-left: -1rem;
-    margin-right: -1rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center; /* Center the title text */
-    font-weight: 200;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); 
-}
-   
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    color: var(--licorice); 
 }
 
 /* Footer styling */
@@ -169,32 +156,86 @@ footer p {
     margin: 0;
 }
 
+/* Dark mode styling */
+body.dark-mode {
+    background-color: #121212; /* Dark mode background (near black) */
+    color: #EDEDED; /* Light text for dark mode */
+}
 
+header.dark-mode {
+    background-color: #1F1F1F; /* Darker header background in dark mode */
+}
+
+.title-box.dark-mode {
+    background-color: #1F1F1F; /* Dark mode background for title box */
+    color: #FFFFFF; /* Light text for title box */
+}
+
+section.card.dark-mode {
+    background-color: #1F1F1F; /* Dark mode background for cards */
+    color: #EDEDED; /* Light text for cards */
+}
+
+footer.dark-mode {
+    background-color: #1F1F1F; /* Dark mode background for footer */
+    color: #EDEDED; /* Light text for footer */
+}
+
+nav a.dark-mode {
+    color: #EDEDED; /* Light text for navigation links in dark mode */
+}
+
+/* Hamburger button styles */
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: .25rem 2vw;
+}
+
+/* When the hamburger menu is open, change to 'X' */
+#myButton.open {
+    color: var(--whiteish); /* Optional: Change color when open */
+}
+
+/* Mobile-specific styles */
 @media (max-width: 768px) {
+    #myButton {
+        display: block; /* Show button on smaller screens */
+    }
+
+    ul.menuLinks {
+        display: none; /* Hide menu by default */
+    }
+
+    ul.menuLinks.open {
+        display: block; /* Show menu when toggled */
+    }
+
+    /* Keep the header layout consistent on mobile */
     header {
-        background-color: var(--coffee); 
-        padding: 10px; 
-        display: flex;
-        width: 100%; /* Full width for mobile screens */
-        max-width: 100%; /* Ensure it fills the screen width */
-        box-sizing: border-box;
+        display: flex; /* Ensure flex layout on mobile */
+        flex-direction: row; /* Keep image and text in the same row */
+        align-items: center; /* Align items in the center vertically */
+        justify-content: space-between; /* Ensure space between elements */
+        padding: 10px; /* Adjust padding for mobile */
     }
 
-    .title-box {
-        font-size: 1.8rem; /* Adjust title size for smaller screens */
-        padding: 0.5rem;
-        background-color: var(--beaver);
-        width: 100%; /* Ensure title box takes full width */
-        max-width: 100%; /* Prevent shrinking */
+    header img {
+        width: 150px; /* Resize image for mobile */
+        margin-right: 10px; /* Reduce margin between image and text */
     }
 
-    main {
-        padding: 1rem;
+    header span {
+        font-size: 2rem; /* Adjust font size for mobile */
     }
 
-    footer {
-        padding: 0.5rem;
-        width: 100%; /* Ensure footer takes full width */
-        box-sizing: border-box;
+    #darkModeToggle {
+        padding: 0.25rem 0.5rem; /* Adjust button size for mobile */
+        font-size: 0.9rem; /* Slightly smaller button text for mobile */
     }
 }
