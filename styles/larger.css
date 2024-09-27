@@ -46,6 +46,10 @@
         border: 1px solid var(--whiteish); 
     }
 
+    nav a.active:hover {
+        color: rgb(238, 125, 20); /* Change the text color to orange only on hover for the active link */
+    }
+
     #myButton {
         display: none; /* Hide hamburger button on larger screens */
     }

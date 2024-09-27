@@ -97,6 +97,18 @@ header span {
     color: var(--whiteish); /* Change the text color on hover */
 }
 
+/* Active and focus state */
+#darkModeToggle:active,
+#darkModeToggle:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Ensure hover state works even after click (fix for losing hover) */
+#darkModeToggle:not(:hover):focus {
+    background-color: var(--whiteish); /* Reset background after click */
+    color: var(--licorice); /* Reset text color after click */
+}
+
 /* Navigation styling */
 nav {
     background-color: var(--beaver);
@@ -156,7 +168,8 @@ body[data-theme="dark"] nav a.active {
 
 /* Dark Mode active link hover state */
 body[data-theme="dark"] nav a.active:hover {
-    color: rgb(238, 125, 20); /* Change the text color to orange on hover */
+    color: rgb(238, 125, 20); /* Change to orange when hovered in dark mode */
+
 }
 
 html, body {
@@ -272,6 +285,17 @@ ul.menuLinks.open {
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
+
+     /* Hover effect for mobile nav links */
+     nav a:hover {
+        color: rgb(238, 125, 20); /* Change the text color to orange on hover */
+    }
+
+    /* Ensure hover effect for active link in mobile (turns orange when hovered) */
+    nav a.active:hover {
+        color: rgb(238, 125, 20); /* Change to orange when hovered for active link */
+    }
+    
     #myButton {
         display: block;
     }
