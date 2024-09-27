@@ -93,8 +93,8 @@ header span {
 }
 
 #darkModeToggle:hover {
-    background-color: var(--silver);
-    color: var(--beaver);
+    background-color: rgb(238, 125, 20); /* Change the background color on hover */
+    color: var(--whiteish); /* Change the text color on hover */
 }
 
 /* Navigation styling */
@@ -123,11 +123,15 @@ nav a {
     text-decoration: none;
     border-radius: 10px;
     font-size: 1.2rem;
+    transition: color 0.3s ease, border 0.3s ease; /* Add transition for smoother hover effect */
+
 }
 
 nav a:hover {
-    border: 1px solid var(--whiteish);
+    color: rgb(238, 125, 20); /* Change the text color on hover */
+    border: 1px solid var(--whiteish); /* Optional: Keep the border or modify as needed */
 }
+
 
 /* Dark Mode for Navigation */
 nav a[data-theme="dark"] {
@@ -137,6 +141,11 @@ nav a[data-theme="dark"] {
 nav a.active {
     background-color: var(--whiteish);
     color: var(--licorice);
+}
+
+/* Hover effect for active link */
+nav a.active:hover {
+    color: rgb(238, 125, 20); /* Change the text color to orange only on hover for the active link */
 }
 
 /* Active state for navigation link in dark mode */
