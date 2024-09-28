@@ -1,0 +1,682 @@
+/* Root colors */
+:root {
+    --primary-gradient: linear-gradient(135deg, #2EA961, #2b4636); /* Vivid Green Gradient */
+    --secondary-gradient: linear-gradient(135deg, #d63031, #6b180f); /* Vivid Red Gradient */
+    --accent-gradient: linear-gradient(135deg, #dfe6e9, #b0b4b6); /* Light Grey Gradient */
+    --dark-bg-gradient: linear-gradient(135deg, #2d3436, #1e272e); /* Darker Grey to Black Gradient */
+    --text-color-dark: #636e72; /* Soft Dark Grey */
+    --text-color-light: #ffffff; /* White */
+}
+
+
+
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-light); /* White Text */
+    background: var(--dark-bg-gradient); /* Dark Gradient Background */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container responsiveness */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/* Header for both mobile and desktop */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-gradient); /* Green Gradient */
+    padding: 15px 20px;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.site-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color-light);
+    text-align: left;
+}
+
+/* Hamburger button */
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color-light);
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    display: none; /* Only show on smaller screens */
+    
+}
+
+/* Active hamburger button */
+#myButton.open {
+    color: #FFF;
+}
+
+/* Mobile navigation menu */
+
+.main-nav {
+    flex-grow: 1; /* Takes up remaining space between logo and button */
+    text-align: center;
+    
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    margin: 0 10px;
+}
+
+.main-nav ul li a {
+    color: var(--secondary-gradient);
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Hover effect with gradient box for nav items */
+.main-nav ul li a:hover {
+    background: var(--secondary-gradient); /* Light Grey Gradient */
+    border-radius: 5px;
+    padding: 10px 15px; /* Add some padding to enhance the box effect */
+    transition: background 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+
+
+ul.menuLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(46, 204, 113, 0.8); /* Transparent Green Gradient */
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(30px); /* Exact blur effect */
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Exact shadow effect */
+    border: 2px solid rgba(255, 255, 255, 0.18); /* Exact border */
+}
+
+ul.menuLinks.open {
+    display: flex;
+}
+
+
+
+/* Apply faded background image using pseudo-element */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/hero.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6; /* Fading effect */
+    z-index: -1; /* Keep the image behind the text */
+
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 15px;
+    height: auto; /* Let the height adjust based on content */
+    overflow: hidden;
+}
+
+/* Hero Text Styling */
+.hero-text h1 {
+    font-size: 1.8rem; /* Responsive font for mobile */
+    margin-bottom: 10px;
+    color: #f1f1f1; /* Lighter color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+    margin-top: 10px;
+}
+
+.hero-text p {
+    font-size: 1.1rem; /* Responsive paragraph font for mobile */
+    color: #ffffff; /* Pure white for maximum contrast */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Darker shadow to boost contrast */
+    margin-top: 3px;
+}
+
+/* Style the "Learn More" CTA Button */
+.cta-button-hero {
+    background: var(--secondary-gradient); /* Red Gradient */
+    color: var(--text-color-light); /* White */
+    padding: 10px 20px; /* Adjust padding for mobile */
+    font-size: 1rem; /* Responsive button text size */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; /* Add space between the text and the button */
+}
+
+
+/* Hover Effect for the Button */
+.cta-button-hero:hover {
+    background: var(--primary-gradient); /* Green Gradient on Hover */
+    transform: scale(1.05); /* Slight pop-out effect */
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+.cta-button-hero:focus {
+    outline-offset: 3px;
+}
+
+/* Mission Section */
+
+/* Mission Section Styling */
+.mission-section {
+    background-color: transparent; 
+    padding: 40px 0;
+}
+
+/* Grid Layout */
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Our Mission and News Boxes with scrollable content */
+.mission-box, .weather-box {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--text-color-light); /* White Background */
+    box-shadow: inset 0 0 15px rgba(46, 204, 113, 0.5), /* Inner Green Glow */
+                0 4px 8px rgba(0, 0, 0, 0.1); /* Outer Shadow */
+    text-align: left; /* Left-align text */
+    height: 200px; /* Fixed height to ensure box size stays the same */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+
+    /* Smooth scrollbar with rounded corners */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(0, 80, 158, 0.5) rgba(255, 255, 255, 0.2); /* For Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari) */
+.mission-box::-webkit-scrollbar, .weather-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mission-box::-webkit-scrollbar-track, .weather-box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px; /* Match the box border radius */
+}
+
+.mission-box::-webkit-scrollbar-thumb, .weather-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 80, 158, 0.5);
+    border-radius: 10px; /* Match the box border radius */
+}
+
+/*  Heading (h2) */
+.mission-box h2, .weather-box h2 {
+    background-color: #ffffff; /* Match the box background */
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1; /* Ensure it stays on top */
+    margin: 0;
+}
+
+/* Optional: Add a slight glow on hover */
+.mission-box:hover, .weather-box:hover {
+    box-shadow: inset 0 0 20px rgba(0, 128, 0, 0.7), /* Stronger inner glow */
+                0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger outer shadow */
+}
+
+/* Headings */
+.mission-box h2, .weather-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Text */
+.mission-box p, .weather-box p {
+    font-size: 1rem;
+    color: var(--text-color-dark); /* Keep text color dark for readability */
+}
+
+/* Focus Areas Section */
+
+/* Focus Section */
+.focus-areas {
+    background: var(--secondary-gradient); /* Red Gradient */
+    color: var(--text-color-light);
+    padding: 40px 0;
+    position: relative;
+    margin-bottom: 40px;
+    top: -30px; /* Move the focus section upward */
+  
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 20px;
+}
+
+
+/* Focus Areas with hover effect */
+/* Focus Areas with the added effects */
+.focus-item {
+    background: var(--primary-gradient); /* Green Gradient */
+    color: var(--text-color-light);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+    margin-top: 2rem;
+    backdrop-filter: blur(30px); /* Blur effect */
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Box shadow */
+    border: 2px solid rgba(255, 255, 255, 0.18); /* Border */
+}
+
+/* Style for focus items in both mobile and desktop */
+.focus-item h3 {
+    background-color: rgb(250, 79, 79); /* Red background for h3 */
+    color: var(--text-color-light); /* White text for h3 */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.focus-item p {
+    color: var(--text-color-light); /* White text for paragraphs */
+}
+
+.focus-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px 10px rgba(250, 79, 79, 0.6); /* Red glow effect */
+}
+
+
+
+/* Style for event section */
+.events-section {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 4rem;
+}
+
+.events-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events-section ul li {
+    margin: 10px 0;
+}
+
+
+/* Wrapper for events */
+.event-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Flip card styling */
+.event-card {
+    width: 200px; /* Adjust to your preference */
+    height: 150px;
+    perspective: 1000px; /* Enable 3D perspective */
+}
+
+.event-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.event-card:hover .event-card-inner {
+    transform: rotateY(180deg); /* Flip effect on hover */
+}
+
+/* Front and back of the flip card */
+.event-card-front, .event-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Shadow effect */
+    border: 2px solid rgba(255, 255, 255, 0.18); /* Border */
+}
+
+/* Back side of the card */
+.event-card-back {
+    background-color: var(--secondary-color); /* Change back color */
+    transform: rotateY(180deg);
+}
+
+/* Text inside the event cards */
+.event-card-front p, .event-card-back p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Decorative underline */
+.event-card-front p:after, .event-card-back p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -0.75rem;
+}
+
+/* Company Spotlight Section */
+.company-section {
+    background: var(--accent-gradient); /* Dark Gradient */
+    padding: 40px 0;
+}
+
+/* Grid with horizontal scrolling */
+.company-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; /* Space between items */
+    overflow-x: auto; /* Horizontal scrolling */
+    padding-bottom: 10px; /* Space below for visual balance */
+}
+
+.company-item {
+    position: relative;
+    min-width: 250px; /* Fixed width for horizontal scrolling */
+    height: 120px; /* Fixed height */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure image stays inside the box */
+    flex: 0 0 auto; /* Ensure items do not shrink */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    perspective: 1000px; /* Enable 3D perspective for flip */
+    transition: transform 0.3s ease; /* Smooth pop-out transition */
+    backdrop-filter: blur(30px); /* Blur effect */
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Box shadow */
+    border: 2px solid rgba(255, 255, 255, 0.18); /* Border */
+    
+}
+
+/* Ensure rounded corners for the image */
+.company-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire box */
+    border-radius: 10px; /* Ensure the image follows the rounded corners */
+    
+}
+
+/* Flip effect */
+.company-item .company-item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Maintain 3D for flip */
+    transition: transform 0.6s; /* Smooth transition for flip */
+    
+}
+
+/* Front and back faces of the card */
+.company-item-front, .company-item-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face when flipped */
+    border-radius: 10px; /* Ensure rounded corners for both sides */
+    overflow: hidden; /* Prevent overflow outside the rounded corners */
+}
+
+.company-item-back {
+    transform: rotateY(180deg);
+    background-color: #272323; /* Adjust back face color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: rgb(245, 242, 242); /* Ensure text is readable on the back */
+    border-radius: 10px; /* Maintain rounded corners */
+    text-align: center;
+}
+
+/* Flip card on hover */
+.company-item:hover .company-item-inner {
+    transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+/* Pop-out effect on hover */
+.company-item:hover {
+    transform: scale(1.05); /* Slight pop-out effect */
+    transition: transform 0.3s ease; /* Smooth pop-out transition */
+}
+
+
+/* Show text and center it on both front and back sides */
+.company-item h3 {
+    position: absolute;
+    top: 40%; /* Adjust top position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ensure text color contrasts with the background */
+    text-align: center;
+    font-size: 0.8rem; /* Slightly reduce font size */
+    font-weight: 500; /* Use a lighter font weight */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add a subtle text shadow for readability */
+    padding: 0 10px;
+    z-index: 2;
+    display: block;
+}
+
+.company-item p {
+    position: absolute;
+    top: 60%; /* Adjust top position for paragraph */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ensure text color contrasts with the background */
+    text-align: center;
+    font-size: 0.4rem; /* Slightly reduce font size */
+    font-weight: 400; /* Use regular font weight for paragraphs */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
+    padding: 0 10px;
+    z-index: 2;
+    display: block;
+}
+
+
+
+/* Base Footer Styling */
+.site-footer {
+    background: var(--primary-gradient); /* Green Gradient */
+    color: var(--text-color-light); /* White */
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Columns Layout */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Branding Column */
+.footer-branding h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-branding p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Contact Info and Student Info */
+.footer-location h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-location p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer-location a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color-light);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer-location a:hover {
+    color: #ccc;
+    border-bottom-color: #ccc;
+}
+
+/* Social Media Section */
+.footer-newsletter h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center the icons on mobile */
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.social-media a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-branding h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+/* Show hamburger button on smaller screens */
+@media (max-width: 768px) {
+    /* Ensure the container is still using flexbox */
+    .site-header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Distribute space between elements */
+    }
+
+    /* Keep the hamburger menu visible and move it to the left */
+    #myButton {
+        display: block;
+        margin-right: 10px; /* Adds space between the hamburger and the logo */
+        margin-left: 0; /* Align the hamburger to the far left */
+    }
+
+    /* Keep the logo next to the hamburger button */
+    .site-header .logo {
+        margin-left: 10px; /* Optional: add space between hamburger and logo */
+    }
+
+    /* Navigation stays hidden unless toggled */
+    .main-nav ul {
+        display: none; /* Hide the menu initially */
+    }
+
+    .main-nav ul.menuLinks.open {
+        display: flex; /* Show the menu when the hamburger is clicked */
+        flex-direction: column;
+    }
+
+    /* Ensure the "Join Us" button remains on the far right */
+    .cta-button-header {
+        margin-left: auto; /* Push the CTA button to the far right */
+    }
+}
+

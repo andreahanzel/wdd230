@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 230 - Web Frontend Development | Andrea Toreki | Chamber of Commerce Home Page">
+        <meta name="author" content="Andrea Toreki">
+        <title>WDD 230 | Andrea Toreki | Budapest Chamber of Commerce</title>
+
+        <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Andrea Toreki's Web Frontend Development Course">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.imgur.com/fvxAmcz.jpg">
+    <meta property="og:url" content="https://andreahanzel.github.io/wdd230/index.html">
+    <meta property="og:description" content="This is Andrea Toreki's WDD 230 Web Frontend Development course portal.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body class="light-mode"> <!-- Added class to manage light/dark mode -->
+
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">Budapest Chamber of Commerce</a>
+    
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <button id="myButton" class="nav-toggle">&#9776;</button> <!-- Hamburger Button -->
+                <ul class="nav-list menuLinks">
+                    <li><a href="index.html" class="active"> Home</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-text">
+            <h1>Your Business Advocate in Budapest</h1>
+            <p>Empowering businesses through networking, resources, and advocacy.</p>
+            <a href="#" class="cta-button-hero">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+<section class="mission-section">
+    <div class="container mission-grid">
+        <!-- Grid Item 1: Our Mission -->
+        <div class="mission-box">
+            <h2>Our Mission</h2>
+            <p>
+                At the Budapest Chamber of Commerce, our mission is to foster a thriving and collaborative business environment in Budapest and beyond. We strive to empower businesses by providing essential resources, networking opportunities, and advocacy to ensure sustained economic growth and innovation. Our focus is on creating a supportive community where businesses, both large and small, can connect, grow, and succeed together.
+            </p>
+            <p>
+                We believe that businesses are the backbone of our local economy, and by offering guidance, training, and mentorship, we aim to help companies navigate challenges, capitalize on opportunities, and make meaningful contributions to the prosperity of Budapest. We actively engage with policymakers, industry leaders, and entrepreneurs to ensure that the interests of the business community are well-represented and advocated for at every level.
+            </p>
+            <p>
+                Our chamber organizes regular events, forums, and seminars designed to foster collaboration and knowledge-sharing among businesses. We are committed to driving innovation through initiatives that promote sustainable practices, digital transformation, and the adoption of cutting-edge technologies across industries. As the business landscape evolves, we aim to remain a dynamic and responsive organization that adapts to the changing needs of our members.
+            </p>
+            <p>
+                Through strategic partnerships with local, national, and international organizations, we provide members with access to a global network of professionals, resources, and market insights. Whether it’s expanding into new markets, navigating regulatory changes, or seeking investment opportunities, the Budapest Chamber of Commerce is here to support every step of the journey.
+            </p>
+            <p>
+                Our ultimate goal is to build a robust, resilient, and innovative business community that contributes to the overall well-being of society. We are proud to be the voice of business in Budapest, and we will continue to champion the causes that matter most to our members, ensuring that the future of business in Budapest remains bright and prosperous for all.
+            </p>
+        </div>
+        
+
+        <!-- Grid Item 2: News -->
+        <div class="weather-box">
+            <h2>Weather</h2>
+            <p>Current Weather. Content is coming soon.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Focus and Events Container -->
+<div class="focus-events-container">
+
+    <!-- Upcoming Events Section -->
+    <section class="events-section">
+        <div class="events-container">
+            <h2>Upcoming Events</h2>
+            <div class="event-wrapper">
+                <div class="event-card">
+                    <div class="event-card-inner">
+                        <div class="event-card-front">
+                            <p>Business Networking</p>
+                        </div>
+                        <div class="event-card-back">
+                            <p>September 30, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-card-inner">
+                        <div class="event-card-front">
+                            <p>International Trade Forum</p>
+                        </div>
+                        <div class="event-card-back">
+                            <p>October 5, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-card-inner">
+                        <div class="event-card-front">
+                            <p>Local Business Expo</p>
+                        </div>
+                        <div class="event-card-back">
+                            <p>November 12, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Focus Areas Section -->
+    <section class="focus-areas">
+        <div class="container">
+            <h2>Our Focus</h2>
+            <div class="focus-grid-wrapper">
+                <div class="focus-grid">
+                    <div class="focus-item">
+                        <h3>Advocacy</h3>
+                        <p>We advocate for policies that support business growth in Budapest and beyond.</p>
+                    </div>
+                    <div class="focus-item">
+                        <h3>Networking</h3>
+                        <p>Connecting businesses through events, forums, and partnerships.</p>
+                    </div>
+                    <div class="focus-item">
+                        <h3>Growth</h3>
+                        <p>We provide resources and services to help businesses expand and prosper.</p>
+                    </div>
+                    <div class="focus-item">
+                        <h3>Innovation</h3>
+                        <p>Driving innovation by providing access to cutting-edge resources and partners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</div>
+
+    <!--  Company Spotlight(s) Section -->
+<section class="company-section">
+    <div class="container">
+        <h2>Company Spotlight(s)</h2>
+        <div class="company-grid-wrapper">
+            <div class="company-grid">
+
+                <!-- Company 1 -->
+                <div class="company-item">
+                    <div class="company-item-inner">
+                        <!-- Front of the card -->
+                        <div class="company-item-front">
+                            <img src="images/company1.jpg" alt="Company 1">
+                        </div>
+                        <!-- Back of the card -->
+                        <div class="company-item-back">
+                            <h3>Company Name 1</h3>
+                            <p>Some description or details about Company 1.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company 2 -->
+                <div class="company-item">
+                    <div class="company-item-inner">
+                        <!-- Front of the card -->
+                        <div class="company-item-front">
+                            <img src="images/company2.jpg" alt="Company 2">
+                        </div>
+                        <!-- Back of the card -->
+                        <div class="company-item-back">
+                            <h3>Company 2</h3>
+                            <p>Some description or details about Company 2.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company 3 -->
+                <div class="company-item">
+                    <div class="company-item-inner">
+                        <!-- Front of the card -->
+                        <div class="company-item-front">
+                            <img src="images/company3.jpg" alt="Company 3">
+                        </div>
+                        <!-- Back of the card -->
+                        <div class="company-item-back">
+                            <h3>Company 3</h3>
+                            <p>Some description or details about Company 3.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company 4 -->
+                <div class="company-item">
+                    <div class="company-item-inner">
+                        <!-- Front of the card -->
+                        <div class="company-item-front">
+                            <img src="images/company4.jpg" alt="Company 4">
+                        </div>
+                        <!-- Back of the card -->
+                        <div class="company-item-back">
+                            <h3>Company 4</h3>
+                            <p>Some description or details about Company 4.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company 5 -->
+                <div class="company-item">
+                    <div class="company-item-inner">
+                        <!-- Front of the card -->
+                        <div class="company-item-front">
+                            <img src="images/company5.jpg" alt="Company 5">
+                        </div>
+                        <!-- Back of the card -->
+                        <div class="company-item-back">
+                            <h3>Company 5</h3>
+                            <p>Some description or details about Company 5.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company 6 -->
+                <div class="company-item">
+                    <div class="company-item-inner">
+                        <!-- Front of the card -->
+                        <div class="company-item-front">
+                            <img src="images/company6.jpg" alt="Company 6">
+                        </div>
+                        <!-- Back of the card -->
+                        <div class="company-item-back">
+                            <h3>Company 6</h3>
+                            <p>Some description or details about Company 6.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-columns">
+            <!-- Left Column: Chamber Info -->
+            <div class="footer-branding">
+                <h3>Budapest Chamber of Commerce</h3>
+                <p>Empowering businesses through networking, resources, and advocacy.</p>
+            </div>
+
+            <!-- Center Left Column: Contact Info -->
+            <div class="footer-location">
+                <h4>Contact Us</h4>
+                <p>
+                    <a href="mailto:toreki@chamberbudapest.com">toreki@chamberbudapest.com</a><br>
+                    +36 1 123 4567<br>
+                    1234 Business Street, Budapest, Hungary
+                </p>
+            </div>
+
+            <!-- Center Right Column: Additional Info -->
+            <div class="footer-location">
+                <h4>Student Info</h4>
+                <p>
+                    WDD 230 - Web Frontend Development <br>
+                    Student Name: Andrea Toreki
+                </p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+
+            <!-- Right Column: Social Media Links -->
+            <div class="footer-newsletter">
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.jpg" alt="Twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="images/instagram.jpg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
