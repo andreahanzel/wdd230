@@ -268,7 +268,7 @@ ul.menuLinks.open {
 /* Paragraph Text */
 .mission-box p, .weather-box p {
     font-size: 1rem;
-    color: var(--text-color-dark); /* Keep text color dark for readability */
+    color: black; /* Keep text color dark for readability */
 }
 
 /* Focus Areas Section */
