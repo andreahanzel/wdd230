@@ -7,9 +7,6 @@
     --text-color-dark: #636e72; /* Soft Dark Grey */
     --text-color-light: #ffffff; /* White */
 }
-
-
-
 /* General body styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -90,7 +87,7 @@ header {
 }
 
 .main-nav ul li a {
-    color: var(--secondary-gradient);
+    color: white;
     padding: 10px;
     text-decoration: none;
 }

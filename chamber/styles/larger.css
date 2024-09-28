@@ -66,7 +66,7 @@
 
     .main-nav ul li a {
         font-size: 1.1rem;
-        color: var(--text-color-light);
+        color: white;
         text-decoration: none;
         padding: 10px 15px;
     }
