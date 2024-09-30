@@ -10,14 +10,13 @@
 
     }
 
-    /* Header for both mobile and desktop */
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: var(--primary-gradient); /* Blue Gradient */
-        padding-top: 40px; /* Increase padding to push the content down */
-        padding-bottom: 20px; /* Optional for balance */
+        background: var(--primary-gradient); 
+        padding-top: 40px; 
+        padding-bottom: 20px;
 
     }
         
@@ -28,15 +27,13 @@
         padding: 10px 0;
         position: relative;
         width: 100%;
-        background: var(--primary-gradient); /* Green Gradient */
-        backdrop-filter: blur(30px); /* Exact blur effect */
+        background: var(--primary-gradient);
+        backdrop-filter: blur(30px); 
         box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Exact shadow effect */
         border-bottom: 2px solid rgba(255, 255, 255, 0.18); /* Exact border */
         z-index: 1000;
     }
-
-
-    /* Force the logo to the far left */
+    
     .site-header .logo {
         flex: 0 0 auto; /* Make sure it stays in its place */
         margin-left: 0; /* Remove any default margin */
@@ -92,7 +89,7 @@
 
     /* Hover effect with gradient box for nav items */
     .main-nav ul li a:hover {
-        background: var(--primary-gradient); /* Light Grey Gradient */
+        background: var(--primary-gradient); 
         border-radius: 5px;
         padding: 10px 15px; /* Add some padding to enhance the box effect */
         transition: background 0.3s ease; /* Smooth transition for the hover effect */
@@ -122,7 +119,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('../images/hero.jpg'); /* Background image */
+        background-image: url('../images/hero.jpg'); /* Background hero image */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -133,15 +130,15 @@
     /* Hero Text Styling */
     .hero-text h1 {
         font-size: 3.5rem; /* Larger text for desktop */
-        color: #ffffff; /* Strong white for high contrast */
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Darker shadow for better readability */
+        color: #ffffff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
         margin-bottom: 10px;
     }
 
     .hero-text p {
         font-size: 1.5rem; /* Larger paragraph text for desktop */
         color: var(--accent-text-color); /* Set the color to the accent text color */
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Darker shadow for improved readability */
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
         margin-top: 5px;
     }
 
@@ -164,99 +161,97 @@
 
    /* Mission Section Styling */
 
-/* Mission Section Grid for larger screens */
-.mission-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: one for Mission, one for News */
-    gap: 40px; /* Add some space between the columns */
-}
+    /* Mission Section Grid for larger screens */
+    .mission-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns: one for Mission, one for News */
+        gap: 40px; /* Add some space between the columns */
+    }
 
-/* Mission and Weather Boxes */
-.mission-box, .weather-box {
-    padding: 30px;
-    background: var(--dark-bg-gradient); /* Dark background for better contrast */
-    color: var(--text-color-light); /* White text for readability */
-    box-shadow: inset 0 0 10px rgba(255, 255, 200, 0.5), /* Inner yellowish glow */
-                0 4px 10px rgba(255, 255, 150, 0.4); /* Outer yellowish shadow */
-    border-radius: 10px;
-    height: auto; /* Adjust height based on content */
-    max-height: 400px; /* Prevent overflow by setting max-height */
-    text-align: left;
-    overflow-y: auto; /* Enable vertical scrolling for long content */
-    transition: box-shadow 0.3s ease; /* Smooth hover transition */
-}
+    /* Mission and Weather Boxes */
+    .mission-box, .weather-box {
+        padding: 30px;
+        background: var(--dark-bg-gradient); /* Dark background for better contrast */
+        color: var(--text-color-light); /* White text for readability */
+        box-shadow: inset 0 0 10px rgba(255, 255, 200, 0.5), /* Inner yellowish glow */
+                    0 4px 10px rgba(255, 255, 150, 0.4); /* Outer yellowish shadow */
+        border-radius: 10px;
+        height: auto; /* Adjust height based on content */
+        max-height: 400px; /* Prevent overflow by setting max-height */
+        text-align: left;
+        overflow-y: auto; /* Enable vertical scrolling for long content */
+        transition: box-shadow 0.3s ease; /* Smooth hover transition */
+    }
 
-/* Headings */
-.mission-box h2, .weather-box h2 {
-    background-color: transparent; /* Blend with background */
-    color: var(--accent-text-color); /* Yellow text for better contrast */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
-}
+    /* Headings */
+    .mission-box h2, .weather-box h2 {
+        background-color: transparent; /* Blend with background */
+        color: var(--accent-text-color); /* Yellow text for better contrast */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
 
-/* Paragraph Text */
-.mission-box p, .weather-box p {
-    color: var(--text-color-light); /* White text for readability */
-}
+    /* Paragraph Text */
+    .mission-box p, .weather-box p {
+        color: var(--text-color-light); /* White text for readability */
+    }
 
-/* Remove custom scrollbar styling */
-
-/* Hover Effect: Add a glow on hover */
-.mission-box:hover, .weather-box:hover {
-    box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), /* Stronger inner yellowish glow */
-                0 6px 12px rgba(255, 255, 150, 0.4); /* Stronger outer shadow */
-}
+    /* Hover Effect: Add a glow on hover */
+    .mission-box:hover, .weather-box:hover {
+        box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), /* Stronger inner yellowish glow */
+                    0 6px 12px rgba(255, 255, 150, 0.4); /* Stronger outer shadow */
+    }
 
     /* Events Section styling */
-.events-section {
-    background-color: var(--primary-color); /* Keep this as the section background */
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 4rem;
-}
+    .events-section {
+        background-color: var(--primary-color); /* Keep this as the section background */
+        padding: 40px;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
 
-.event-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
-    gap: 30px;
-}
+    .event-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+        gap: 30px;
+    }
 
-.event-card {
-    width: 250px;
-    height: 200px;
-    perspective: 1000px; /* Enable 3D perspective */
-
-
-}
-
-.event-card-front {
-    background: var(--dark-bg-gradient); /* Use background for gradient */
-    color: var(--accent-text-color); /* Yellowish text */
-}
+    .event-card {
+        width: 250px;
+        height: 200px;
+        perspective: 1000px; /* Enable 3D perspective */
 
 
-.event-card-back {
-    background-color: var(--primary-color); /* Darker background for back */
-    color: var(--text-color-light); /* White text on back */
-}
+    }
 
-/* Increase text size for larger screens */
-.event-card-front p, .event-card-back p {
-    font-size: 1.2rem;
-}
+    .event-card-front {
+        background: var(--dark-bg-gradient); /* Use background for gradient */
+        color: var(--accent-text-color); /* Yellowish text */
+    }
 
-/* Hover effect */
-.event-card:hover .event-card-inner,
-.event-card.is-flipped .event-card-inner {
-    transform: rotateY(180deg); /* Flip effect */
-}
+
+    .event-card-back {
+        background-color: var(--primary-color); /* Darker background for back */
+        color: var(--text-color-light); /* White text on back */
+    }
+
+    /* Increase text size for larger screens */
+    .event-card-front p, .event-card-back p {
+        font-size: 1.2rem;
+    }
+
+    /* Hover effect */
+    .event-card:hover .event-card-inner,
+    .event-card.is-flipped .event-card-inner {
+        transform: rotateY(180deg); /* Flip effect */
+    }
 
 
 
    /* Focus Areas Section */
     .focus-areas {
-        background: var(--secondary-gradient); /* Unified blue to dark grey gradient background */
+        background: var(--secondary-gradient); 
         color: var(--text-color-dark);
         padding: 30px 0;
         position: relative;
@@ -274,13 +269,13 @@
 
     /* Focus Items Styling */
     .focus-item {
-        background: var(--primary-gradient); /* Dark background */
+        background: var(--primary-gradient); 
         color: var(--text-color-light); /* White text */
         padding: 30px; /* More padding for larger screens */
         border-radius: 10px;
         text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-        backdrop-filter: blur(30px); /* Blur effect */
+        backdrop-filter: blur(30px); 
         box-shadow: 0px 0px 30px rgba(255, 255, 237, 0.37); /* Light outer shadow */
         border: 2px solid rgba(255, 255, 255, 0.18); /* Subtle border */
         height: 100%; /* Full height */

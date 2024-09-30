@@ -33,7 +33,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--primary-gradient); /* Blue Gradient */
+    background: var(--primary-gradient);
     padding: 15px 20px;
    
 }
@@ -98,13 +98,13 @@ header {
 
 /* Hover effect with gradient box for nav items */
 .main-nav ul li a:hover {
-    background: var(--primary-gradient); /* Light Grey Gradient */
+    background: var(--primary-gradient); 
     border-radius: 5px;
     padding: 10px 15px; /* Add some padding to enhance the box effect */
     transition: background 0.3s ease; /* Smooth transition for the hover effect */
 }
 
-
+/* Active link styling */
 
 ul.menuLinks {
     display: none;
@@ -114,7 +114,7 @@ ul.menuLinks {
     left: 0;
     width: 100%;
     height: 48vh;
-    background: var(--dark-bg-gradient); /* Blue Gradient */
+    background: var(--dark-bg-gradient); 
     z-index: 1000;
     padding: 0;
     margin: 0;
@@ -143,7 +143,7 @@ ul.menuLinks.open {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero.jpg'); /* Background image */
+    background-image: url('../images/hero.jpg'); /* Background hero image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,15 +175,15 @@ ul.menuLinks.open {
 
 .hero-text p {
     font-size: 1.1rem; /* Responsive paragraph font for mobile */
-    color: var(--accent-text-color); /* Set the color to the accent text color */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Darker shadow to boost contrast */
+    color: var(--accent-text-color); 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
     margin-top: 3px;
 }
 
-/* Style the "Learn More" CTA Button */
+/* Style the CTA Button */
 .cta-button-hero {
-    background: var(--dark-bg-gradient); /* Change background to the accent gradient */
-    color: var(--text-color-light); /* White */
+    background: var(--dark-bg-gradient); 
+    color: var(--text-color-light); 
     padding: 10px 20px; /* Adjust padding for mobile */
     font-size: 1rem; /* Responsive button text size */
     border: none;
@@ -198,7 +198,7 @@ ul.menuLinks.open {
 
 /* Hover Effect for the Button */
 .cta-button-hero:hover {
-    background: var(--accent-gradient); /* Green Gradient on Hover */
+    background: var(--accent-gradient); 
     transform: scale(1.05); /* Slight pop-out effect */
     filter: drop-shadow(0 0 10px #fffdef);
     color: black;
@@ -221,16 +221,16 @@ ul.menuLinks.open {
     gap: 20px; /* Space between grid items */
 }
 
-/* Our Mission and News Boxes with scrollable content */
+/* Our Mission and Weather boxes with scrollable content */
 .mission-box, .weather-box {
     padding: 20px; /* Adjusted for small screens */
     border-radius: 10px;
-    background: var(--dark-bg-gradient); /* Dark background for contrast */
-    color: var(--text-color-light); /* White text for readability */
-    box-shadow: inset 0 0 10px rgba(255, 255, 200, 0.5), /* Inner yellowish glow */
-                0 4px 8px rgba(255, 255, 150, 0.3); /* Outer yellowish shadow */
+    background: var(--dark-bg-gradient); 
+    color: var(--text-color-light); 
+    box-shadow: inset 0 0 10px rgba(255, 255, 200, 0.5),
+                0 4px 8px rgba(255, 255, 150, 0.3); 
     text-align: left;
-    height: auto; /* Adjust height based on content */
+    height: auto; /* Height based on content */
     max-height: 300px; /* Prevent overflow with a max-height */
     overflow-y: auto; /* Enable vertical scrolling */
     transition: box-shadow 0.3s ease; /* Smooth hover transition */
@@ -239,35 +239,35 @@ ul.menuLinks.open {
 /* Headings */
 .mission-box h2, .weather-box h2 {
     background-color: transparent; /* Blend with background */
-    color: var(--accent-text-color); /* Yellow text for better contrast */
+    color: var(--accent-text-color); 
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 1; /* Ensure it stays on top */
     margin: 0;
 }
 
-/* Optional: Add a slight glow on hover */
+/* Mission slight glow on hover */
 .mission-box:hover, .weather-box:hover {
-    box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), /* Stronger inner yellowish glow */
-                0 6px 12px rgba(255, 255, 150, 0.4); /* Stronger outer shadow */
+    box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), 
+                0 6px 12px rgba(255, 255, 150, 0.4); 
 }
 
-/* Headings */
+/* Mission box h2 */
 .mission-box h2, .weather-box h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Paragraph Text */
+/* Mission's Paragraph Text */
 .mission-box p, .weather-box p {
-    color: var(--text-color-light); /* White text for readability */
+    color: var(--text-color-light); 
 }
 
 
 
 /* Style for event section */
 .events-section {
-    background-color: var(--primary-color); /* Keep this as the section background */
+    background-color: var(--primary-color); 
     color: var(--text-color-light);
     border-radius: 10px;
     padding: 20px;
@@ -296,7 +296,7 @@ ul.menuLinks.open {
 
 /* Flip card styling */
 .event-card {
-    width: 200px; /* Adjust to your preference */
+    width: 200px; 
     height: 150px;
     perspective: 1000px; /* Enable 3D perspective */
  
@@ -310,7 +310,7 @@ ul.menuLinks.open {
     text-align: center;
     transition: transform 0.6s ease-in-out;
     transform-style: preserve-3d;
-    cursor: pointer; /* Make clickable on mobile */
+    cursor: pointer; 
 }
 
 .event-card-front, .event-card-back {
@@ -329,14 +329,14 @@ ul.menuLinks.open {
 
 /* Front side: darker background and yellowish text */
 .event-card-front {
-    background: var(--dark-bg-gradient); /* Use background for gradient */
-    color: var(--accent-text-color); /* Yellowish text */
+    background: var(--dark-bg-gradient); 
+    color: var(--accent-text-color); 
 }
 
 
 .event-card-back {
-    background-color: var(--primary-color); /* Darker background */
-    color: var(--text-color-light); /* White text on back */
+    background-color: var(--primary-color); 
+    color: var(--text-color-light); 
     transform: rotateY(180deg); /* Rotate the back side */
 }
 
@@ -371,7 +371,7 @@ ul.menuLinks.open {
 
 /* Focus Section */
 .focus-areas {
-    background: var(--secondary-gradient); /* Unified blue to dark grey gradient background */
+    background: var(--secondary-gradient); 
     color: var(--text-color-dark);
     padding: 40px 0;
     position: relative;
@@ -388,14 +388,14 @@ ul.menuLinks.open {
 
 /* Focus Items Styling */
 .focus-item {
-    background: var(--primary-gradient); /* Dark background */
+    background: var(--primary-gradient); 
     color: var(--text-color-dark); 
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    backdrop-filter: blur(30px); /* Blur effect */
-    box-shadow: 0px 0px 30px rgba(255, 255, 237, 0.37); /* Light outer shadow */
+    backdrop-filter: blur(30px); 
+    box-shadow: 0px 0px 30px rgba(255, 255, 237, 0.37); 
     border: 2px solid rgba(255, 255, 255, 0.18); /* Subtle border */
     margin-top: 2rem; /* Adds space between focus items */
 }
@@ -403,20 +403,20 @@ ul.menuLinks.open {
 /* Focus Item Headings */
 .focus-item h3 {
     background-color: transparent; /* Transparent background */
-    color: var(--accent-text-color); /* Dark text color for better contrast */
+    color: var(--accent-text-color); 
     padding: 10px;
     border-radius: 5px;
 }
 
 /* Focus Item Paragraphs */
 .focus-item p {
-    color: var(--text-color-light); /* White text for paragraphs */
+    color: var(--text-color-light); 
 }
 
 /* Hover effects for focus items */
 .focus-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px 10px rgba(255, 255, 200, 0.6); /* Stronger yellowish shadow effect on hover */
+    box-shadow: 0 0 30px 10px rgba(255, 255, 200, 0.6); 
 }
 
 /* Scrollbars (WebKit browsers like Chrome, Safari) */
@@ -430,7 +430,7 @@ ul.menuLinks.open {
 }
 
 .focus-item::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 80, 158, 0.5); /* Darker scrollbar thumb */
+    background-color: rgba(0, 80, 158, 0.5); 
     border-radius: 10px;
 }
 
@@ -444,7 +444,7 @@ ul.menuLinks.open {
 
 /* Company Spotlight Section */
 .company-section {
-    background: var(--dark-bg-gradient); /* Dark Gradient */
+    background: var(--dark-bg-gradient); 
     padding: 40px 0;
 }
 
@@ -535,7 +535,7 @@ ul.menuLinks.open {
     top: 40%; /* Adjust top position */
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--accent-text-color); /* Yellow text for contrast */
+    color: var(--accent-text-color); 
     text-align: center;
     font-size: 0.8rem; /* Slightly reduce font size */
     font-weight: 500; /* Use a lighter font weight */
