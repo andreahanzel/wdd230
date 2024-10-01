@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Page</title>
+    <meta name="description" content="Responsive image example using srcset and picture element">
+    <meta name="author" content="Andrea Toreki">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <header><h1>Responsive Images Demonstration</h1></header>
+    <nav></nav>
+    <main>
+        <!-- Image with srcset for different screen sizes -->
+        <div class="hero">
+            <picture>
+                <!-- Small image for screens up to 500px -->
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <!-- Medium image for screens up to 1000px -->
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <!-- Large image for screens larger than 1000px -->
+                <img src="images/hero-large.webp" alt="Temple Image" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>@Andrea Toreki | BYUI | WED 230 - Fall 2024</footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>

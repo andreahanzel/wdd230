@@ -1,0 +1,16 @@
+/* Styles for the hero image */
+
+h1 {
+  text-align: center;
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+}
