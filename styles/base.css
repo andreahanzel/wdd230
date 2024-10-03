@@ -183,7 +183,6 @@ html, body {
 /* Main content layout */
 main {
     flex-grow: 1;
-    margin: 0;
     padding: 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -205,6 +204,43 @@ main {
     font-weight: 700;
     margin-top: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Hero image container with relative positioning */
+.hero {
+    position: relative;
+    
+}
+
+/* Make the hero image responsive */
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+/* Overlay Label Styles */
+.herolabel {
+    position: absolute;
+    bottom: 80%;
+    left: 20px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Label text styles */
+.herolabel span {
+    font-size: 1rem;
+    font-family: "Roboto", serif; 
+    color: #333; 
+    font-weight: bold;
+    
+
 }
 
 /* Cards */
@@ -239,6 +275,35 @@ section.card h2 {
     text-align: center;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
+
+/* Styles for the visit counter */
+p {
+    margin: 1rem;
+}
+
+.label {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+.visits {
+    color: var(--beaver);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Map container styles */
+.map-container {
+    margin: 2rem 0;          /* Adds spacing around the map */
+    max-width: 100%;         /* Ensure it stays within the page width */
+    display: flex;
+    justify-content: center; /* Centers the map horizontally */
+}
+
+.map-container iframe {
+    border: none;      /* Removes any default border */
+}
+
 
 /* Footer styling */
 footer {

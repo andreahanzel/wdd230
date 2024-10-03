@@ -73,6 +73,12 @@
         padding: 2rem 0;
     }
 
+    /* Hero section styling */
+
+    .herolabel span {
+        font-size: 2rem;
+    }
+
     /* CSS Grid for the section layout */
     .grid-layout {
         display: grid;

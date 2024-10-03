@@ -54,3 +54,23 @@ window.addEventListener('DOMContentLoaded', () => {
     myButton.textContent = '\u2630'; // Unicode for hamburger (three lines)
 });
 
+// Get the span element where we will display the number of visits
+const visitsDisplay = document.querySelector(".visits");
+
+// Get the number of visits from localStorage, or initialize to 0 if it doesn't exist
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+// If numVisits is greater than 0, display it. Otherwise, display a first-time message.
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+// Increment the number of visits
+numVisits++;
+
+// Save the new number of visits to localStorage
+localStorage.setItem("numVisits-ls", numVisits);
+
+
