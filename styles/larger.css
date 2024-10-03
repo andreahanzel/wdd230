@@ -73,11 +73,39 @@
         padding: 2rem 0;
     }
 
-    /* Hero section styling */
-
-    .herolabel span {
-        font-size: 2rem;
+        /* Hero container with relative positioning */
+    .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
     }
+
+    /* Hero image to remain responsive */
+    .hero picture img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Overlay Label Styles with fixed positioning */
+    .herolabel {
+        position: absolute;  /* Keep the label absolutely positioned relative to the hero image */
+        top: 50%;  
+        left: 50%; 
+        transform: translate(-50%, -50%); /* Center the label both vertically and horizontally */
+        background-color: rgba(255, 255, 255, 0.5);  /* Transparent background */
+        padding: 1.5rem;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    /* Label text styles */
+    .herolabel span {
+        font-size: 2rem; 
+        
+    }
+
+
 
     /* CSS Grid for the section layout */
     .grid-layout {
@@ -130,6 +158,23 @@
         box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Light shadow for the title */
     }
 
+    .map-container {
+        margin: 2rem 0;          /* Keep the same margin for spacing */
+        max-width: 100%;         /* Ensure it stays within the page width */
+        display: block;          /* Stack the heading and iframe vertically */
+    }
+
+    .map-container h2 {
+        text-align: center;      /* Center-align the heading */
+        margin-bottom: 1rem;     /* Add space between heading and iframe */
+    }
+
+    .map-container iframe {
+        border: none;            /* Removes any default border */
+        width: 100%;             /* Ensure the iframe is responsive */
+        height: 400px;           /* Maintain consistent height */
+    }
+
     /* Footer adjustments */
     footer {
         padding: 1rem;
@@ -142,4 +187,8 @@
     footer p {
         margin: 0;
     }
+
+
 }
+
+

@@ -52,18 +52,20 @@
 
     <main>
         
-        <!-- Temple Hero Image -->
-         <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-                <img src="images/hero-large.webp" loading="lazy" width="1000" height="500" alt="Hero Photo">
-            </picture>
+            <!-- Temple Hero Image -->
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" loading="lazy" width="1000" height="500" alt="Hero Photo">
+        </picture>
 
-            <div class="herolabel">
-                <span>Orlando Temple</span>
-            </div>
-        
+        <!-- Place the herolabel inside the hero container -->
+        <div class="herolabel">
+            <span>Orlando Temple</span>
+        </div>
+    </div>
+
         <!-- Full width title box -->
         <div class="title-box">
             <h1>WDD 230: Web Frontend Development</h1>
@@ -98,11 +100,10 @@
 
     <!-- Embed Google Map -->
     <section class="map-container">
+        <h2>Our Location</h2>
         <iframe 
             src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL_HERE" 
-            width="100%" 
-            height="400" 
-            style="border:0;" 
+            style="width: 100%; height: 400px; border: none;" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">

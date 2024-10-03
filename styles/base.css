@@ -207,27 +207,27 @@ main {
 }
 
 
-/* Hero image container with relative positioning */
+/* Hero container with relative positioning */
 .hero {
     position: relative;
-    
+    width: 100%;
+    height: auto;
 }
 
-/* Make the hero image responsive */
+/* Hero image to remain responsive */
 .hero picture img {
     width: 100%;
     height: auto;
     display: block;
-    
 }
 
-/* Overlay Label Styles */
+/* Overlay Label Styles with fixed positioning */
 .herolabel {
-    position: absolute;
-    bottom: 80%;
-    left: 20px;
-    width: 30%;
-    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;  /* Keep the label absolutely positioned relative to the hero image */
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); /* Center the label both vertically and horizontally */ 
+    background-color: rgba(255, 255, 255, 0.5);  /* Transparent background */
     padding: 1rem;
     text-align: center;
     border-radius: 10px;
@@ -235,12 +235,10 @@ main {
 
 /* Label text styles */
 .herolabel span {
-    font-size: 1rem;
-    font-family: "Roboto", serif; 
-    color: #333; 
+    font-size: 1.2rem; 
+    font-family: "Roboto", serif;
+    color: #333;
     font-weight: bold;
-    
-
 }
 
 /* Cards */
@@ -296,13 +294,20 @@ p {
 .map-container {
     margin: 2rem 0;          /* Adds spacing around the map */
     max-width: 100%;         /* Ensure it stays within the page width */
-    display: flex;
-    justify-content: center; /* Centers the map horizontally */
+    text-align: center;      /* Center-align the content within the map container */
+}
+
+.map-container h2 {
+    margin-bottom: 1rem;     /* Add space between heading and iframe */
 }
 
 .map-container iframe {
-    border: none;      /* Removes any default border */
+    border: none;            /* Removes any default border */
+    width: 100%;             /* Ensure the iframe is responsive */
+    height: 400px;           /* Set a fixed height for the iframe */
+    max-width: 100%;         /* Prevent iframe from exceeding container width */
 }
+
 
 
 /* Footer styling */
@@ -352,7 +357,7 @@ ul.menuLinks.open {
 @media (max-width: 768px) {
 
      /* Hover effect for mobile nav links */
-     nav a:hover {
+    nav a:hover {
         color: rgb(238, 125, 20); /* Change the text color to orange on hover */
     }
 
@@ -395,3 +400,5 @@ ul.menuLinks.open {
         font-size: 0.9rem;
     }
 }
+
+
