@@ -57,16 +57,21 @@
                 <!-- Left Sidebar (Widgets, Headings, Calendar) -->
                 <aside class="sidebar">
                     <div class="widget-container">
-                        <h2>About the chamber</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quasi debitis blanditiis est ipsam mollitia? Facere nostrum cupiditate voluptas minima ea beatae fugit suscipit quaerat dignissimos facilis rem sit ex fuga eius adipisci quos, deleniti eos? Similique atque, doloremque aperiam quos ratione deleniti animi expedita incidunt dicta vitae facilis magni harum et porro quis voluptate optio non, possimus ut sint! Ipsam sit, dicta illo odio fugiat, assumenda cupiditate inventore error mollitia neque velit nobis voluptas illum dignissimos provident fuga architecto? Fugiat, eveniet culpa! Eligendi voluptas ea officia quae earum officiis fugiat, veritatis nam odio quod. Pariatur, accusantium unde? Explicabo, eum.</p>
+                        <h2>About Budapest</h2>
+                        <br>
+                        <p>Discover the vibrant heart of Hungary through the Budapest Chamber’s comprehensive guide. The page offers a captivating glimpse into the city’s rich culture, historical landmarks, and stunning architecture. From breathtaking photos of iconic sites like Buda Castle and the Parliament Building to hidden gems such as the thermal baths and bustling markets, the Discover page showcases Budapest in all its glory. Visitors can explore sightseeing options, learn about local traditions, and uncover the best spots for dining and entertainment. Whether it’s a stroll along the Danube or an adventure through the city’s world-class museums, this page serves as the ultimate resource for anyone looking to experience the magic of Budapest.</p>                    
                     </div>
-        
+
                     <div class="widget-container">
                         <h2>Breaking News</h2>
+                        <br>
                         <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="400">
-                        </picture>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa ducimus amet, nemo velit vitae est consectetur ab sed quidem, minus minima ad recusandae voluptate iusto consequatur natus voluptatum ut error itaque adipisci a labore aliquam. Vero dolorum illum quos culpa amet quia natus laboriosam, cum rerum consequuntur praesentium nihil?</p>
+                            <source srcset="images/breaking-small.webp" media="(max-width: 500px)">
+                            <source srcset="images/breaking-medium.webp" media="(max-width: 1000px)">
+                            <img src="images/breaking-large.webp" alt="Breaking News" loading="lazy" style="width: 100%; height: auto;">
+                        </picture>                        
+                        <br>
+                        <p>Today, a large crowd gathered in Budapest to protest against war, waving Hungarian flags and holding signs that read "NO WAR." The peaceful demonstration, which attracted people of all ages, took place near one of the city's major landmarks, with participants voicing their opposition to international conflict and military intervention. Various national flags were also visible, signaling solidarity across borders. This protest comes amid growing tensions in Europe and other parts of the world, as citizens demand peaceful resolutions to global disputes. The atmosphere remained calm, with protestors emphasizing unity and diplomacy over violence.</p>
                     </div>
         
                     <div class="calendar-widget">
@@ -84,158 +89,236 @@
                             </tbody>
                         </table>
 
-                        <div class="applications-container">
-                            <h2>Applications</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa ducimus amet, nemo velit vitae est consectetur ab sed quidem, minus minima ad recusandae voluptate iusto consequatur natus voluptatum ut error itaque adipisci a labore aliquam. Vero dolorum illum quos culpa amet quia natus laboriosam, cum rerum consequuntur praesentium nihil?</p>
+                        <div class="scholarship-container">
+                            <h2>Scholarship Opportunities for Studying in Budapest</h2>
+                            <p>Budapest offers a range of scholarship opportunities for international students looking to study in this culturally vibrant city. From government-funded programs like the Stipendium Hungaricum, which covers tuition fees and living costs, to various university-specific scholarships, students can find financial support to pursue degrees in fields such as arts, science, and technology. These scholarships not only provide financial assistance but also offer students the chance to experience Budapest’s rich history, diverse culture, and world-class education system. Applying for these programs can open doors to both academic growth and unforgettable life experiences in Hungary’s capital.</p>                          
                             <a href="https://www.example.com" target="_blank">Learn more</a> 
-
                         </div>
                     </div>
                     
+                    <div class="visit-message-container">
+                        <h2>Visitor Message</h2>
+                        <p id="visitMessage">Welcome! Let us know if you have any questions.</p>
+                    </div>
                     
                 </aside>
         
                 <!-- Right Content Area (Main Images or Content) -->
-            <section class="main-content">
-                <div class="image-container">
+                <section class="main-content">
+                    <div class="image-container">
+                        
+                        <h1>Discover Budapest</h1>
+                        <!-- Card 1 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <!-- Small image for screens up to 500px -->
+                                <source srcset="images/basilica-small.webp" media="(max-width: 500px)">
+                                <!-- Medium image for screens up to 1000px -->
+                                <source srcset="images/basilica-medium.webp" media="(max-width: 1000px)">
+                                <!-- Large image for screens larger than 1000px -->
+                                <img src="images/basilica-large.webp" alt="St. Stephen’s Basilica" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">St. Stephen’s Basilica</div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/eye-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/eye-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/eye-large.webp" alt="Budapest Eye" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Budapest Eye</div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/castle-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/castle-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/castle-large.webp" alt="Buda Castle" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Buda Castle</div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/chain-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/chain-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/chain-large.webp" alt="Chain Bridge" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Chain Bridge</div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/fish-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/fish-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/fish-large.webp" alt="Fisherman's Bastion" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Fisherman's Bastion</div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/gellert-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/gellert-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/gellert-large.webp" alt="Gellért Hill and Citadella" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Gellért Hill and Citadella</div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/square-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/square-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/square-large.webp" alt="Heroe Square" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Heroes’ Square</div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/margaret-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/margaret-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/margaret-large.webp" alt="Margaret Island" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Margaret Island</div>
+                        </div>
+                        <!-- Card 9 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/market-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/market-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/market-large.webp" alt="Great Market Hall" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Great Market Hall</div>
+                        </div>
+                        <!-- Card 10 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/matthias-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/matthias-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/matthias-large.webp" alt="Matthias Church" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Matthias Church</div>
+                        </div>
+                        <!-- Card 11 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/opera-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/opera-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/opera-large.webp" alt="Hungarian State Opera House" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Hungarian State Opera House</div>
+                        </div>
+                        <!-- Card 12 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/parlament-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/parlament-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/parlament-large.webp" alt="Hungarian Parliament Building" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Hungarian Parliament Building</div>
+                        </div>
+                        <!-- Card 13 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/statue-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/statue-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/statue-large.webp" alt="Liberty Statue" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Liberty Statue</div>
+                        </div>
+                        <!-- Card 14 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/basilica-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/basilica-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/basilica-large.webp" alt="Széchenyi Thermal Bath" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Széchenyi Thermal Bath</div>
+                        </div>
+                        <!-- Card 15 -->
+                        <div class="carousel-item">
+                            <picture>
+                                <source srcset="images/vajda-small.webp" media="(max-width: 500px)">
+                                <source srcset="images/vajda-medium.webp" media="(max-width: 1000px)">
+                                <img src="images/vajda-large.webp" alt="Vajdahunyad Castle" loading="lazy" width="400" height="600">
+                            </picture>
+                            <div class="card-text">Vajdahunyad Castle</div>
+                        </div>
+                        <!-- Additional cards go here as needed -->
+                    </div>
+                    <div class="application-container">
+                        <h2>Apply for Budapest Cultural Exchange Programs</h2>
+                        <p>
+                            Budapest offers numerous cultural exchange programs that allow participants to immerse themselves in the city’s rich traditions and vibrant arts scene. These programs are open to students, professionals, and creatives from around the world, providing opportunities to live and learn in Budapest while fostering international understanding. 
+                            Participants can apply for programs in areas such as history, arts, language, and community projects. 
+                            By joining one of these exchange programs, individuals can deepen their cultural knowledge, gain new skills, and build lasting connections with both locals and fellow participants from across the globe.
+                        </p>
+                        <a href="#" class="learn-more-btn" onclick="toggleDropdown(event)">Learn more</a>
                     
-                    <h1>Discover Budapest</h1>
-                    <!-- Card 1 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 1</div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/700" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 2</div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/750" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 3</div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/650" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 4</div>
-                    </div>
-                    <!-- Card 5 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/665" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 5</div>
-                    </div>
-                    <!-- Card 6 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/800" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 6</div>
-                    </div>
-                    <!-- Card 7 -->
-                    <div class="carousel-item">
-                        <img<picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 7</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 8</div>
-                    </div>
-                    <!-- Card 9 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 9</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 10</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 11</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 12</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 13</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 14</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 15</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 16</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 17</div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="carousel-item">
-                        <picture>
-                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
-                        </picture>
-                        <div class="card-text">Portfolio 18</div>
-                    </div>
-                </div>
-                <div class="applications-container">
-                    <h2>Our Programs</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa ducimus amet, nemo velit vitae est consectetur ab sed quidem, minus minima ad recusandae voluptate iusto consequatur natus voluptatum ut error itaque adipisci a labore aliquam. Vero dolorum illum quos culpa amet quia natus laboriosam, cum rerum consequuntur praesentium nihil?</p>
-                    <a href="https://www.example.com" target="_blank">Learn more</a> 
+                        <!-- Dropdown Content with individual styled containers -->
+                    <div id="dropdownContent" class="dropdown-container">
+                        <div class="dropdown-item">
+                            <h3>Historical Exchange Program</h3>
+                            <p>Admission Requirements:</p>
+                            <ul>
+                                <li>Applicants should submit a portfolio of previous historical work or research projects.</li>
+                                <li>A minimum of 3 years of professional experience in a related field is preferred.</li>
+                                <li>Proficiency in English is required; knowledge of additional languages is a plus.</li>
+                            </ul>
+                        </div>
 
-                </div>
-            </section>
+                        <div class="dropdown-item">
+                            <h3>Art & Culture Residency Program</h3>
+                            <p>Eligibility Criteria:</p>
+                            <ul>
+                                <li>At least 2 years of professional experience in the arts or cultural sectors.</li>
+                                <li>Submission of 5 to 8 high-quality samples of your artwork or projects.</li>
+                                <li>Evidence of participation in prior exhibitions, residencies, or cultural initiatives.</li>
+                                <li>Availability to attend the full duration of the residency, typically 3 to 6 months.</li>
+                                <li>Optional: Letters of recommendation from industry professionals.</li>
+                            </ul>
+                        </div>
 
-                
+                        <div class="dropdown-item">
+                            <h3>Language Immersion Program</h3>
+                            <p>Prerequisites: /p>
+                            <ul>
+                                <li>A background in linguistics or prior language-learning experience is recommended.</li>
+                                <li>Commitment to attend daily language classes and cultural excursions.</li>
+                                <li>Participants should complete a pre-assessment test to determine their language level.</li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <h3>Community Development Projects</h3>
+                            <p>Participation Criteria:</p>
+                            <ul>
+                                <li>At least 1 year of experience in community service or development projects.</li>
+                                <li>Participants are expected to submit a brief proposal on how they intend to contribute to local projects.</li>
+                                <li>Applicants must demonstrate cultural sensitivity and adaptability.</li>
+                                <li>Teamwork skills and the ability to collaborate with international teams are essential.</li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-item">
+                            <h3>Academic Research Fellowships</h3>
+                            <p>Application Requirements:</p>
+                            <ul>
+                                <li>Applicants must hold a Master’s or PhD in a relevant academic field.</li>
+                                <li>Submit a research proposal (1,500 to 2,000 words) outlining your objectives and expected outcomes.</li>
+                                <li>Provide a curriculum vitae (CV) that includes relevant academic and research experience.</li>
+                                <li>Demonstrate access to necessary resources or partnerships with Hungarian institutions.</li>
+                                <li>Optional: Include a list of publications or academic papers you’ve authored.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
+                    
+                    
+                </section>
            
         </main>
 

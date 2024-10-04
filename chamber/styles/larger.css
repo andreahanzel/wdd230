@@ -438,90 +438,49 @@
     display: block;
 }
 
-    /* Larger Footer Styling */
-    .site-footer {
-        background-color: var(--primary-color);
-        padding: 40px 0;
-        color: var(--text-color-light);
-        font-size: 0.9rem;
-    }
+    /* ------------------------------ Footer Styling-----------------------------------------*/
 
-    .site-footer .container {
-        max-width: 1200px;
-        margin: 0 auto;
+    @media (min-width: 768px) {
+        .footer-columns {
+            flex-direction: row; /* Arrange columns in a row */
+            justify-content: space-between; /* Spread them out */
+            align-items: flex-start; /* Align items to the top */
+            text-align: left; /* Align text to the left for larger screens */
+        }
+    
+        .footer-branding h3 {
+            font-size: 2rem; /* Larger font for branding */
+        }
+    
+        /* Adjust padding and layout for larger screens */
+        .site-footer {
+            padding: 60px 40px; /* Larger padding for a spacious look */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+        }
+    
+        /* Increase font size for headers */
+        .footer-location h4, .footer-newsletter h4 {
+            font-size: 1.4rem;
+        }
+    
+        .footer-location a {
+            border-bottom: 2px solid var(--text-color-light); /* Thicker underline for larger screens */
+        }
+    
+        .social-media {
+            justify-content: flex-start; /* Align social icons to the left */
+        }
+    
+        .social-media a {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .social-media a:hover {
+            transform: scale(1.3); /* Larger zoom effect on hover */
+        }
     }
-
-    /* Footer Columns Layout */
-    .footer-columns {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        text-align: left;
-    }
-
-    /* Branding Column */
-    .footer-branding h3 {
-        font-size: 1.8rem;
-        font-weight: bold;
-    }
-
-    .footer-branding p {
-        margin-top: 10px;
-        line-height: 1.6;
-    }
-
-    /* Contact Info and Student Info */
-    .footer-location h4 {
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    .footer-location p {
-        margin: 0;
-        line-height: 1.6;
-    }
-
-    .footer-location a {
-        color: var(--text-color-light);
-        text-decoration: none;
-        border-bottom: 1px solid var(--text-color-light);
-        display: inline-block;
-        margin-top: 10px;
-    }
-
-    .footer-location a:hover {
-        color: #ccc;
-        border-bottom-color: #ccc;
-    }
-
-    /* Social Media Section */
-    .footer-newsletter h4 {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
-    }
-
-    .social-media {
-        justify-content: flex-end;
-        gap: 20px;
-        margin-top: 30px;
-    }
-
-    .social-media a {
-        width: 40px;
-        height: 40px;
-        transition: transform 0.3s ease;
-    }
-
-    .social-media a:hover {
-        transform: scale(1.2);
-    }
-
-    .social-media img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    
 
 }
 
@@ -537,6 +496,7 @@
         margin-top: 50px; /* Adds margin to move the entire section down */
     }
 
+   
 
     /* ---------------------------Sidebar styles ---------------------------------------- */
 
@@ -584,11 +544,195 @@
         height: 250px; /* Smaller images for larger screens */
     }
 
+    /* Styling the card text for larger screens */
+    .carousel-item .card-text {
+        font-size: 0.9rem; /* Larger font for larger screens */
+        padding: 12px 20px; /* More padding for larger screens */
+        letter-spacing: 3px; /* Increased letter spacing for a modern look */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow for larger screens */
+        border-radius: 10px; /* Slightly rounded corners */
+    }
+
     /* Center the h1 heading */
     .image-container h1 {
         grid-column: span 3;
         text-align: center;
         margin-bottom: 20px;
+        font-size: 4rem; /* Increase font size for larger screens */
+        letter-spacing: 3px; /* More spacing between letters for a modern look */
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Stronger shadow on larger screens */
+        margin-bottom: 40px; /* More space below on larger screens */
+        transition: transform 0.4s ease, text-shadow 0.4s ease; /* Add smooth transitions */
+    }
+
+    /* Hover effect for h1 */
+    .image-container h1:hover {
+        transform: scale(1.05); /* Slight scale-up effect on hover */
+        text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.9); /* Enhanced shadow on hover */
     }
 }
+
+    /* ---------------------------Widgets Container styles ---------------------------------------- */
+
+
+    .widget-container {
+        padding: 30px; /* More padding for larger screens */
+        border-radius: 15px; /* Increase border radius */
+        margin-bottom: 30px;
+        background: linear-gradient(135deg, rgba(2, 2, 3, 0.8), rgba(30, 39, 46, 0.9)); /* Enhance the background gradient */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 198, 27, 0.6); /* Stronger shadow and glow effect */
+    }
+
+    .widget-container h2 {
+        font-size: 2rem; /* Larger heading */
+        margin-bottom: 15px;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Slightly stronger text shadow */
+    }
+
+    .widget-container p {
+        font-size: 1.1rem; /* Slightly larger text for easier reading */
+        line-height: 1.8;
+        margin-top: 15px;
+    }
+
+    /* Enhanced hover effect for larger screens */
+    .widget-container:hover {
+        transform: scale(1.05); /* More noticeable scale-up on hover */
+        box-shadow: 0 10px 30px rgba(255, 198, 27, 0.7), 0 0 25px rgba(255, 198, 27, 0.8); /* More intense glowing effect */
+    }
+
+
+    /* ---------------------------Applications Container styles ---------------------------------------- */
+
+
+    /* Style for the entire dropdown container */
+    .dropdown-container {
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* Individual dropdown items */
+    .dropdown-item {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1); /* Subtle background */
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    }
+
+    /* Add hover effect and scale on larger screens */
+    .dropdown-item:hover {
+        background: rgba(255, 255, 255, 0.2); /* Highlighted background */
+        transform: scale(1.05); /* Slight scale effect */
+    }
+
+    /* Headings inside each dropdown item */
+    .dropdown-item h3 {
+        font-size: 1.5rem; /* Larger heading for bigger screens */
+    }
+
+    /* Paragraph inside each dropdown item */
+    .dropdown-item p {
+        font-size: 1.1rem; /* Slightly larger font */
+    }
+
+    /* Styling the bullet points (unordered list) */
+    .dropdown-item ul {
+        margin-top: 10px;
+        padding-left: 25px; /* Adds indentation for larger screens */
+    }
+
+    .dropdown-item ul li {
+        margin-bottom: 10px;
+        font-size: 1rem; /* Larger font size for better readability */
+    }
+
+    /* Button style */
+    .learn-more-btn {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect for the button on larger screens */
+    .learn-more-btn:hover {
+        background: var(--primary-gradient); /* Blue gradient on hover */
+        color: var(--text-color-light); /* White text */
+        transform: scale(1.05); /* Slight pop-out effect */
+    }
+
+    /* ---------------------------Apply Container styles ---------------------------------------- */
+
+   /* Larger screens with 3D pop-out effect */
+@media (min-width: 1024px) {
+    /* Pop-up effect for larger screens */
+    .application-container {
+        transform-style: preserve-3d; /* Enables 3D rotation effect */
+    }
+
+    /* 3D tilt and glow effect on hover for larger screens */
+    .application-container:hover {
+        transform: rotate3d(0.5, 1, 0, 20deg); /* 3D tilt effect */
+        box-shadow: 0 8px 20px rgba(255, 198, 27, 0.8), 0 0 15px rgba(255, 198, 27, 0.6); /* Glowing effect */
+        transform: scale(1.05); /* Slight scale-up effect */
+        box-shadow: 0 6px 18px rgba(255, 198, 27, 0.8), 0 0 10px rgba(255, 198, 27, 0.6); /* Enhanced glow shadow on hover */
+
+    }
 }
+
+
+/* ---------------------------Scholarship Container styles ---------------------------------------- */
+
+    /* Scholarship container styles */
+    .scholarship-container {
+        margin-top: 50px; /* More space above on larger screens */
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Background hover effect for the entire container */
+    .scholarship-container:hover {
+        background: var(--primary-gradient); /* Blue gradient background on hover */
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+        transform: scale(1.02); /* Slight scale-up effect */
+        transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease; /* Smooth transition */
+    }
+
+    /* Larger heading */
+    .scholarship-container h2 {
+        font-size: 2rem; /* Larger font size */
+        margin-bottom: 20px;
+        text-align: left; /* Align left on larger screens */
+    }
+
+    /* Larger paragraph text */
+    .scholarship-container p {
+        font-size: 1.2rem; /* Increase font size for better readability */
+        margin-bottom: 30px;
+        text-align: left; /* Align left on larger screens */
+    }
+
+    /* Button styling */
+    .scholarship-container a {
+        padding: 15px 25px; /* Larger padding */
+        font-size: 1.1rem;
+        width: auto; /* Auto width for a better fit */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .scholarship-container a:hover {
+        background: var(--accent-gradient); /* Yellow gradient on hover */
+        color: var(--text-color-dark); /* Black text on hover */
+        transform: scale(1.1); /* Slight pop-out effect */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+    }
+
+}
+
+

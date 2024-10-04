@@ -153,3 +153,45 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('mouseout', startAutoplay);
     });
 });
+
+
+// milliseconds to days constant
+const msToDays = 86400000;
+
+// Function to check and display the visit message
+function displayVisitMessage() {
+    const visitMessageElement = document.getElementById('visitMessage');
+    const now = new Date();
+    const lastVisit = localStorage.getItem('lastVisit');
+
+    // If no last visit, it's the user's first visit
+    if (!lastVisit) {
+        visitMessageElement.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const lastVisitDate = new Date(lastVisit);
+        const timeDifference = now - lastVisitDate;
+        const daysDifference = Math.floor(timeDifference / msToDays); // Convert milliseconds to days
+
+        // Display message based on how long ago they visited
+        if (daysDifference < 1) {
+            visitMessageElement.textContent = "Back so soon! Awesome!";
+        } else if (daysDifference === 1) {
+            visitMessageElement.textContent = "You last visited 1 day ago.";
+        } else {
+            visitMessageElement.textContent = `You last visited ${daysDifference} days ago.`;
+        }
+    }
+
+    // Save the current visit in localStorage
+    localStorage.setItem('lastVisit', now);
+}
+
+function toggleDropdown(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    const dropdownContent = document.getElementById('dropdownContent');
+    
+    // Toggle the open class to show or hide the dropdown content
+    dropdownContent.classList.toggle('open');
+}
+
+
