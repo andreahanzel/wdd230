@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 230 - Web Frontend Development | Andrea Toreki | Chamber of Commerce Home Page">
+        <meta name="author" content="Andrea Toreki">
+        <title>WDD 230 | Andrea Toreki | Budapest Chamber of Commerce</title>
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Andrea Toreki's Web Frontend Development Course">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://i.imgur.com/fvxAmcz.jpg">
+        <meta property="og:url" content="https://andreahanzel.github.io/wdd230/index.html">
+        <meta property="og:description" content="This is Andrea Toreki's WDD 230 Web Frontend Development course portal.">
+    
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico">
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body class="light-mode"> <!-- Added class to manage light/dark mode -->
+
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container">
+                <a href="#" class="logo">Budapest Chamber of Commerce</a>
+        
+                <!-- Main Navigation -->
+                <nav class="main-nav">
+                    <button id="myButton" class="nav-toggle">&#9776;</button> <!-- Hamburger Button -->
+                    <ul class="nav-list menuLinks">
+                        <li><a href="index.html" class="active"> Home</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="discovery.html">Directory</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-layout">
+            
+                <!-- Left Sidebar (Widgets, Headings, Calendar) -->
+                <aside class="sidebar">
+                    <div class="widget-container">
+                        <h2>About the chamber</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quasi debitis blanditiis est ipsam mollitia? Facere nostrum cupiditate voluptas minima ea beatae fugit suscipit quaerat dignissimos facilis rem sit ex fuga eius adipisci quos, deleniti eos? Similique atque, doloremque aperiam quos ratione deleniti animi expedita incidunt dicta vitae facilis magni harum et porro quis voluptate optio non, possimus ut sint! Ipsam sit, dicta illo odio fugiat, assumenda cupiditate inventore error mollitia neque velit nobis voluptas illum dignissimos provident fuga architecto? Fugiat, eveniet culpa! Eligendi voluptas ea officia quae earum officiis fugiat, veritatis nam odio quod. Pariatur, accusantium unde? Explicabo, eum.</p>
+                    </div>
+        
+                    <div class="widget-container">
+                        <h2>Breaking News</h2>
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="400">
+                        </picture>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa ducimus amet, nemo velit vitae est consectetur ab sed quidem, minus minima ad recusandae voluptate iusto consequatur natus voluptatum ut error itaque adipisci a labore aliquam. Vero dolorum illum quos culpa amet quia natus laboriosam, cum rerum consequuntur praesentium nihil?</p>
+                    </div>
+        
+                    <div class="calendar-widget">
+                        <h3 id="current-month">June 2024</h3>
+                        <div class="calendar-nav">
+                            <button id="prev-month">&lt;</button> <!-- Previous Month Button -->
+                            <button id="next-month">&gt;</button> <!-- Next Month Button -->
+                        </div>
+                        <table id="calendar">
+                            <thead>
+                                <tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>
+                            </thead>
+                            <tbody id="calendar-body">
+                                <!-- Calendar days will be dynamically generated here -->
+                            </tbody>
+                        </table>
+
+                        <div class="applications-container">
+                            <h2>Applications</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa ducimus amet, nemo velit vitae est consectetur ab sed quidem, minus minima ad recusandae voluptate iusto consequatur natus voluptatum ut error itaque adipisci a labore aliquam. Vero dolorum illum quos culpa amet quia natus laboriosam, cum rerum consequuntur praesentium nihil?</p>
+                            <a href="https://www.example.com" target="_blank">Learn more</a> 
+
+                        </div>
+                    </div>
+                    
+                    
+                </aside>
+        
+                <!-- Right Content Area (Main Images or Content) -->
+            <section class="main-content">
+                <div class="image-container">
+                    
+                    <h1>Discover Budapest</h1>
+                    <!-- Card 1 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 1</div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/700" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 2</div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/750" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 3</div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/650" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 4</div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/665" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 5</div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/800" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 6</div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="carousel-item">
+                        <img<picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 7</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 8</div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 9</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 10</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 11</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 12</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 13</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 14</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 15</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 16</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 17</div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="carousel-item">
+                        <picture>
+                            <img src="https://picsum.photos/400/600" alt="Placeholder Dummy Image" loading="lazy" width="400" height="600">
+                        </picture>
+                        <div class="card-text">Portfolio 18</div>
+                    </div>
+                </div>
+                <div class="applications-container">
+                    <h2>Our Programs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa ducimus amet, nemo velit vitae est consectetur ab sed quidem, minus minima ad recusandae voluptate iusto consequatur natus voluptatum ut error itaque adipisci a labore aliquam. Vero dolorum illum quos culpa amet quia natus laboriosam, cum rerum consequuntur praesentium nihil?</p>
+                    <a href="https://www.example.com" target="_blank">Learn more</a> 
+
+                </div>
+            </section>
+
+                
+           
+        </main>
+
+    </body>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <!-- Left Column: Chamber Info -->
+                    <div class="footer-branding">
+                        <h3>Budapest Chamber of Commerce</h3>
+                        <p>Empowering businesses through networking, resources, and advocacy.</p>
+                    </div>
+
+                    <!-- Center Left Column: Contact Info -->
+                    <div class="footer-location">
+                        <h4>Contact Us</h4>
+                        <p>
+                            <a href="mailto:toreki@chamberbudapest.com">toreki@chamberbudapest.com</a><br>
+                            +36 1 123 4567<br>
+                            1234 Business Street, Budapest, Hungary
+                        </p>
+                    </div>
+
+                    <!-- Center Right Column: Additional Info -->
+                    <div class="footer-location">
+                        <h4>Student Info</h4>
+                        <p>
+                            WDD 230 - Web Frontend Development <br>
+                            Student Name: Andrea Toreki
+                        </p>
+                        <p>Last modified: <span id="last-modified"></span></p>
+                    </div>
+
+                    <!-- Right Column: Social Media Links -->
+                    <div class="footer-newsletter">
+                        <h4>Follow Us</h4>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.jpg" alt="Twitter"></a>
+                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="images/instagram.jpg" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script -->
+        <script src="scripts/chamber.js"></script>
+    </body>
+</html>

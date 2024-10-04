@@ -32,3 +32,124 @@ window.addEventListener('resize', () => {
         myButton.textContent = '☰'; // Reset to hamburger icon
     }
 });
+
+
+// Calendar
+// Calendar Variables
+const currentMonthEl = document.getElementById('current-month');
+const calendarBody = document.getElementById('calendar-body');
+const prevMonthBtn = document.getElementById('prev-month');
+const nextMonthBtn = document.getElementById('next-month');
+
+let today = new Date();
+let currentMonth = today.getMonth();
+let currentYear = today.getFullYear();
+
+// Function to generate the calendar days
+function generateCalendar(month, year) {
+    calendarBody.innerHTML = ''; // Clear previous calendar body
+    const firstDay = new Date(year, month).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    // Update the month display
+    const monthNames = ["January", "February", "March", "April", "May", "June", 
+                        "July", "August", "September", "October", "November", "December"];
+    currentMonthEl.textContent = `${monthNames[month]} ${year}`;
+
+    // Create the days grid
+    let date = 1;
+    for (let i = 0; i < 6; i++) { // 6 rows to cover all possible weeks in a month
+        const row = document.createElement('tr');
+
+        for (let j = 0; j < 7; j++) { // 7 columns for the days of the week
+            const cell = document.createElement('td');
+
+            if (i === 0 && j < firstDay) {
+                cell.textContent = ''; // Empty cells before the first day of the month
+            } else if (date > daysInMonth) {
+                break; // Stop when we've reached the end of the month
+            } else {
+                cell.textContent = date;
+                cell.classList.add('calendar-day'); // Add class to each day
+                cell.addEventListener('click', () => alert(`You clicked on ${monthNames[month]} ${date}, ${year}`)); // Click event for each day
+                
+                // Highlight today's date
+                if (date === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+                    cell.classList.add('current-day'); 
+                }
+                date++;
+            }
+            row.appendChild(cell);
+        }
+        calendarBody.appendChild(row);
+    }
+}
+
+// Function to switch months
+function switchMonth(change) {
+    currentMonth += change;
+
+    if (currentMonth === 12) {
+        currentMonth = 0;
+        currentYear++;
+    } else if (currentMonth === -1) {
+        currentMonth = 11;
+        currentYear--;
+    }
+
+    generateCalendar(currentMonth, currentYear);
+}
+
+// Event Listeners for Previous and Next buttons
+prevMonthBtn.addEventListener('click', () => switchMonth(-1));
+nextMonthBtn.addEventListener('click', () => switchMonth(1));
+
+// Initial Calendar Display
+generateCalendar(currentMonth, currentYear);
+
+
+
+// Carousel Autoplay Animation
+
+const carouselItems = document.querySelectorAll('.carousel-item');
+let currentSlide = 0;
+let slideInterval;
+const intervalTime = 4000; // 4 seconds for each slide
+
+// Function to show the active slide
+function showSlide(index) {
+    carouselItems.forEach((item, i) => {
+        item.classList.remove('active'); // Remove active class from all slides
+        if (i === index) {
+            item.classList.add('active'); // Add active class to the current slide
+        }
+    });
+}
+
+// Function to move to the next slide
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % carouselItems.length; // Loop back to the first slide
+    showSlide(currentSlide);
+}
+
+// Start the autoplay function
+function startAutoplay() {
+    slideInterval = setInterval(nextSlide, intervalTime);
+}
+
+// Stop the autoplay function (when hovered)
+function stopAutoplay() {
+    clearInterval(slideInterval);
+}
+
+// Initialize the carousel on page load
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide); // Show the first slide
+    startAutoplay();
+
+    // Add hover event to pause and resume autoplay
+    carouselItems.forEach(item => {
+        item.addEventListener('mouseover', stopAutoplay);
+        item.addEventListener('mouseout', startAutoplay);
+    });
+});

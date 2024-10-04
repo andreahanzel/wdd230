@@ -28,6 +28,7 @@ body {
 
 }
 
+
 /* Header for both mobile and desktop */
 header {
     display: flex;
@@ -161,7 +162,7 @@ ul.menuLinks.open {
     text-align: center;
     padding: 50px 15px;
     height: auto; /* Let the height adjust based on content */
-    overflow: hidden;
+
 }
 
 /* Hero Text Styling */
@@ -650,20 +651,236 @@ ul.menuLinks.open {
     object-fit: cover;
 }
 
+/* ------------------------- Discovery Page Addition ------------------------- */
+
+/* Global styling */
+* {
+    box-sizing: border-box; /* Ensure padding doesn't affect widths */
+    padding: 0;
+    margin: 0;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+/* ---------------------------Sidebar styles ---------------------------------------- */
+
+/* Sidebar styling */
+.sidebar {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1E1E1E;
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px;
+}
+
+.widget-container {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.widget-container img {
+    max-width: 100%; /* Make images responsive */
+    display: block;
+    border-radius: 5px;
+}
+
+.applications-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+/* ---------------------------Calendar widget styles ---------------------------------------- */
+
+
+/* Calendar widget styles */
+.calendar-widget {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--dark-bg-gradient); /* Dark gradient background */
+    border-radius: 5px;
+}
+
+.calendar-widget h3 {
+    font-size: 1.5rem;
+    color: var(--accent-text-color); /* Yellow accent */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calendar-nav button {
+    background: var(--primary-gradient); /* Blue gradient button */
+    color: var(--text-color-light); /* White text */
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-nav button:hover {
+    background: var(--accent-gradient); /* Yellow gradient on hover */
+    color: var(--text-color-dark); /* Black text on hover */
+}
+
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#calendar th {
+    padding: 10px;
+    color: var(--accent-text-color); /* Yellow for weekdays */
+    text-transform: uppercase;
+}
+
+#calendar td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle contrast for calendar cells */
+    color: var(--text-color-light); /* White text */
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight current day in the calendar */
+.current-day {
+    background-color: var(--accent-text-color); /* Yellow for current day */
+    color: var(--text-color-dark); /* Black text */
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* Style clickable days */
+.calendar-day {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calendar-day:hover {
+    background-color: var(--primary-gradient); /* Blue gradient on hover */
+    color: var(--text-color-light); /* White text on hover */
+    border-radius: 50%;
+}
+
+/* ---------------------------Calendar widget styles end ---------------------------------------- */
+
+
+/* ---------------------------Main content and images styles start ---------------------------------------- */
+
+/* Main content */
+.main-content {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Image container grid */
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--primary-color); /* Use primary color */
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.image-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--accent-text-color); /* Yellow accent for heading */
+    margin-bottom: 20px;
+}
+
+/* Individual carousel cards */
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Increased height for better visuals */
+    background-color: var(--primary-gradient); /* Gradient background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-item .card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-light); /* White text */
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); /* Stronger text-shadow */
+}
+
+/* Hover effects */
+.carousel-item:hover .card-text {
+    opacity: 1;
+    transform: translate(-50%, -40%); /* Text moves slightly */
+}
+
+.carousel-item:hover img {
+    opacity: 0.2;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    background-color: var(--dark-bg-gradient); /* Dark background on hover */
+}
+
+
+
+/* ---------------------------Main content and images styles end ---------------------------------------- */
+
+
+/* ------------------------- Discovery Page Addition ------------------------- */
+
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .footer-columns {
         flex-direction: column;
-        gap: 30px;
+        gap: 10px;
         text-align: center;
     }
 
     .footer-branding h3 {
         font-size: 1.3rem;
     }
+
 }
-
-
 
 /* Show hamburger button on smaller screens */
 @media (max-width: 768px) {
