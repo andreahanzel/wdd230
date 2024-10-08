@@ -33,8 +33,6 @@ window.addEventListener('resize', () => {
     }
 });
 
-
-// Calendar
 // Calendar Variables
 const currentMonthEl = document.getElementById('current-month');
 const calendarBody = document.getElementById('calendar-body');
@@ -153,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('mouseout', startAutoplay);
     });
 });
+
 
 
 // Milliseconds to days constant
