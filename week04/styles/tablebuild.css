@@ -1,0 +1,90 @@
+:root {
+    --table-header-bg: #030303; /* Dark background for the header */
+    --header-text-color: #fff; /* White text for the header */
+    --highlight-bg: #333; /* Highlighted background for "Basic", "Premium", "Deluxe" */
+    --primary-text-color: #4B0082; /* Dark purple for checkmarks */
+    --secondary-text-color: red; /* Red for X marks */
+    --zebra-color: #f2f2f2; /* Light gray for zebra striping */
+    --darker-gray: #ddd; /* Darker gray for Feature 2 row */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+thead th {
+    border: none; /* Remove all borders from header cells */
+}
+
+
+thead th[colspan="4"] {
+    background-color: var(--table-header-bg);
+    color: var(--header-text-color);
+    padding: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+thead th:not([colspan]) {
+    background-color: var(--highlight-bg);
+    color: var(--header-text-color);
+    padding: 25px;
+    font-weight: bold;
+}
+
+tbody th {
+    padding: 10px;
+    text-align: left;
+    background-color: var(--zebra-color);
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #777;
+}
+
+tbody td {
+    font-size: 1.3rem;
+}
+
+tbody td {
+    color: var(--primary-text-color);
+}
+
+/* Target the empty <th> for the black background and remove top border */
+thead th:first-child {
+    background-color: #030303; /* Black background */
+    border-top: none; /* Remove top border */
+}
+
+
+/* Color for X marks */
+tbody td:contains('❌') {
+    color: var(--secondary-text-color);
+}
+
+/* Zebra striping for even rows */
+tbody tr:nth-child(2) {
+    background-color: var(--darker-gray);
+}
+
+/* Light gray background for every other row */
+tbody tr.zebra {
+    background-color: var(--zebra-color);
+}
