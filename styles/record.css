@@ -1,0 +1,63 @@
+/* Root Variables */
+:root {
+    --beaver: #2C2121;
+    --beaverlight: #533F3C;
+    --licorice: #171717;
+    --coffee: #4C4139;
+    --silver: #EDEDED;
+    --whiteish: #DDDADA;
+    --background-light: #ffffff;
+    --text-light: #171717;
+    --error-red: #fff0f3; /* Light red background for error */
+}
+
+/* Main Section Styling */
+main {
+    padding: 2rem;
+    background-color: var(--whiteish);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem auto;  /* Center the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section h2 {
+    color: var(--beaver); /* Use primary color for heading */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: var(--licorice);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Links */
+.button-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--beaverlight);
+    color: var(--silver);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Spacing between buttons */
+}
+
+.button-link:hover {
+    background-color: var(--beaver); /* Darker hover color */
+}
+
+/* Ensure links stack vertically on smaller screens */
+@media (max-width: 600px) {
+    .button-link {
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%; /* Make buttons full width on small screens */
+        text-align: center;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Andrea Toreki | Course Assignment Portal">
+    <meta name="author" content="Andrea Toreki">
+    
+    <title>Andrea Toreki - WDD 230 - Web Frontend Development</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Andrea Toreki's Web Frontend Development Course">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.imgur.com/fvxAmcz.jpg">
+    <meta property="og:url" content="https://andreahanzel.github.io/wdd230/index.html">
+    <meta property="og:description" content="This is Andrea Toreki's WDD 230 Web Frontend Development course portal.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">  <!-- Normalize CSS file linked -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/record.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-mode"> <!-- Added class to manage light/dark mode -->
+    <!-- Image -->
+    <header>
+        <img src="images/profile.jpg" alt="Andrea Toreki profile" width="250" height="333">
+        <span>Andrea Toreki</span>
+        <button id="darkModeToggle">Toggle Dark Mode</button> <!-- Added dark mode toggle button -->
+    </header>
+
+    <!-- Menu HTML Links -->
+    <nav>
+        <button id="myButton">&#9776;</button> <!-- Hamburger button -->
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="Chamber"><a href="chamber/">Chamber</a></li>
+            <li><a href="chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html" class="active">Form</a></li>
+        </ul>
+    </nav>
+
+     <!-- Main Form Section -->
+    <main>
+        <section class="register-box">
+            <h2>Register</h2>
+            <div id="formmessage" class="error-message"></div>
+            <form id="registrationForm" method="get" action="record.html">
+
+                <!-- Username -->
+                <label for="username">Username (3 letters minimum)*</label>
+                <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{3,}" title="Username must be at least 3 characters long and contain only letters and numbers" required>
+
+                
+                <!-- Password -->
+                <label for="password">Password (minimum 8 characters, alphanumeric)*</label>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and contain only letters and numbers" required>
+
+                <!-- Confirm Password -->
+                <label for="confirmPassword">Confirm Password (must match password)*</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" pattern="[A-Za-z0-9]{8,}" title="Confirm password must match the original password and be at least 8 characters long" required>
+
+
+                <!-- Show/Hide Password Checkbox -->
+                <label>
+                    <input type="checkbox" id="togglePassword"> Show Passwords
+                </label>
+
+                <!-- Email (byui.edu only) -->
+                <label for="email">Email (byui.edu only)*</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid byui.edu email address" required>
+                <span id="emailError" class="error-message"></span> <!-- Error message area for email -->
+
+
+
+                <!-- Rating -->
+                <label for="rating">Rate this page (1-10):</label>
+                <div id="rangevalue">5</div>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </datalist>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Registration">
+            </form>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Andrea Toreki, Hungary</p>
+        <p id="lastModified">Last modified: <span id="modDate"></span></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script> <!-- Existing script for dates -->
+    <script src="scripts/formvalidation.js"></script> <!-- Form Script -->
+</body>
+
+</html>
