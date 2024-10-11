@@ -214,3 +214,78 @@ function toggleDropdown(event) {
 }
 
 
+
+// Function to display the current timestamp in the form field
+
+document.addEventListener("DOMContentLoaded", function() {
+    let tim// Function to display the current timestamp in the form field
+    document.addEventListener("DOMContentLoaded", function() {
+        let timestampField = document.getElementById("timestamp");
+        if (timestampField) {
+            let currentTimestamp = new Date().toISOString();
+            timestampField.value = currentTimestamp;
+        }
+    
+        // For the title field
+        const titleField = document.getElementById("title");
+        if (titleField) {
+            titleField.addEventListener("input", function() {
+                const pattern = /^[A-Za-z\s\-]{7,}$/;
+                if (!pattern.test(titleField.value)) {
+                    titleField.setCustomValidity("Title must be at least 7 characters and contain only letters, spaces, or hyphens.");
+                } else {
+                    titleField.setCustomValidity("");
+                }
+            });
+        }
+    
+        // For the phone field
+        const phoneField = document.getElementById("phone");
+        if (phoneField) {
+            phoneField.addEventListener("input", function() {
+                const phonePattern = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+                if (!phonePattern.test(phoneField.value)) {
+                    phoneField.setCustomValidity("Please enter a valid phone number.");
+                } else {
+                    phoneField.setCustomValidity("");
+                }
+            });
+        }
+    });
+    
+    // Function to display the current timestamp in the form field
+    document.addEventListener("DOMContentLoaded", function() {
+        let timestampField = document.getElementById("timestamp");
+        if (timestampField) {
+            let currentTimestamp = new Date().toISOString();
+            timestampField.value = currentTimestamp;
+        }
+    
+        // For the title field
+        const titleField = document.getElementById("title");
+        if (titleField) {
+            titleField.addEventListener("input", function() {
+                const pattern = /^[A-Za-z\s\-]{7,}$/;
+                if (!pattern.test(titleField.value)) {
+                    titleField.setCustomValidity("Title must be at least 7 characters and contain only letters, spaces, or hyphens.");
+                } else {
+                    titleField.setCustomValidity("");
+                }
+            });
+        }
+    
+        // For the phone field
+        const phoneField = document.getElementById("phone");
+        if (phoneField) {
+            phoneField.addEventListener("input", function() {
+                const phonePattern = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+                if (!phonePattern.test(phoneField.value)) {
+                    phoneField.setCustomValidity("Please enter a valid phone number.");
+                } else {
+                    phoneField.setCustomValidity("");
+                }
+            });
+        }
+    });
+    
+});

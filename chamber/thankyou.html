@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Thank you for joining the Budapest Chamber of Commerce. Your membership application has been received.">
+        <meta name="author" content="Andrea Toreki">
+        <title>Thank You! | WDD 230 | Andrea Toreki | Budapest Chamber of Commerce</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Andrea Toreki's Web Frontend Development Course">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.imgur.com/fvxAmcz.jpg">
+    <meta property="og:url" content="https://andreahanzel.github.io/wdd230/index.html">
+    <meta property="og:description" content="This is Andrea Toreki's WDD 230 Web Frontend Development course portal.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- Header Area -->
+
+<body class="light-mode"> <!-- Added class to manage light/dark mode -->
+
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">Budapest Chamber of Commerce</a>
+    
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <button id="myButton" class="nav-toggle">&#9776;</button> <!-- Hamburger Button -->
+                <ul class="nav-list menuLinks">
+                    <li><a href="index.html" class="active"> Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Area -->
+
+    <main class="thankyou-main">
+        <section class="thank-you">
+            <h1>Thank You for Joining!</h1>
+            <p>We appreciate your interest in joining the Chamber of Commerce. Your application has been received.</p>
+            <p>We will contact you shortly with the next steps.</p>
+            <a href="index.html" class="button">Back to Home</a>
+            <a href="join.html" class="button-link">Submit Another Response</a>
+        </section>
+    </main>
+       
+    
+
+<!-- Footer Area -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-columns">
+            <!-- Left Column: Chamber Info -->
+            <div class="footer-branding">
+                <h3>Budapest Chamber of Commerce</h3>
+                <p>Empowering businesses through networking, resources, and advocacy.</p>
+            </div>
+
+            <!-- Center Left Column: Contact Info -->
+            <div class="footer-location">
+                <h4>Contact Us</h4>
+                <p>
+                    <a href="mailto:toreki@chamberbudapest.com">toreki@chamberbudapest.com</a><br>
+                    +36 1 123 4567<br>
+                    1234 Business Street, Budapest, Hungary
+                </p>
+            </div>
+
+            <!-- Center Right Column: Additional Info -->
+            <div class="footer-location">
+                <h4>Student Info</h4>
+                <p>
+                    WDD 230 - Web Frontend Development <br>
+                    Student Name: Andrea Toreki
+                </p>
+                <p>Last modified: <span id="last-modified"></span></p>
+            </div>
+
+            <!-- Right Column: Social Media Links -->
+            <div class="footer-newsletter">
+                <h4>Follow Us</h4>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.jpg" alt="Twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="images/instagram.jpg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Script -->
+
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

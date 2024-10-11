@@ -1160,3 +1160,151 @@ body {
     }
 }
 
+/* ------------------------- Join Page Section (Base - Mobile) ------------------------- */
+
+.join-form {
+    background: var(--primary-gradient);
+    padding: 2em;
+    border-radius: 8px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+form {
+    background: var(--dark-bg-gradient);
+    padding: 2em;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.75em;
+    
+    color: var(--text-color-light);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1.25em;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background: #ffffff;
+    color: var(--text-color-dark);
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background: var(--accent-gradient);
+    color: var(--text-color-dark);
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: var(--secondary-gradient); /* Lightens the button color on hover */
+    color: var(--text-color-light);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.membership-benefits {
+    background: var(--secondary-gradient);
+    padding: 1.5em;
+    border-radius: 10px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.membership-benefits h2 {
+    margin-bottom: 1em;
+    color: var(--primary-color); /* Dark Blue */
+    
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-benefits li {
+    margin-bottom: 1em;
+    color: var(--text-color-light);
+    font-size: 1em;
+   
+}
+
+/* ------------------------- Thank You Page Section (Base - Mobile) ------------------------- */
+
+.thankyou-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: var(--primary-gradient);
+}
+
+.thank-you {
+    background: var(--dark-bg-gradient);
+    padding: 3em;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.thank-you h1 {
+    color: var(--accent-text-color); /* Yellow */
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.thank-you p {
+    color: var(--text-color-light);
+    font-size: 1.1em;
+    margin-bottom: 1.2em;
+}
+
+.thank-you a.button, .thank-you a.button-link {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin-top: 1em;
+    margin-right: 1em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.thank-you a.button {
+    background: var(--accent-gradient);
+    color: var(--text-color-dark);
+}
+
+.thank-you a.button-link {
+    background: transparent;
+    color: var(--accent-text-color);
+    border: 2px solid var(--accent-text-color);
+}
+
+.thank-you a.button:hover {
+    background: var(--secondary-gradient); /* Lightens the button color on hover */
+    color: var(--text-color-light);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.thank-you a.button-link:hover {
+    background: var(--accent-text-color);
+    color: var(--text-color-dark);
+    transform: scale(1.05);
+}
