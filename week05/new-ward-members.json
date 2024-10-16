@@ -1,0 +1,29 @@
+{
+    "familyName": "Hanzel",
+    "movedInDate": "2022-04-01",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "members": [
+      {
+        "name": "Stephan Hanzel",
+        "gender": "Male",
+        "birthdate": "1984-04-25"
+      },
+      {
+        "name": "Andrea Hanzel",
+        "gender": "Female",
+        "birthdate": "1984-07-13"
+      },
+      {
+        "name": "Amaryah Hanzel",
+        "gender": "Female",
+        "birthdate": "2022-01-26"
+      },
+      {
+        "name": "Elijah Hanzel",
+        "gender": "Male",
+        "birthdate": "2022-01-26"
+      }
+    ]
+  }
+  

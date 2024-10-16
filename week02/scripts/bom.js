@@ -95,3 +95,5 @@ numVisits++;
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
+
+
