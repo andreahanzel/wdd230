@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  section {
+    background-color: #d6d1e6;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  /* Image styling */
+  img {
+    width: 60%; /* Make the images slightly smaller */
+    height: auto;
+    box-shadow: 0 0 40px black; /* Black shadow around the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Hover effect to create a pop-out effect */
+  img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 0 25px black; /* Increase the shadow on hover for a pop-out effect */
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #4a3c7d; /* Purple text for headings */
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+    margin-bottom: 10px;
+  }
+  
