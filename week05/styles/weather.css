@@ -1,0 +1,108 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333; /* Dark text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main content wrapper */
+main {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    margin-bottom: 40px; /* Adds space between the weather card and footer */
+}
+
+/* Add a hover effect for interactivity */
+main:hover {
+    transform: scale(1.03);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2rem;
+    color: #0077b6; /* Stylish blue color */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Weather description */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Figure styling for weather image and caption */
+figure {
+    margin: 20px 0;
+}
+
+/* Weather icon styling */
+img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+/* Caption below the weather icon */
+figcaption {
+    font-size: 1rem;
+    color: #555;
+    text-transform: capitalize;
+}
+
+/* Footer styling */
+footer {
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+    margin-top: 20px; /* Adds space between the footer text and weather app */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    figcaption {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
+}
