@@ -32,10 +32,13 @@ const displayLinks = (weeks) => {
       let a = document.createElement('a');
       a.href = link.url; // Set the URL for the link
       a.textContent = link.title; // Set the text for the link
-      if (index < week.links.length - 1) {
-        li.innerHTML += ' | '; // Add a separator if it's not the last link
-      }
       li.appendChild(a); // Append each link to the list item
+
+      // Add separator only if it's not the last link
+      if (index < week.links.length - 1) {
+        let separator = document.createTextNode(" | "); // Separator text
+        li.appendChild(separator); // Append separator after the link
+      }
     });
 
     ul.appendChild(li); // Append the list item to the <ul>
