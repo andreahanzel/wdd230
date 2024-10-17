@@ -1,14 +1,14 @@
 // Define base URL and links URL
-const baseURL = "https://github.com/andreahanzel/wdd230/";
-const linksURL = `${baseURL}data/links.json`; // Reference to JSON data
+const baseURL = "https://andreahanzel.github.io/wdd230/"; // My own GitHub Pages URL
+const linksURL = `${baseURL}data/links.json`; // Reference to my hosted JSON file
 
 // Function to fetch links data
 async function getLinks() {
   try {
-    const response = await fetch(linksURL);
+    const response = await fetch(linksURL); // Fetching from the same domain
     if (response.ok) {
       const data = await response.json();
-      displayLinks(data.weeks);
+      displayLinks(data.weeks); // Pass the weeks data to the display function
     } else {
       console.error('Failed to fetch links.');
     }
@@ -33,7 +33,7 @@ const displayLinks = (weeks) => {
       a.href = link.url; // Set the URL for the link
       a.textContent = link.title; // Set the text for the link
       if (index < week.links.length - 1) {
-        a.innerHTML += ' | '; // Add a separator if it's not the last link
+        li.innerHTML += ' | '; // Add a separator if it's not the last link
       }
       li.appendChild(a); // Append each link to the list item
     });

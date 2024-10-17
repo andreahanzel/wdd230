@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 // OpenWeatherMap API key and location for Budapest, Hungary
-const apiKey = '0edb12d9e55a404fe35a6de044286fe6';  // MY actual API key
+const apiKey = '0edb12d9e55a404fe35a6de044286fe6';  // My actual API key
 const lat = '47.4871';  // Latitude for Budapest, Hungary
 const lon = '19.0503';   // Longitude for Budapest, Hungary
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;  // Metric for Celsius

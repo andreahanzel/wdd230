@@ -133,31 +133,67 @@
         max-width: 100%;
     }
 
-    /* Box styling */
-    section.card {
-        padding: 1rem;
-        background-color: var(--whiteish); 
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-        text-align: left;
-        color: var(--licorice); /* Dark text for card content */
-        justify-content: space-between;
-        margin-bottom: 1.5rem; /* Adds space between sections */
-        font-weight: 500;
+
+    /* Learning Activities Section - Card1 */
+section.card1 {
+    padding: 2rem; /* More padding for larger screens */
+    gap: 2rem; /* Increased gap between elements */
+}
+
+/* Card Titles (h2) for Card1 */
+section.card1 h2 {
+    font-size: 1.6rem; /* Larger font size for the title */
+}
+
+/* Styling for Learning Activities List */
+section.card1 ul {
+    gap: 1.5rem; /* Increase gap between list items */
+}
+
+/* Style for list items */
+section.card1 li {
+    font-size: 1.2rem; /* Larger font for list items */
+    padding: 0.75rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on larger screens */
+}
+
+/* Custom bullets for each week */
+section.card1 li::before {
+    font-size: 1.5rem; /* Larger bullet size */
+}
+
+
+    /* Cards (for card2 specifically) */
+    section.card2 {
+        padding: 2rem;
     }
 
-    section.card h2 {
-        background-color: var(--beaverligt); /* Background for the card title */
-        color: var(--whiteish); /* Contrasting text color for the title */
-        padding: 0.5rem;
-        margin-top: -1rem; 
-        margin-left: -1rem;
-        margin-right: -1rem;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px; /* Rounded top corners */
-        text-align: center; /* Center the title text */
-        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Light shadow for the title */
+    /* Larger screen temperature styling */
+    .temperature-box #current-temp {
+        font-size: 1.2rem;
     }
+
+    /* Larger screen visit counter styling */
+    .visits-box .visits {
+        font-size: 1.2rem;
+    }
+
+    /* Info Boxes Container adjustments */
+    .info-boxes {
+        gap: 2rem;
+    }
+
+    /* Box Padding */
+    .info-boxes .box {
+        padding: 2rem;
+    }
+
+    /* Larger Weather Icon Size */
+    .temperature-box #weather-icon {
+        width: 60px;
+    }
+
+
 
     .map-container {
         margin: 2rem 0;          /* Keep the same margin for spacing */

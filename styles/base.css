@@ -242,7 +242,6 @@ main {
     font-weight: bold;
 }
 
-
 /* Learning Activities Section - Card1 */
 section.card1 {
     padding: 1.5rem;
@@ -254,13 +253,16 @@ section.card1 {
     font-weight: 400;
     margin-top: 1.5rem;
     text-align: left; /* Left-align content in card1 */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1.5rem; /* Add space between elements */
 }
 
 /* Card Titles (h2) for Card1 */
 section.card1 h2 {
     background-color: var(--beaverlight);
     color: var(--whiteish);
-    padding: 0.5rem;
+    padding: 1rem;
     margin-top: -1rem;
     margin-left: -1rem;
     margin-right: -1rem;
@@ -268,6 +270,7 @@ section.card1 h2 {
     border-top-right-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    font-size: 1.4rem; /* Base size */
 }
 
 /* Styling for Learning Activities List */
@@ -275,29 +278,50 @@ section.card1 ul {
     list-style-type: none;
     padding-left: 0;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem;
 }
 
+/* Style for list items */
 section.card1 li {
     margin-bottom: 0.8rem;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Slightly smaller for base */
+    padding: 0.5rem;
+    background-color: var(--silver);
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for list items */
+section.card1 li:hover {
+    background-color: var(--background-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* Styling for links */
 section.card1 a {
     color: var(--orange-accent);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+    display: inline-block;
+    padding: 0.2rem 0;
 }
 
+/* Hover effect for links */
 section.card1 a:hover {
     color: var(--coffee);
     text-decoration: underline;
 }
 
+/* Custom bullets for each week */
 section.card1 li::before {
-    content: "• "; /* Custom bullet for each week */
+    content: "• ";
     color: var(--orange-accent);
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Slightly smaller for base */
     font-weight: bold;
 }
 
@@ -305,6 +329,14 @@ section.card1 li::before {
 @media (max-width: 768px) {
     section.card1 {
         padding: 1rem;
+    }
+
+    section.card1 li {
+        font-size: 0.9rem; /* Further reduced size for mobile */
+    }
+
+    section.card1 li::before {
+        font-size: 1.1rem; /* Adjust bullet size for mobile */
     }
 }
 
@@ -382,7 +414,7 @@ section.card2 h2 {
 
 /* Temperature Styling */
 .temperature-box #current-temp {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--orange-accent);
     font-weight: bold;
     margin-bottom: 0.5rem;
@@ -409,16 +441,29 @@ section.card2 h2 {
 
 /* Visit Counter Styling */
 .visits-box p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.5rem 0;
     text-align: center;
 }
 
 .visits-box .visits {
-    font-size: 1.8rem;
+    font-size: 1rem;
     color: var(--orange-accent);
     font-weight: bold;
 }
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 768px) {
+    section.card1,
+    section.card2 {
+        padding: 1rem;
+    }
+
+    .info-boxes .box {
+        padding: 1rem;
+    }
+}
+
 
 
 /* Map container styles */
