@@ -134,33 +134,33 @@
     }
 
 
-    /* Learning Activities Section - Card1 */
-section.card1 {
-    padding: 2rem; /* More padding for larger screens */
-    gap: 2rem; /* Increased gap between elements */
-}
+        /* Learning Activities Section - Card1 */
+    section.card1 {
+        padding: 2rem; /* More padding for larger screens */
+        gap: 2rem; /* Increased gap between elements */
+    }
 
-/* Card Titles (h2) for Card1 */
-section.card1 h2 {
-    font-size: 1.6rem; /* Larger font size for the title */
-}
+    /* Card Titles (h2) for Card1 */
+    section.card1 h2 {
+        font-size: 1.6rem; /* Larger font size for the title */
+    }
 
-/* Styling for Learning Activities List */
-section.card1 ul {
-    gap: 1.5rem; /* Increase gap between list items */
-}
+    /* Styling for Learning Activities List */
+    section.card1 ul {
+        gap: 1.5rem; /* Increase gap between list items */
+    }
 
-/* Style for list items */
-section.card1 li {
-    font-size: 1.2rem; /* Larger font for list items */
-    padding: 0.75rem;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on larger screens */
-}
+    /* Style for list items */
+    section.card1 li {
+        font-size: 1.2rem; /* Larger font for list items */
+        padding: 0.75rem;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow on larger screens */
+    }
 
-/* Custom bullets for each week */
-section.card1 li::before {
-    font-size: 1.5rem; /* Larger bullet size */
-}
+    /* Custom bullets for each week */
+    section.card1 li::before {
+        font-size: 1.5rem; /* Larger bullet size */
+    }
 
 
     /* Cards (for card2 specifically) */

@@ -303,7 +303,7 @@ section.card1 li:hover {
 
 /* Styling for links */
 section.card1 a {
-    color: var(--orange-accent);
+    color: var(--licorice);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -320,7 +320,7 @@ section.card1 a:hover {
 /* Custom bullets for each week */
 section.card1 li::before {
     content: "• ";
-    color: var(--orange-accent);
+    color: var(--licorice);
     font-size: 1.3rem; /* Slightly smaller for base */
     font-weight: bold;
 }
@@ -415,7 +415,7 @@ section.card2 h2 {
 /* Temperature Styling */
 .temperature-box #current-temp {
     font-size: 1.2rem;
-    color: var(--orange-accent);
+    color: var(--licorice);
     font-weight: bold;
     margin-bottom: 0.5rem;
     text-align: center;
@@ -448,7 +448,7 @@ section.card2 h2 {
 
 .visits-box .visits {
     font-size: 1rem;
-    color: var(--orange-accent);
+    color: var(--licorice);
     font-weight: bold;
 }
 
