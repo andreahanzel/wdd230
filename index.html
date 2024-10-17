@@ -74,7 +74,7 @@
         <!-- Grid layout for Learning Activities -->
         <div class="grid-layout">
             <!-- Learning Activities Section -->
-            <section class="card">
+            <section class="card1">
                 <h2>Learning Activities</h2>
                 <ul>
                     <li>Week 01 <a href="week01/holygrail.html">Lesson 1</a> | <a href="week01/media-query.html">Lesson 2</a> | <a href="https://codepen.io/Andrea-Toreki/pen/NWZQLee">Lesson 3</a></li>
@@ -88,10 +88,22 @@
             </section>
 
             <!-- Information Section -->
-            <section class="card">
+            <section class="card2">
                 <h2>Information</h2>
-                <p>Weather: Not implemented yet.</p>
-                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                
+                <div class="info-boxes">
+                    <div class="box temperature-box">
+                        <p>The current temperature is: <span id="current-temp">Loading...</span></p>
+                        <figure>
+                            <img id="weather-icon" src="" alt="Weather icon">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="box visits-box">
+                        <p><span class="label">Number of Visits: </span><span class="visits">Loading...</span></p>
+                    </div>
+                </div>
             </section>
             
         </div>
@@ -117,6 +129,8 @@
     </footer>
 
     <script src="scripts/getDates.js"></script> <!-- Existing script for dates -->
+    <script src="scripts/weather.js"></script> <!-- New script for weather -->
+    <script src="scripts/links.js"></script>    <!-- New script for links -->
 </body>
 
 </html>

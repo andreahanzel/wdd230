@@ -1,0 +1,120 @@
+{
+    "weeks": [
+      {
+        "week": "Week 01",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "Lesson 1: Holy Grail Layout"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Lesson 2: Media Queries"
+          },
+          {
+            "url": "https://codepen.io/Andrea-Toreki/pen/NWZQLee",
+            "title": "Lesson 3: CodePen Demo"
+          }
+        ]
+      },
+      {
+        "week": "Week 02",
+        "links": [
+          {
+            "url": "week02/design.html",
+            "title": "Lesson 1: Design Principles"
+          },
+          {
+            "url": "https://codepen.io/Andrea-Toreki/pen/ExqaLBz",
+            "title": "Lesson 2: Responsive Design"
+          },
+          {
+            "url": "week02/bom.html",
+            "title": "Lesson 3: BOM (Browser Object Model)"
+          }
+        ]
+      },
+      {
+        "week": "Week 03",
+        "links": [
+          {
+            "url": "week03/images/landscape.webp",
+            "title": "Lesson 1: Landscape Images"
+          },
+          {
+            "url": "week03/lazyload.html",
+            "title": "Lesson 2: Lazy Load"
+          },
+          {
+            "url": "week03/responsive-images.html",
+            "title": "Lesson 3: Responsive Images"
+          },
+          {
+            "url": "week02/bom.html",
+            "title": "Lesson 4: Browser Object Model"
+          }
+        ]
+      },
+      {
+        "week": "Week 04",
+        "links": [
+          {
+            "url": "https://codepen.io/Andrea-Toreki/pen/oNKzJdB",
+            "title": "Lesson 1: CodePen Demo"
+          },
+          {
+            "url": "week04/images/csscombinators.png",
+            "title": "Lesson 2: CSS Combinators"
+          },
+          {
+            "url": "week04/tablebuild.html",
+            "title": "Lesson 3: Building Tables"
+          },
+          {
+            "url": "week04/index.html",
+            "title": "Lesson 4: Index"
+          }
+        ]
+      },
+      {
+        "week": "Week 05",
+        "links": [
+          {
+            "url": "https://codepen.io/Andrea-Toreki/pen/oNKWpja",
+            "title": "Lesson 1: CodePen Demo"
+          },
+          {
+            "url": "week05/new-ward-members.json",
+            "title": "Lesson 2: JSON Data"
+          },
+          {
+            "url": "week05/prophets.html",
+            "title": "Lesson 3: Prophets Display"
+          },
+          {
+            "url": "week05/weather.html",
+            "title": "Lesson 4: Weather API"
+          }
+        ]
+      },
+      {
+        "week": "Week 06",
+        "links": [
+          {
+            "url": "#",
+            "title": "Lessons (Coming Soon)"
+          }
+        ]
+      },
+      {
+        "week": "Week 07",
+        "links": [
+          {
+            "url": "#",
+            "title": "Lessons (Coming Soon)"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 // URL for OpenWeatherMap API (for Trier, Germany)
-const apiKey = '0edb12d9e55a404fe35a6de044286fe6';  // Replace with your actual API key
+const apiKey = '0edb12d9e55a404fe35a6de044286fe6';  // My actual API key
 const lat = '49.75';  // Latitude for Trier, Germany
 const lon = '6.64';   // Longitude for Trier, Germany
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
