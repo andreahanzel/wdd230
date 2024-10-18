@@ -289,3 +289,53 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 });
+
+
+ // DIRECTORY PAGE SCRIPTS
+document.addEventListener("DOMContentLoaded", function() {
+    const directoryList = document.getElementById('directory-list');
+    const gridViewBtn = document.getElementById('grid-view-btn');
+    const listViewBtn = document.getElementById('list-view-btn');
+
+    // Fetch and display the members
+    fetch('data/members.json') // Assumes members.json is located in the 'data' folder
+        .then(response => response.json())
+        .then(data => displayMembers(data.members)) // Call function to display members
+        .catch(error => console.error('Error fetching member data:', error));
+
+    // Function to display members in the directory
+    function displayMembers(members) {
+        directoryList.innerHTML = ''; // Clear existing content
+
+        members.forEach(member => {
+            const item = document.createElement('div');
+            item.classList.add('directory-item');
+            
+            item.innerHTML = `
+                <img src="images/${member.image}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p>${member.description}</p>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
+            `;
+            directoryList.appendChild(item);
+        });
+    }
+
+    // Toggle between Grid and List View
+    gridViewBtn.addEventListener('click', () => {
+        directoryList.classList.remove('directory-list');
+        directoryList.classList.add('directory-grid');
+        gridViewBtn.classList.add('active');
+        listViewBtn.classList.remove('active');
+    });
+
+    listViewBtn.addEventListener('click', () => {
+        directoryList.classList.remove('directory-grid');
+        directoryList.classList.add('directory-list');
+        listViewBtn.classList.add('active');
+        gridViewBtn.classList.remove('active');
+    });
+});
