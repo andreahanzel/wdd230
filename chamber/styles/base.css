@@ -1313,17 +1313,6 @@ input[type="submit"]:hover {
 
 /* --------------------------- DIRECTORY PAGE ---------------------------------------- */
 
-/* Root Colors */
-:root {
-    --primary-gradient: linear-gradient(135deg, #36537D, #12141C);
-    --accent-gradient: linear-gradient(135deg, #FFC61B, #FFE185);
-    --dark-bg-gradient: linear-gradient(135deg, #020203, #1E272E);
-    --text-color-light: #FFFFFF;
-    --primary-color: #192941; /* Blue */
-    --accent-text-color: #FFC61B; /* Yellow */
-    --border-color: #EAEAEA;
-}
-
 /* Main container */
 .directorymain {
     margin: 0 auto;
