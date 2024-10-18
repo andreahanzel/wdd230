@@ -292,3 +292,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
  // DIRECTORY PAGE SCRIPTS
+ 
+
+ // Fetch JSON data from members.json and render the HTML
+fetch('members.json')
+.then(response => response.json())
+.then(data => {
+    const membersContainer = document.querySelector("#membersContainer");
+    membersContainer.innerHTML = ""; // Clear out existing content
+
+    data.members.forEach(member => {
+        const section = document.createElement('section');
+        section.innerHTML = `
+            <img src="${member.image}" alt="${member.name}" />
+            <h3>${member.name}</h3>
+            <p>${member.sector}</p>
+            <a href="${member.website}" target="_blank">Details</a>
+        `;
+        membersContainer.appendChild(section);
+    });
+})
+.catch(error => console.error('Error fetching members:', error));
+
+// Grid/List view toggle functionality
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const display = document.querySelector("#membersContainer");
+
+// Set default view to grid
+display.classList.add("grid");
+
+gridButton.addEventListener("click", () => {
+display.classList.add("grid");
+display.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+display.classList.add("list");
+display.classList.remove("grid");
+});

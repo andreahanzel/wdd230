@@ -849,5 +849,17 @@
 
 /* --------------------------- DIRECTORY PAGE ---------------------------------------- */
 
+/* Enhance section cards on hover */
+.grid section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+/* Add active button states */
+.directory-main button.active {
+    background: var(--accent-gradient);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 

@@ -1,21 +1,21 @@
 {
     "members": [
       {
-        "name": "PPF (Partner in Pet Food)",
+        "name": "PPF (Partner in Pet Food Hungária Kft)",
         "address": "14 Puskás Tivadar Utca, Budaörs, Pest, 2040, Hungary",
         "phone": "+36 1 801 02 03",
         "website": "https://www.ppfeurope.com",
-        "image": "ppf.png",
+        "image": "ppf.webp",
         "membershipLevel": "Gold",
         "sector": "Food (Pet Products)",
-        "description": "PPF is a European leader in pet food production with 10 manufacturing facilities across Europe."
+        "description": "PPF is a European leader in pet food production with 10 manufacturing facilities across Europe, serving over 600 customers in 40 countries."
       },
       {
         "name": "B+N Referencia Zrt.",
         "address": "Váci út 116-118, Tower 1, 15th floor, 1133 Budapest, Hungary",
         "phone": "+36 30 670 8752",
         "website": "https://www.bnref.hu",
-        "image": "bnreferencia.png",
+        "image": "bnreferencia.webp",
         "membershipLevel": "Silver",
         "sector": "Business Services (Facility Management)",
         "description": "Leading facility management service provider in Hungary, operating across Central Europe."
@@ -25,7 +25,7 @@
         "address": "Arborétum u. 2, Szarvas, 5540, Hungary",
         "phone": "+36 66 514 680",
         "website": "https://www.cool4u.hu",
-        "image": "cool4u.png",
+        "image": "cool4u.webp",
         "membershipLevel": "Gold",
         "sector": "HVAC Distribution",
         "description": "Leading distributor of HVAC solutions in Hungary, providing systems for both residential and commercial clients."
@@ -35,7 +35,7 @@
         "address": "Budaörs, Hungary",
         "phone": "+36 1 555 4321",
         "website": "http://www.tmx.hu",
-        "image": "tmxmobile.png",
+        "image": "tmxmobile.webp",
         "membershipLevel": "Platinum",
         "sector": "Consumer Services (Mobile Services)",
         "description": "TMX Mobile provides repair and mobile services across Hungary, expanding into the consumer electronics sector."
@@ -45,7 +45,7 @@
         "address": "5. Laborfalvi Róza Street, Budapest, Hungary",
         "phone": "+36 1 886 6700",
         "website": "https://www.diatron.com",
-        "image": "diatron.png",
+        "image": "diatron.webp",
         "membershipLevel": "Silver",
         "sector": "Medical Products",
         "description": "Specializes in medical diagnostic products, particularly hematology analyzers."
@@ -55,20 +55,70 @@
         "address": "Hajógyári Sziget, Óbuda Island, Budapest, Hungary",
         "phone": "+36 1 372 0650",
         "website": "https://www.szigetfestival.com",
-        "image": "szigetfestival.png",
+        "image": "szigetfestival.webp",
         "membershipLevel": "Gold",
         "sector": "Leisure (Music and Cultural Festival)",
-        "description": "One of the largest cultural festivals in Europe, featuring more than 1,000 performances annually."
+        "description": "One of the largest cultural festivals in Europe, attracting over half a million attendees annually."
       },
       {
         "name": "Food Base",
         "address": "Gödöllő, Hungary",
         "phone": "+36 1 765 3210",
         "website": "https://foodbase.hu/en/",
-        "image": "foodbase.png",
+        "image": "foodbase.webp",
         "membershipLevel": "Silver",
         "sector": "Food",
         "description": "Focuses on spices and food additives, acquired by Turpaz Industries."
+      },
+      {
+        "name": "Akzo Nobel - Industrial Liquid Coatings",
+        "address": "Hungary",
+        "phone": "+36 1 234 5678",
+        "website": "https://www.akzonobel.com",
+        "image": "akzonobel.webp",
+        "membershipLevel": "Platinum",
+        "sector": "Chemicals",
+        "description": "Focuses on chemical coatings used in industrial applications."
+      },
+      {
+        "name": "AXON Lízing és Pénzügyi Zrt.",
+        "address": "Szeged, Hungary",
+        "phone": "+36 62 554 765",
+        "website": "https://axonleasing.hu/",
+        "image": "axonleasing.webp",
+        "membershipLevel": "Bronze",
+        "sector": "Financial Services",
+        "description": "AXON specializes in leasing and financial services."
+      },
+      {
+        "name": "AIMotive",
+        "address": "Budapest, Hungary",
+        "phone": "+36 1 234 0000",
+        "website": "https://www.aimotive.com",
+        "image": "aimotive.webp",
+        "membershipLevel": "Platinum",
+        "sector": "Information Technology (Automotive AI)",
+        "description": "Developer of AI-powered driving technologies."
+      },
+      {
+        "name": "Asura Technologies",
+        "address": "Budapest, Hungary",
+        "phone": "+36 1 234 5678",
+        "website": "https://www.asuratechnologies.com",
+        "image": "asura.webp",
+        "membershipLevel": "Gold",
+        "sector": "Information Technology (Surveillance and Traffic Systems)",
+        "description": "AI-powered traffic management and surveillance solutions."
+      },
+      {
+        "name": "Aeron Zrt.",
+        "address": "Dorottya utca 1, Budapest, Hungary",
+        "phone": "+36 1 234 5678",
+        "website": "https://www.aeron.com",
+        "image": "aeron.webp",
+        "membershipLevel": "Platinum",
+        "sector": "Fashion & Apparel",
+        "description": "Budapest-based fashion label known for minimalist designs."
       }
     ]
   }

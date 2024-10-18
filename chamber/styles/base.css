@@ -1313,65 +1313,142 @@ input[type="submit"]:hover {
 
 /* --------------------------- DIRECTORY PAGE ---------------------------------------- */
 
-/* Directory specific styles */
-#directory-main {
+/* Root Colors */
+:root {
+    --primary-gradient: linear-gradient(135deg, #36537D, #12141C);
+    --accent-gradient: linear-gradient(135deg, #FFC61B, #FFE185);
+    --dark-bg-gradient: linear-gradient(135deg, #020203, #1E272E);
+    --text-color-light: #FFFFFF;
+    --primary-color: #192941; /* Blue */
+    --accent-text-color: #FFC61B; /* Yellow */
+    --border-color: #EAEAEA;
+}
+
+/* Main container */
+.directorymain {
     margin: 0 auto;
     padding: 1rem;
-    max-width: 1200px;
-    background-color: #fff;
-}
-
-#directory-menu {
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    background-color: var(--accent-gradient);
-    text-align: center;
-}
-
-#directory-menu button {
-    padding: 1rem;
-    font-weight: 700;
-    background-color: var(--primary-color);
-    color: var(--text-color-light);
-    border: none;
-    cursor: pointer;
-}
-
-#directory-menu button:hover {
-    background-color: var(--accent-text-color);
-    color: var(--text-color-dark);
-}
-
-#directory-article {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
-}
-
-#directory-article section {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-#directory-article img {
-    max-width: 100px;
-    height: auto;
-}
-
-#directory-article h3 {
+    max-width: 1000px;
+    background-color: var(--dark-bg-gradient);
     font-family: 'Roboto', sans-serif;
+    color: var(--text-color-light);
+}
+
+/* Buttons */
+.directory-main {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.directory-main button {
+    padding: 0.75rem;
+    background: var(--primary-gradient);
+    color: var(--text-color-light);
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.directory-main button:hover {
+    background: var(--accent-gradient);
+}
+
+.directory-main button.active {
+    background: var(--accent-gradient);
+}
+
+/* Grid View */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid section {
+    background-color: var(--text-color-light);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.grid p {
+    font-weight: bold;
     color: var(--primary-color);
 }
 
-#directory-article p {
-    font-size: 0.9rem;
-    color: var(--text-color-dark);
+.grid a {
+    color: var(--accent-text-color);
+    font-weight: 600;
+    text-decoration: none;
 }
 
-#directory-article a {
+.grid a:hover {
+    text-decoration: underline;
+}
+
+/* List View */
+.list {
+    display: block;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: var(--text-color-light);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.list img {
+    display: none; /* Hide image in list view */
+}
+
+.list h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.list p, .list a {
+    color: var(--primary-color);
+}
+
+.list a {
+    text-align: right;
     color: var(--accent-text-color);
-    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .list section {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .list section > * {
+        margin-bottom: 0.5rem;
+    }
+
+    .grid section {
+        padding: 15px;
+    }
 }
