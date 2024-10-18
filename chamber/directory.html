@@ -54,16 +54,16 @@
     
 <!-- Main Area -->
 <main id="directory-main">
-    <section class="directory-controls">
-        <h2>Member Directory</h2>
-        <div class="view-toggle">
-            <button id="grid-view-btn" aria-label="Grid View" class="active">Grid View</button>
-            <button id="list-view-btn" aria-label="List View">List View</button>
-        </div>
-    </section>
-
-    <section id="directory-list" class="directory-grid"></section>
+    <div class="menu" id="directory-menu">
+        <button id="directory-grid">⏹️Grid</button>
+        <button id="directory-list">📄List</button>
+    </div>
+    <hr>
+    <article id="directory-article" class="directory-grid">
+        <!-- This content will be dynamically generated from the JSON file using JS -->
+    </article>
 </main>
+
 
 
 <!-- Footer -->

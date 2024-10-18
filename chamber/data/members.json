@@ -1,274 +1,74 @@
 {
     "members": [
       {
-        "name": "Danube Software Solutions",
-        "address": "1234 Tech Avenue, Budapest, Hungary",
-        "phone": "+36 1 987 6543",
-        "website": "https://www.danubesoftware.hu",
-        "image": "danube.png",
+        "name": "PPF (Partner in Pet Food)",
+        "address": "14 Puskás Tivadar Utca, Budaörs, Pest, 2040, Hungary",
+        "phone": "+36 1 801 02 03",
+        "website": "https://www.ppfeurope.com",
+        "image": "ppf.png",
         "membershipLevel": "Gold",
-        "description": "A leading IT service provider in the region, specializing in software development."
+        "sector": "Food (Pet Products)",
+        "description": "PPF is a European leader in pet food production with 10 manufacturing facilities across Europe."
       },
       {
-        "name": "Budapest Bakery Co.",
-        "address": "5678 Pastry Lane, Budapest, Hungary",
-        "phone": "+36 1 876 5432",
-        "website": "https://www.budapestbakery.com",
-        "image": "bakery.png",
+        "name": "B+N Referencia Zrt.",
+        "address": "Váci út 116-118, Tower 1, 15th floor, 1133 Budapest, Hungary",
+        "phone": "+36 30 670 8752",
+        "website": "https://www.bnref.hu",
+        "image": "bnreferencia.png",
         "membershipLevel": "Silver",
-        "description": "Traditional bakery offering a wide range of breads, pastries, and cakes."
+        "sector": "Business Services (Facility Management)",
+        "description": "Leading facility management service provider in Hungary, operating across Central Europe."
       },
       {
-        "name": "Green Energy Hungary",
-        "address": "4321 Eco Drive, Budapest, Hungary",
-        "phone": "+36 1 765 4321",
-        "website": "https://www.greenenergy.hu",
-        "image": "greenenergy.png",
+        "name": "Cool4U Kft",
+        "address": "Arborétum u. 2, Szarvas, 5540, Hungary",
+        "phone": "+36 66 514 680",
+        "website": "https://www.cool4u.hu",
+        "image": "cool4u.png",
         "membershipLevel": "Gold",
-        "description": "Providing renewable energy solutions for homes and businesses."
+        "sector": "HVAC Distribution",
+        "description": "Leading distributor of HVAC solutions in Hungary, providing systems for both residential and commercial clients."
       },
       {
-        "name": "Duna Financial Services",
-        "address": "8901 Banking Blvd, Budapest, Hungary",
-        "phone": "+36 1 654 3210",
-        "website": "https://www.dunafinancial.hu",
-        "image": "duna.png",
+        "name": "TMX Mobile Solution",
+        "address": "Budaörs, Hungary",
+        "phone": "+36 1 555 4321",
+        "website": "http://www.tmx.hu",
+        "image": "tmxmobile.png",
         "membershipLevel": "Platinum",
-        "description": "Specialized in financial advisory and wealth management."
+        "sector": "Consumer Services (Mobile Services)",
+        "description": "TMX Mobile provides repair and mobile services across Hungary, expanding into the consumer electronics sector."
       },
       {
-        "name": "Pearl Marketing Agency",
-        "address": "7890 Branding Street, Budapest, Hungary",
-        "phone": "+36 1 543 2109",
-        "website": "https://www.pearlmarketing.hu",
-        "image": "pearlmarketing.png",
+        "name": "Diatron MI PLC",
+        "address": "5. Laborfalvi Róza Street, Budapest, Hungary",
+        "phone": "+36 1 886 6700",
+        "website": "https://www.diatron.com",
+        "image": "diatron.png",
         "membershipLevel": "Silver",
-        "description": "Full-service marketing agency with expertise in digital and traditional campaigns."
+        "sector": "Medical Products",
+        "description": "Specializes in medical diagnostic products, particularly hematology analyzers."
       },
       {
-        "name": "Budapest Artisans Guild",
-        "address": "3456 Craft Road, Budapest, Hungary",
-        "phone": "+36 1 432 1098",
-        "website": "https://www.budapestartisans.hu",
-        "image": "artisans.png",
-        "membershipLevel": "Bronze",
-        "description": "A collective of local artisans creating handmade goods and crafts."
+        "name": "Sziget Festival",
+        "address": "Hajógyári Sziget, Óbuda Island, Budapest, Hungary",
+        "phone": "+36 1 372 0650",
+        "website": "https://www.szigetfestival.com",
+        "image": "szigetfestival.png",
+        "membershipLevel": "Gold",
+        "sector": "Leisure (Music and Cultural Festival)",
+        "description": "One of the largest cultural festivals in Europe, featuring more than 1,000 performances annually."
       },
       {
-        "name": "Hungarian Legal Experts",
-        "address": "6543 Law Circle, Budapest, Hungary",
-        "phone": "+36 1 321 0987",
-        "website": "https://www.hungarianlegal.hu",
-        "image": "legalexperts.png",
-        "membershipLevel": "Platinum",
-        "description": "Legal advisory services with a focus on corporate and civil law."
-      },
-      {
-        "name": "Innovative Interiors",
-        "address": "1234 Design Blvd, Budapest, Hungary",
-        "phone": "+36 1 234 9876",
-        "website": "https://www.innovativeinteriors.hu",
-        "image": "interiors.png",
+        "name": "Food Base",
+        "address": "Gödöllő, Hungary",
+        "phone": "+36 1 765 3210",
+        "website": "https://foodbase.hu/en/",
+        "image": "foodbase.png",
         "membershipLevel": "Silver",
-        "description": "Interior design and consulting for residential and commercial spaces."
-      },
-      {
-        "name": "Future Vision Studios",
-        "address": "8765 Cinema Street, Budapest, Hungary",
-        "phone": "+36 1 123 4567",
-        "website": "https://www.futurevision.hu",
-        "image": "futurevision.png",
-        "membershipLevel": "Gold",
-        "description": "A film and video production company specializing in documentaries and commercials."
-      },
-      {
-        "name": "Budapest Logistics Ltd.",
-        "address": "4321 Freight Ave, Budapest, Hungary",
-        "phone": "+36 1 543 6789",
-        "website": "https://www.budapestlogistics.hu",
-        "image": "logistics.png",
-        "membershipLevel": "Bronze",
-        "description": "Offering comprehensive logistics and supply chain solutions."
-      },
-      {
-        "name": "Thermal Spa Retreat",
-        "address": "9876 Wellness Road, Budapest, Hungary",
-        "phone": "+36 1 654 9876",
-        "website": "https://www.thermalspa.hu",
-        "image": "spa.png",
-        "membershipLevel": "Gold",
-        "description": "Relaxing spa offering thermal baths, massage, and wellness treatments."
-      },
-      {
-        "name": "Cityscape Architecture",
-        "address": "5432 Architect Lane, Budapest, Hungary",
-        "phone": "+36 1 987 6543",
-        "website": "https://www.cityscape.hu",
-        "image": "cityscape.png",
-        "membershipLevel": "Silver",
-        "description": "Specializing in modern architecture and urban planning."
-      },
-      {
-        "name": "Pannonia Real Estate",
-        "address": "1234 Property Blvd, Budapest, Hungary",
-        "phone": "+36 1 321 7654",
-        "website": "https://www.pannoniarealestate.hu",
-        "image": "pannonia.png",
-        "membershipLevel": "Platinum",
-        "description": "Luxury real estate agency with properties across Budapest."
-      },
-      {
-        "name": "Budapest Car Rentals",
-        "address": "4321 Rent-A-Car Lane, Budapest, Hungary",
-        "phone": "+36 1 234 8765",
-        "website": "https://www.budapestcarrentals.hu",
-        "image": "carrental.png",
-        "membershipLevel": "Silver",
-        "description": "Providing premium car rental services for tourists and locals."
-      },
-      {
-        "name": "Tisza Accounting Services",
-        "address": "5678 Finance Way, Budapest, Hungary",
-        "phone": "+36 1 543 2109",
-        "website": "https://www.tiszaaccounting.hu",
-        "image": "tiszaaccounting.png",
-        "membershipLevel": "Gold",
-        "description": "A full-service accounting firm catering to small businesses."
-      },
-      {
-        "name": "Central Café & Bistro",
-        "address": "1234 Coffee Street, Budapest, Hungary",
-        "phone": "+36 1 678 5432",
-        "website": "https://www.centralcafe.hu",
-        "image": "centralcafe.png",
-        "membershipLevel": "Bronze",
-        "description": "Cozy café and bistro offering local and international cuisine."
-      },
-      {
-        "name": "Pest Pest Control",
-        "address": "5678 Bug Blvd, Budapest, Hungary",
-        "phone": "+36 1 654 3210",
-        "website": "https://www.pestcontrol.hu",
-        "image": "pestcontrol.png",
-        "membershipLevel": "Silver",
-        "description": "Providing eco-friendly pest control services for residential and commercial properties."
-      },
-      {
-        "name": "Budapest Organic Markets",
-        "address": "4321 Farm Street, Budapest, Hungary",
-        "phone": "+36 1 765 4321",
-        "website": "https://www.organicmarkets.hu",
-        "image": "organicmarket.png",
-        "membershipLevel": "Gold",
-        "description": "Local organic market featuring fresh produce and artisanal products."
-      },
-      {
-        "name": "Hungary Tech Expo",
-        "address": "6543 Expo Road, Budapest, Hungary",
-        "phone": "+36 1 123 6543",
-        "website": "https://www.tech-expo.hu",
-        "image": "tech-expo.png",
-        "membershipLevel": "Platinum",
-        "description": "Annual tech expo showcasing the latest innovations and startups."
-      },
-      {
-        "name": "Buda Bike Rentals",
-        "address": "9876 Bicycle Lane, Budapest, Hungary",
-        "phone": "+36 1 876 5432",
-        "website": "https://www.budabikerentals.hu",
-        "image": "budabike.png",
-        "membershipLevel": "Silver",
-        "description": "Offering bicycle rentals for tourists exploring the city."
-      },
-      {
-        "name": "Creative Minds Advertising",
-        "address": "4321 Ad Blvd, Budapest, Hungary",
-        "phone": "+36 1 543 6789",
-        "website": "https://www.creativeminds.hu",
-        "image": "creativeminds.png",
-        "membershipLevel": "Gold",
-        "description": "A creative agency specializing in digital marketing and ad campaigns."
-      },
-      {
-        "name": "Hungarian Craft Brewery",
-        "address": "1234 Brewery Lane, Budapest, Hungary",
-        "phone": "+36 1 987 5432",
-        "website": "https://www.hungarianbrewery.hu",
-        "image": "craftbrewery.png",
-        "membershipLevel": "Bronze",
-        "description": "Local craft brewery known for its artisanal beers and ales."
-      },
-      {
-        "name": "EuroTech Electronics",
-        "address": "5678 Circuit Street, Budapest, Hungary",
-        "phone": "+36 1 654 3210",
-        "website": "https://www.eurotech.hu",
-        "image": "eurotech.png",
-        "membershipLevel": "Platinum",
-        "description": "Manufacturing electronic components and devices for global markets."
-      },
-      {
-        "name": "Hungary Tours Co.",
-        "address": "9876 Travel Road, Budapest, Hungary",
-        "phone": "+36 1 876 5432",
-        "website": "https://www.hungarytours.hu",
-        "image": "tours.png",
-        "membershipLevel": "Silver",
-        "description": "Organizing customized tours and travel experiences across Hungary."
-      },
-      {
-        "name": "Budapest IT Services",
-        "address": "4321 Network Blvd, Budapest, Hungary",
-        "phone": "+36 1 543 2109",
-        "website": "https://www.budapestit.hu",
-        "image": "itservices.png",
-        "membershipLevel": "Gold",
-        "description": "Offering managed IT services for businesses of all sizes."
-      },
-      {
-        "name": "Hungarian Vineyard",
-        "address": "5432 Wine Lane, Budapest, Hungary",
-        "phone": "+36 1 654 9876",
-        "website": "https://www.hungarianvineyard.hu",
-        "image": "vineyard.png",
-        "membershipLevel": "Bronze",
-        "description": "Family-owned vineyard producing award-winning wines."
-      },
-      {
-        "name": "Eco Budapest Landscaping",
-        "address": "7654 Green Blvd, Budapest, Hungary",
-        "phone": "+36 1 876 5432",
-        "website": "https://www.ecolandscaping.hu",
-        "image": "landscaping.png",
-        "membershipLevel": "Silver",
-        "description": "Sustainable landscaping services for commercial and residential properties."
-      },
-      {
-        "name": "Budapest Yoga Studio",
-        "address": "9876 Zen Street, Budapest, Hungary",
-        "phone": "+36 1 543 2109",
-        "website": "https://www.budapestyoga.hu",
-        "image": "yoga.png",
-        "membershipLevel": "Gold",
-        "description": "Wellness and yoga studio offering a range of classes and workshops."
-      },
-      {
-        "name": "Royal Hungarian Jewels",
-        "address": "4321 Jewel Road, Budapest, Hungary",
-        "phone": "+36 1 765 4321",
-        "website": "https://www.hungarianjewels.hu",
-        "image": "jewels.png",
-        "membershipLevel": "Platinum",
-        "description": "Luxury jewelry store with handcrafted Hungarian designs."
-      },
-      {
-        "name": "Danube River Cruises",
-        "address": "1234 River Lane, Budapest, Hungary",
-        "phone": "+36 1 987 6543",
-        "website": "https://www.danuberivercruises.hu",
-        "image": "danubecruises.png",
-        "membershipLevel": "Gold",
-        "description": "Offering scenic river cruises along the Danube."
+        "sector": "Food",
+        "description": "Focuses on spices and food additives, acquired by Turpaz Industries."
       }
     ]
   }

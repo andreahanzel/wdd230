@@ -1313,110 +1313,65 @@ input[type="submit"]:hover {
 
 /* --------------------------- DIRECTORY PAGE ---------------------------------------- */
 
-/* Directory Main Section */
+/* Directory specific styles */
 #directory-main {
-    padding: 20px;
-    max-width: 1200px;
     margin: 0 auto;
-    background: var(--secondary-gradient); /* White to Blue Gradient */
-    color: var(--text-color-dark); /* Use dark text color */
+    padding: 1rem;
+    max-width: 1200px;
+    background-color: #fff;
 }
 
-.directory-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+#directory-menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--accent-gradient);
+    text-align: center;
 }
 
-.directory-controls h2 {
-    color: var(--primary-color); /* Blue */
-}
-
-.view-toggle button {
-    background-color: var(--primary-color); /* Blue background */
-    color: var(--text-color-light); /* White text */
+#directory-menu button {
+    padding: 1rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
     border: none;
-    padding: 10px;
-    margin-left: 10px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    transition: background-color 0.3s ease;
 }
 
-.view-toggle button.active {
-    background-color: var(--accent-text-color); /* Yellow for active button */
-    color: var(--text-color-dark); /* Dark text on active button */
+#directory-menu button:hover {
+    background-color: var(--accent-text-color);
+    color: var(--text-color-dark);
 }
 
-.view-toggle button:hover {
-    background-color: #ffc61b99; /* Slightly transparent yellow on hover */
-}
-
-/* Grid View */
-.directory-grid {
+#directory-article {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
 }
 
-/* List View */
-.directory-list {
-    display: block;
+#directory-article section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.directory-item {
-    background-color: var(--dark-bg-gradient); /* Dark background */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    color: var(--text-color-light); /* White text inside items */
-}
-
-.directory-item:hover {
-    transform: translateY(-5px);
-    background-color: var(--primary-gradient); /* Add gradient hover effect */
-}
-
-.directory-item img {
-    max-width: 100%;
+#directory-article img {
+    max-width: 100px;
     height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
 }
 
-.directory-item h3 {
-    font-size: 1.5rem;
-    color: var(--accent-text-color); /* Yellow for titles */
+#directory-article h3 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
 }
 
-.directory-item p {
+#directory-article p {
     font-size: 0.9rem;
-    color: var(--text-color-light); /* White for text */
+    color: var(--text-color-dark);
 }
 
-.directory-item a {
-    color: var(--accent-text-color); /* Yellow links */
+#directory-article a {
+    color: var(--accent-text-color);
     text-decoration: none;
-    font-weight: 600;
-}
-
-.directory-item a:hover {
-    text-decoration: underline;
-}
-
-/* For List View Layout */
-.directory-list .directory-item {
-    display: flex;
-    align-items: center;
-}
-
-.directory-list .directory-item img {
-    width: 80px;
-    margin-right: 20px;
-}
-
-.directory-list .directory-item h3 {
-    font-size: 1.2rem;
 }

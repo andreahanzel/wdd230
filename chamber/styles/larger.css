@@ -850,16 +850,4 @@
 /* --------------------------- DIRECTORY PAGE ---------------------------------------- */
 
 
-@media (min-width: 1024px) {
-    .directory-grid {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
 
-    .directory-controls {
-        padding: 0 10px;
-    }
-
-    .directory-item {
-        padding: 20px;
-    }
-}
