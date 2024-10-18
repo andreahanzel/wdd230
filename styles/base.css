@@ -484,6 +484,35 @@ section.card2 h2 {
     max-width: 100%;         /* Prevent iframe from exceeding container width */
 }
 
+/* Style for the Show Map button */
+#loadMapBtn {
+    background-color: var(--orange-accent); /* Orange background */
+    color: var(--licorice); /* Dark text color */
+    border: none;
+    padding: 0.75rem 1.5rem; /* Generous padding */
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+    margin-bottom: 1rem; /* Add spacing below the button */
+}
+
+/* Hover and focus effects for the button */
+#loadMapBtn:hover,
+#loadMapBtn:focus {
+    background-color: var(--coffee); /* Darker shade on hover */
+    outline: none; /* Remove the outline when focused */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Active state effect */
+#loadMapBtn:active {
+    transform: translateY(0); /* Reset lift effect when active (clicked) */
+    background-color: var(--beaver); /* Slightly darker for active state */
+}
+
+
 
 
 /* Footer styling */

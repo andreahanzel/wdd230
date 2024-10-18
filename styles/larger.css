@@ -212,6 +212,11 @@
         height: 400px;           /* Maintain consistent height */
     }
 
+    #loadMapBtn {
+        padding: 1rem 2rem; /* Larger padding */
+        font-size: 1.2rem;  /* Increase font size */
+    }
+
     /* Footer adjustments */
     footer {
         padding: 1rem;

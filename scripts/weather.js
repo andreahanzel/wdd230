@@ -32,7 +32,8 @@ function displayResults(data) {
 
   // Set the icon and description from the weather data
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  const desc = data.weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  
 
   // Update the image element with the correct src and alt attributes
   weatherIcon.setAttribute('src', iconsrc);
