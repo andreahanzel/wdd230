@@ -13,7 +13,6 @@
 /* General body styles */
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--text-color-light); /* White Text */
     background: var(--dark-bg-gradient); /* Dark Gradient Background */
     line-height: 1.6;
     margin: 0;
@@ -1310,134 +1309,201 @@ input[type="submit"]:hover {
 }
 
 
-
 /* --------------------------- DIRECTORY PAGE ---------------------------------------- */
 
-/* Main container */
+/* Main Layout Styling */
 .directorymain {
     margin: 0 auto;
     padding: 1rem;
-    max-width: 1000px;
-    background-color: var(--dark-bg-gradient);
+    max-width: 1200px;
+    background: var(--dark-bg-gradient);
     font-family: 'Roboto', sans-serif;
-    color: var(--text-color-light);
 }
 
-/* Buttons */
+.directory-heading {
+    margin-top: 4rem; /* Space between navigation and heading */
+    margin-bottom: 2rem; /* Space below the heading */
+    text-align: center;
+    position: relative;
+    
+}
+
+.directory-heading h2 {
+    font-size: 2rem; /* Larger heading for big screens */
+    font-weight: bold;
+    color: var(--accent-text-color); /* Yellow color for the text */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Add letter spacing for more style */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    background: linear-gradient(135deg, var(--accent-text-color), var(--text-color-light)); /* Gradient text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Use gradient as text color */
+    padding-bottom: 1rem; /* Add space below text */
+    position: relative;
+}
+
+/* Add a stylish underline effect using a pseudo-element */
+.directory-heading h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Width of the underline */
+    height: 5px; /* Thickness of the underline */
+    background-color: var(--accent-text-color); /* Yellow underline */
+    border-radius: 5px; /* Round the underline edges */
+    box-shadow: 0 4px 10px rgba(255, 198, 27, 0.7); /* Add a glowing shadow */
+}
+
+/* ------------------- Button Group Styling ------------------- */
 .directory-main {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 1.5rem; /* Gap between the buttons */
+    margin-bottom: 2rem; /* Space below the buttons */
+}
+
+.directory-toggle-button {
+    background-color: var(--primary-color); /* Base button color */
+    color: white;
+    border: 2px solid var(--accent-text-color); /* Add yellow border */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Button Hover and Active States */
+.directory-toggle-button:hover {
+    background: var(--accent-gradient); /* Yellow gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 10px 20px rgba(255, 198, 27, 0.5); /* Glowing shadow */
+    color: black; /* Dark text on hover */
+}
+
+.directory-toggle-button:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+
+/* Add space between buttons and directory content */
+hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem; /* Larger gap between buttons and list */
+    border: 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.1); /* Subtle line */
+}
+
+/* ----------------- Grid & List Layout Shared Styles ------------------- */
+
+/* Directory Section: Shared styling for both grid and list views */
+.gridDirectory .directory-section,
+.listDirectory .directory-section {
+    background: var(--dark-bg-gradient); /* Dark gradient background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2); /* Slight shadow */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect with stronger pop-out */
+.gridDirectory .directory-section:hover,
+.listDirectory .directory-section:hover {
+    transform: scale(1.05); /* Pop-out effect */
+    box-shadow: 0 10px 50px rgba(255, 255, 255, 0.3); /* Stronger shadow */
+}
+
+/* ----------------- Logo Shadow Background (Separate from Section) ------------------- */
+
+
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Keep the logo ratio without stretching */
+}
+
+/* ----------------- Button Styling for Visit Website Button ------------------- */
+.directorymain .gridDirectory .directory-content .visit-button,
+.directorymain .listDirectory .directory-content .visit-button {
+    
+    color: var(--text-color-dark); /* Black text */
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the "Visit Website" button */
+.directorymain .gridDirectory .directory-content .visit-button:hover,
+.directorymain .listDirectory .directory-content .visit-button:hover {
+    background: var(--accent-gradient); /* Yellow gradient on hover */
+    transform: scale(1.1); /* Slight pop-out effect */
+    color: var(--text-color-dark); /* Keep black text */
+    box-shadow: 0px 10px 20px rgba(255, 198, 27, 0.7); /* Glowing yellow shadow */
+    filter: brightness(1.15); /* Slightly increase brightness on hover */
+}
+
+/* ----------------- Grid Layout ------------------- */
+.gridDirectory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create multiple columns */
     gap: 1rem;
+    padding: 1rem;
+}
+
+/* Grid View - Adjusted Logo Styling for Small Screens */
+.gridDirectory .directory-section img {
+    width: 100%; /* Make the logo responsive to the container */
+    max-width: 150px; /* Set a max width for small screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent deformation */
     margin-bottom: 1rem;
 }
 
-.directory-main button {
-    padding: 0.75rem;
-    background: var(--primary-gradient);
-    color: var(--text-color-light);
-    font-weight: bold;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+/* Button in Grid View: Full width */
+.gridDirectory .directory-content .visit-button {
+    width: 100%; /* Button takes full width in grid view */
 }
 
-.directory-main button:hover {
-    background: var(--accent-gradient);
+/* ----------------- List Layout ------------------- */
+.listDirectory {
+    display: flex;
+    flex-direction: column; /* Single-column layout for list view */
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
 }
 
-.directory-main button.active {
-    background: var(--accent-gradient);
+/* Remove logos in the list view */
+.listDirectory .directory-section img {
+    display: none;
 }
 
-/* Grid View */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+/* Align content and button in a column for list view */
+.listDirectory .directory-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
 }
 
-.grid section {
-    background-color: var(--text-color-light);
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.listDirectory .directory-content h3,
+.listDirectory .directory-content p {
+    margin: 0.2rem 0; /* Adjust spacing for consistency */
 }
 
-.grid img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.grid h3 {
-    color: var(--primary-color);
-    font-size: 1.25rem;
-}
-
-.grid p {
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.grid a {
-    color: var(--accent-text-color);
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.grid a:hover {
-    text-decoration: underline;
-}
-
-/* List View */
-.list {
-    display: block;
-}
-
-.list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    background-color: var(--text-color-light);
-    border: 1px solid var(--border-color);
-    padding: 10px;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.list img {
-    display: none; /* Hide image in list view */
-}
-
-.list h3 {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-}
-
-.list p, .list a {
-    color: var(--primary-color);
-}
-
-.list a {
-    text-align: right;
-    color: var(--accent-text-color);
-    font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .list section {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .list section > * {
-        margin-bottom: 0.5rem;
-    }
-
-    .grid section {
-        padding: 15px;
-    }
+.listDirectory .directory-content .visit-button {
+    width: auto;
+    margin-top: 0.5rem; /* Add a small margin between text and button */
 }

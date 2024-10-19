@@ -5,9 +5,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="WDD 230 - Web Frontend Development | Andrea Toreki | Chamber of Commerce Home Page">
+        <meta name="description" content="Explore the Budapest Chamber of Commerce business directory. Find trusted businesses, services, and members across Hungary.">
         <meta name="author" content="Andrea Toreki">
-        <title>WDD 230 | Andrea Toreki | Budapest Chamber of Commerce</title>
+        <title>Business Directory - Budapest Chamber of Commerce |  WDD 230 | Andrea Toreki</title>
+  
 
         <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Andrea Toreki's Web Frontend Development Course">
@@ -45,7 +46,7 @@
                     <li><a href="index.html" class="active"> Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="#">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -54,94 +55,175 @@
     
 <!-- Main Area -->
 <main class="directorymain">
+
+    <div class="directory-heading">
+        <h2>Business Directory</h2>
+    </div>
+
+    <!-- Button group for grid and list toggle -->
     <div class="directory-main">
-        <button id="grid">⏹️Grid</button>
-        <button id="list">📄List</button>
+        <button id="grid-directory" class="directory-toggle-button">⏹️ Grid</button>
+        <button id="list-directory" class="directory-toggle-button">📄 List</button>
     </div>
     <hr>
-    <article class="grid" id="membersContainer">
-        <section>
-            <img src="images/ppf.webp" alt="PPF (Partner in Pet Food Hungária Kft)" />
-            <h3>PPF Kft</h3>
-            <p>Pet Products</p>
-            <a href="https://www.ppfeurope.com" target="_blank">Details</a>
+    <article class="gridDirectory" id="membersContainer">
+        <div class="directory-heading">
+            <h2>Business Directory</h2>
+        </div>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/ppf.webp" alt="PPF (Partner in Pet Food Hungária Kft)">
+            </div>
+            <div class="directory-content">
+                <h3>PPF Kft</h3>
+                <p>14 Puskás Tivadar Utca, Budaörs, Pest, 2040, Hungary</p>
+                <p>+36 1 801 02 03</p>
+                <button class="visit-button" onclick="window.open('https://www.ppfeurope.com', '_blank')">Visit Website</button>
+                <p>Gold Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/bnreferencia.webp" alt="B+N Referencia Zrt." />
-            <h3>B+N Referencia Zrt</h3>
-            <p>Facility Management</p>
-            <a href="https://www.bnref.hu" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/bnreferencia.webp" alt="B+N Referencia Zrt.">
+            </div>
+            <div class="directory-content">
+                <h3>B+N Referencia Zrt</h3>
+                <p>Váci út 116-118, Tower 1, 15th floor, 1133 Budapest, Hungary</p>
+                <p>+36 30 670 8752</p>
+                <button class="visit-button" onclick="window.open('https://www.bnref.hu', '_blank')">Visit Website</button>
+                <p>Silver Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/cool4u.webp" alt="Cool4U Kft" />
-            <h3>Cool4U Kft</h3>
-            <p>HVAC Distribution</p>
-            <a href="https://www.cool4u.hu" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/cool4u.webp" alt="Cool4U Kft">
+            </div>
+            <div class="directory-content">
+                <h3>Cool4U Kft</h3>
+                <p>Arborétum u. 2, Szarvas, 5540, Hungary</p>
+                <p>+36 66 514 680</p>
+                <button class="visit-button" onclick="window.open('https://www.cool4u.hu', '_blank')">Visit Website</button>
+                <p>Gold Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/tmxmobile.webp" alt="TMX Mobile Solution" />
-            <h3>TMX Mobile</h3>
-            <p>Mobile Services</p>
-            <a href="http://www.tmx.hu" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/tmxmobile.webp" alt="TMX Mobile Solution">
+            </div>
+            <div class="directory-content">
+                <h3>TMX Mobile</h3>
+                <p>Budaörs, Hungary</p>
+                <p>+36 1 555 4321</p>
+                <button class="visit-button" onclick="window.open('http://www.tmx.hu', '_blank')">Visit Website</button>
+                <p>Platinum Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/diatron.webp" alt="Diatron MI PLC" />
-            <h3>Diatron MI PLC</h3>
-            <p>Medical Products</p>
-            <a href="https://www.diatron.com" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/diatron.webp" alt="Diatron MI PLC">
+            </div>
+            <div class="directory-content">
+                <h3>Diatron MI PLC</h3>
+                <p>5. Laborfalvi Róza Street, Budapest, Hungary</p>
+                <p>+36 1 886 6700</p>
+                <button class="visit-button" onclick="window.open('https://www.diatron.com', '_blank')">Visit Website</button>
+                <p>Silver Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/szigetfestival.webp" alt="Sziget Festival" />
-            <h3>Sziget Festival Kft</h3>
-            <p>Music and Cultural Festival</p>
-            <a href="https://www.szigetfestival.com" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/szigetfestival.webp" alt="Sziget Festival">
+            </div>
+            <div class="directory-content">
+                <h3>Sziget Festival Kft</h3>
+                <p>Hajógyári Sziget, Óbuda Island, Budapest, Hungary</p>
+                <p>+36 1 372 0650</p>
+                <button class="visit-button" onclick="window.open('https://www.szigetfestival.com', '_blank')">Visit Website</button>
+                <p>Gold Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/foodbase.webp" alt="Food Base" />
-            <h3>Food Base Kft</h3>
-            <p>Food</p>
-            <a href="https://foodbase.hu/en/" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/foodbase.webp" alt="Food Base">
+            </div>
+            <div class="directory-content">
+                <h3>Food Base Kft</h3>
+                <p>Gödöllő, Hungary</p>
+                <p>+36 1 765 3210</p>
+                <button class="visit-button" onclick="window.open('https://foodbase.hu/en/', '_blank')">Visit Website</button>
+                <p>Silver Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/akzonobel.webp" alt="Akzo Nobel - Industrial Liquid Coatings" />
-            <h3>Akzo Nobel Zrt</h3>
-            <p>Chemicals</p>
-            <a href="https://www.akzonobel.com" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/akzonobel.webp" alt="Akzo Nobel - Industrial Liquid Coatings">
+            </div>
+            <div class="directory-content">
+                <h3>Akzo Nobel Zrt</h3>
+                <p>Hungary</p>
+                <p>+36 1 234 5678</p>
+                <button class="visit-button" onclick="window.open('https://www.akzonobel.com', '_blank')">Visit Website</button>
+                <p>Platinum Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/axonleasing.webp" alt="AXON Lízing és Pénzügyi Zrt." />
-            <h3>AXON</h3>
-            <p>Financial Services</p>
-            <a href="https://axonleasing.hu/" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/axonleasing.webp" alt="AXON Lízing és Pénzügyi Zrt.">
+            </div>
+            <div class="directory-content">
+                <h3>AXON</h3>
+                <p>Szeged, Hungary</p>
+                <p>+36 62 554 765</p>
+                <button class="visit-button" onclick="window.open('https://axonleasing.hu/', '_blank')">Visit Website</button>
+                <p>Bronze Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/aimotive.webp" alt="AIMotive" />
-            <h3>AIMotive</h3>
-            <p>Automotive AI</p>
-            <a href="https://www.aimotive.com" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/aimotive.webp" alt="AIMotive">
+            </div>
+            <div class="directory-content">
+                <h3>AIMotive</h3>
+                <p>Budapest, Hungary</p>
+                <p>+36 1 234 0000</p>
+                <button class="visit-button" onclick="window.open('https://www.aimotive.com', '_blank')">Visit Website</button>
+                <p>Platinum Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/asura.webp" alt="Asura Technologies" />
-            <h3>Asura Technologies</h3>
-            <p>Traffic Systems & Surveillance</p>
-            <a href="https://www.asuratechnologies.com" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/asura.webp" alt="Asura Technologies">
+            </div>
+            <div class="directory-content">
+                <h3>Asura Technologies</h3>
+                <p>Budapest, Hungary</p>
+                <p>+36 1 234 5678</p>
+                <button class="visit-button" onclick="window.open('https://www.asuratechnologies.com', '_blank')">Visit Website</button>
+                <p>Gold Member</p>
+            </div>
         </section>
 
-        <section>
-            <img src="images/aeron.webp" alt="Aeron Zrt." />
-            <h3>Aeron Zrt.</h3>
-            <p>Fashion & Apparel</p>
-            <a href="https://www.aeron.com" target="_blank">Details</a>
+        <section class="directory-section">
+            <div class="logo-container">
+            <img src="images/aeron.webp" alt="Aeron Zrt.">
+            </div>
+            <div class="directory-content">
+                <h3>Aeron Zrt.</h3>
+                <p>Dorottya utca 1, Budapest, Hungary</p>
+                <p>+36 1 234 5678</p>
+                <button class="visit-button" onclick="window.open('https://www.aeron.com', '_blank')">Visit Website</button>
+                <p>Platinum Member</p>
+            </div>
         </section>
 
     </article>
@@ -195,6 +277,6 @@
 
 <!-- Script -->
 
-    <script src="scripts/chamber.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

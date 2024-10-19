@@ -849,17 +849,121 @@
 
 /* --------------------------- DIRECTORY PAGE ---------------------------------------- */
 
-/* Enhance section cards on hover */
-.grid section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+@media (min-width: 768px) {
+
+
+    .directory-heading {
+        margin-top: 4rem; /* Space between navigation and heading */
+        margin-bottom: 2rem; /* Space below the heading */
+        text-align: center;
+        position: relative;
+        
+    }
+
+    .directory-heading h2 {
+        font-size: 3rem; /* Larger heading for big screens */
+        font-weight: bold;
+        color: var(--accent-text-color); /* Yellow color for the text */
+        text-transform: uppercase;
+        letter-spacing: 2px; /* Add letter spacing for more style */
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+        background: linear-gradient(135deg, var(--accent-text-color), var(--text-color-light)); /* Gradient text */
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Use gradient as text color */
+        padding-bottom: 1rem; /* Add space below text */
+        position: relative;
+    }
+
+    /* Add a stylish underline effect using a pseudo-element */
+    .directory-heading h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px; /* Width of the underline */
+        height: 5px; /* Thickness of the underline */
+        background-color: var(--accent-text-color); /* Yellow underline */
+        border-radius: 5px; /* Round the underline edges */
+        box-shadow: 0 4px 10px rgba(255, 198, 27, 0.7); /* Add a glowing shadow */
+    }
+
+    /* Grid Layout for Larger Screens */
+    .gridDirectory {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Larger grid cards */
+    }
+
+    /* Adjust logo sizes and prevent deformation for larger screens */
+    .gridDirectory .directory-section img {
+        width: 100%;
+        max-width: 200px; /* Larger max width for logos */
+        height: auto;
+        object-fit: contain; /* Prevent stretching or deformation */
+        margin-bottom: 1rem;
+    }
+
+    /* ----------------- Logo Shadow Background for Larger Screens ------------------- */
+    
+
+    .logo-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* Maintain aspect ratio */
+    }
+
+    /* List Layout for Larger Screens */
+    .listDirectory .directory-section {
+        display: flex;
+        flex-direction: row; /* Arrange in a row */
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--primary-color); /* Slightly darker background for list view */
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+
+    /* Hide logos in list view */
+    .listDirectory .directory-section img {
+        display: none;
+    }
+
+    .listDirectory .directory-content {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    /* Headings grow to take available space */
+    .listDirectory .directory-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .listDirectory .directory-content p {
+        margin: 0.2rem 0; /* Adjust spacing for text */
+    }
+
+    /* Button in list view */
+    .listDirectory .directory-content .visit-button {
+        width: auto; /* Button adjusts to content size */
+        margin-top: 0.5rem; /* Add a margin between text and button */
+    }
 }
 
-/* Add active button states */
-.directory-main button.active {
-    background: var(--accent-gradient);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+/* Adjust hover and other effects for larger screens */
+@media (min-width: 1024px) {
+
+    /* Increase hover effects */
+    .directorymain .gridDirectory .directory-section:hover,
+    .directorymain .listDirectory .directory-section:hover {
+        transform: scale(1.07); /* Slightly stronger hover pop-out */
+        box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4); /* Stronger shadow on hover */
+    }
+
+    .directorymain .gridDirectory .directory-content .visit-button:hover,
+    .directorymain .listDirectory .directory-content .visit-button:hover {
+        box-shadow: 0px 12px 25px rgba(255, 198, 27, 0.8); /* Stronger button shadow */
+        transform: scale(1.2); /* Slightly bigger pop-out */
+    }
 }
 

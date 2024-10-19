@@ -15,21 +15,29 @@ if (lastModified) {
 const myButton = document.getElementById('myButton');
 const menuLinks = document.querySelector('ul.menuLinks');
 
-// Toggle the 'open' class when the hamburger button is clicked
-myButton.addEventListener('click', () => {
-    menuLinks.classList.toggle('open');
-    myButton.classList.toggle('open');
+// Toggl// Ensure DOM is loaded before accessing elements
+document.addEventListener('DOMContentLoaded', () => {
+    const myButton = document.getElementById('myButton');
+    const menuLinks = document.querySelector('ul.menuLinks');
 
-    // Toggle the button content between hamburger and "X"
-    myButton.textContent = myButton.classList.contains('open') ? '✕' : '☰';
-});
+    if (myButton && menuLinks) {
+        // Toggle the 'open' class when the hamburger button is clicked
+        myButton.addEventListener('click', () => {
+            menuLinks.classList.toggle('open');
+            myButton.classList.toggle('open');
 
-// Reset menu when resizing from mobile to desktop
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-        menuLinks.classList.remove('open');
-        myButton.classList.remove('open');
-        myButton.textContent = '☰'; // Reset to hamburger icon
+            // Toggle the button content between hamburger and "X"
+            myButton.textContent = myButton.classList.contains('open') ? '✕' : '☰';
+        });
+
+        // Reset menu when resizing from mobile to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                menuLinks.classList.remove('open');
+                myButton.classList.remove('open');
+                myButton.textContent = '☰'; // Reset to hamburger icon
+            }
+        });
     }
 });
 
@@ -290,44 +298,4 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
- 
 
-// DIRECTORY PAGE SCRIPTS
-
-// Fetch JSON data from members.json and render the HTML
-fetch('members.json')
-    .then(response => response.json())
-    .then(data => {
-        const membersContainer = document.querySelector("#membersContainer");
-        membersContainer.innerHTML = ""; // Clear out existing content
-
-        data.members.forEach(member => {
-            const section = document.createElement('section');
-            section.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name}" />
-                <h3>${member.name}</h3>
-                <p>${member.sector}</p>
-                <a href="${member.website}" target="_blank">Details</a>
-            `;
-            membersContainer.appendChild(section);
-        });
-    })
-    .catch(error => console.error('Error fetching members:', error));
-
-// Grid/List view toggle functionality
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
-const display = document.querySelector("#membersContainer");
-
-// Set default view to grid
-display.classList.add("grid");
-
-gridButton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
-
-listButton.addEventListener("click", () => {
-    display.classList.add("list");
-    display.classList.remove("grid");
-});
