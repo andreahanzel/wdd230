@@ -2,8 +2,8 @@
     "members": [
       {
         "name": "PPF",
-        "address": "14 Puskás Tivadar Utca, Budaörs, Pest, 2040, Hungary",
-        "phone": "+36 1 801 02 03",
+        "address": "1112 Budapest, Boldizsár utca 4, Hungary",
+        "phone": "+36 1 801 0203",
         "website": "https://www.ppfeurope.com",
         "image": "ppf.webp",
         "membershipLevel": "Gold",
@@ -32,8 +32,8 @@
       },
       {
         "name": "TMX Mobile Solution",
-        "address": "Budaörs, Hungary",
-        "phone": "+36 1 555 4321",
+        "address": "Budaörs, Kinizsi u. 2/b, 2040 Hungary",
+        "phone": "+36 1 585 8381",
         "website": "http://www.tmx.hu",
         "image": "tmxmobile.webp",
         "membershipLevel": "Platinum",
@@ -62,8 +62,8 @@
       },
       {
         "name": "Food Base",
-        "address": "Gödöllő, Hungary",
-        "phone": "+36 1 765 3210",
+        "address": "Gödöllő, Moór János u, 2100 Hungary",
+        "phone": " +36 28 545 380",
         "website": "https://foodbase.hu/en/",
         "image": "foodbase.webp",
         "membershipLevel": "Silver",
@@ -71,9 +71,9 @@
         "description": "Focuses on spices and food additives, acquired by Turpaz Industries."
       },
       {
-        "name": "Akzo Nobel - Industrial Liquid Coatings",
-        "address": "Hungary",
-        "phone": "+36 1 234 5678",
+        "name": "Akzo Nobel Coatings Zrt",
+        "address": "Budapest, Dunavirág u. 2-6, 1138 Hungary",
+        "phone": "+36 1 430 3950",
         "website": "https://www.akzonobel.com",
         "image": "akzonobel.webp",
         "membershipLevel": "Platinum",
@@ -81,9 +81,9 @@
         "description": "Focuses on chemical coatings used in industrial applications."
       },
       {
-        "name": "AXON Lízing és Pénzügyi Zrt.",
-        "address": "Szeged, Hungary",
-        "phone": "+36 62 554 765",
+        "name": "AXON Lízing és Pénzügyi Zrt",
+        "address": "Szolnok, Szigligeti u. 2, 5000 Hungary",
+        "phone": "+36 56 799 190",
         "website": "https://axonleasing.hu/",
         "image": "axonleasing.webp",
         "membershipLevel": "Bronze",
@@ -92,8 +92,8 @@
       },
       {
         "name": "AIMotive",
-        "address": "Budapest, Hungary",
-        "phone": "+36 1 234 0000",
+        "address": "Budapest, Szépvölgyi út 18 - 22, 1025 Hungary",
+        "phone": "+36 1 770 7201",
         "website": "https://www.aimotive.com",
         "image": "aimotive.webp",
         "membershipLevel": "Platinum",
@@ -101,9 +101,9 @@
         "description": "Developer of AI-powered driving technologies."
       },
       {
-        "name": "Asura Technologies",
-        "address": "Budapest, Hungary",
-        "phone": "+36 1 234 5678",
+        "name": "Asura Technologies Ltd",
+        "address": "Budapest, Városmajor u. 12-14-C. ép, 1122 Hungary",
+        "phone": "+36 30 155 7137",
         "website": "https://www.asuratechnologies.com",
         "image": "asura.webp",
         "membershipLevel": "Gold",
