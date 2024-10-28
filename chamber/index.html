@@ -50,6 +50,25 @@
             </nav>
         </div>
     </header>
+
+
+
+      <!-- Overlay Background - PLACE THIS BELOW HEADER -->
+      <div class="banner-overlay" style="display: none;"></div>
+
+      <!-- Banner Content - Updated dayBanner Structure -->
+      <div id="dayBanner" class="day-banner" style="display: none;">
+          <div class="banner-content">
+              <div class="logo">Budapest Chamber of Commerce</div>
+              <h2>Connect with Local Leaders</h2>
+              <p>Join us for a “Meet and Greet” at the chamber on Wednesday at 7:00 p.m.</p>
+              <a href="https://www.google.com/maps/place/Business+Center+Kft./@47.5071637,18.9633933,12z/data=!4m10!1m2!2m1!1s1234+Business+Street,+Budapest,+Hungary!3m6!1s0x4741dbcdf2daf829:0xdfe6f7e2b73694b5!8m2!3d47.5523446!4d19.074246!15sCicxMjM0IEJ1c2luZXNzIFN0cmVldCwgQnVkYXBlc3QsIEh1bmdhcnmSARBjb3Jwb3JhdGVfb2ZmaWNl4AEA!16s%2Fg%2F1hhw9tb7s?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="cta-button">
+                Learn More
+            </a>
+          </div>
+          <!-- Close Button -->
+          <span id="closeBanner" class="close-banner">&times;</span>
+      </div>
     
     <!-- Main Area -->
 
@@ -60,9 +79,10 @@
         <div class="container hero-text">
             <h1>Your Business Advocate in Budapest</h1>
             <p>Empowering businesses through networking, resources, and advocacy.</p>
-            <a href="#" class="cta-button-hero">Learn More</a>
+            <a href="discover.html" class="cta-button-hero">Learn More</a>
         </div>
     </section>
+
 
     <!-- Mission Section -->
     <section class="mission-section">
@@ -71,19 +91,30 @@
             <div class="mission-box">
                 <h2>Our Mission</h2>
                 <p>
-                    At the Budapest Chamber of Commerce, our mission is to foster a thriving and collaborative business environment in Budapest and beyond.
+                    At the Budapest Chamber of Commerce, our mission is to foster a thriving and collaborative business environment in Budapest and beyond. We are committed to supporting entrepreneurs, empowering established businesses, and advocating for policies that promote sustainable economic growth. Through tailored resources, dynamic networking opportunities, and community partnerships, we aim to strengthen the region’s economic vitality and drive innovation for a prosperous future.
                 </p>
     
         </div>
         
 
-        <!-- Weather Section -->
-        <div class="weather-box">
+         <!-- Weather Section -->
+         <div class="weather-box">
             <h2>Weather</h2>
-            <p>Current Weather. Content is coming soon.</p>
+            <p>Current Temperature: <span id="chamber-current-temp">Loading...</span></p>
+            <p>Weather Description: <span id="chamber-weather-desc">Loading...</span></p>
+            <figure>
+                <img id="chamber-weather-icon" src="images/icon2.webp" alt="Weather icon">
+                <figcaption id="chamber-caption-desc"></figcaption>
+            </figure>
+            <div id="chamber-forecast">
+                <p>3-Day Forecast:</p>
+                <div>Loading forecast data...</div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+    
 
 
     <!-- Focus and Events Container -->
@@ -162,107 +193,19 @@
     
 </div>
 
-    <!--  Company Spotlight(s) Section -->
+
+
 <section class="company-section">
     <div class="container">
-        <h2>Company Spotlight(s)</h2>
+        <h2>Company Spotlights</h2>
         <div class="company-grid-wrapper">
-            <div class="company-grid">
-
-                <!-- Company 1 -->
-                <div class="company-item">
-                    <div class="company-item-inner">
-                        <!-- Front of the card -->
-                        <div class="company-item-front">
-                            <img src="images/company1.jpg" alt="Company 1">
-                        </div>
-                        <!-- Back of the card -->
-                        <div class="company-item-back">
-                            <h3>Company Name 1</h3>
-                            <p>Some description or details about Company 1.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Company 2 -->
-                <div class="company-item">
-                    <div class="company-item-inner">
-                        <!-- Front of the card -->
-                        <div class="company-item-front">
-                            <img src="images/company2.jpg" alt="Company 2">
-                        </div>
-                        <!-- Back of the card -->
-                        <div class="company-item-back">
-                            <h3>Company 2</h3>
-                            <p>Some description or details about Company 2.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Company 3 -->
-                <div class="company-item">
-                    <div class="company-item-inner">
-                        <!-- Front of the card -->
-                        <div class="company-item-front">
-                            <img src="images/company3.jpg" alt="Company 3">
-                        </div>
-                        <!-- Back of the card -->
-                        <div class="company-item-back">
-                            <h3>Company 3</h3>
-                            <p>Some description or details about Company 3.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Company 4 -->
-                <div class="company-item">
-                    <div class="company-item-inner">
-                        <!-- Front of the card -->
-                        <div class="company-item-front">
-                            <img src="images/company4.jpg" alt="Company 4">
-                        </div>
-                        <!-- Back of the card -->
-                        <div class="company-item-back">
-                            <h3>Company 4</h3>
-                            <p>Some description or details about Company 4.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Company 5 -->
-                <div class="company-item">
-                    <div class="company-item-inner">
-                        <!-- Front of the card -->
-                        <div class="company-item-front">
-                            <img src="images/company5.jpg" alt="Company 5">
-                        </div>
-                        <!-- Back of the card -->
-                        <div class="company-item-back">
-                            <h3>Company 5</h3>
-                            <p>Some description or details about Company 5.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Company 6 -->
-                <div class="company-item">
-                    <div class="company-item-inner">
-                        <!-- Front of the card -->
-                        <div class="company-item-front">
-                            <img src="images/company6.jpg" alt="Company 6">
-                        </div>
-                        <!-- Back of the card -->
-                        <div class="company-item-back">
-                            <h3>Company 6</h3>
-                            <p>Some description or details about Company 6.</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="company-grid" id="companySpotlightContainer">
+                <!-- Spotlight items will be injected here by JavaScript -->
             </div>
         </div>
     </div>
 </section>
+
 
 </main>
 
@@ -313,5 +256,8 @@
 <!-- Script -->
 
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/weatherchamber.js"></script>
+    <script src="scripts/companyspotlight.js"></script>
+    <script src="scripts/dayBanner.js"></script>
 </body>
 </html>

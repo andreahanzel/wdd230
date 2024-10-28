@@ -143,7 +143,7 @@ ul.menuLinks.open {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero.jpg'); /* Background hero image */
+    background-image: url('../images/hero1.webp'); /* Background hero image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,7 +231,7 @@ ul.menuLinks.open {
                 0 4px 8px rgba(255, 255, 150, 0.3); 
     text-align: left;
     height: auto; /* Height based on content */
-    max-height: 300px; /* Prevent overflow with a max-height */
+    max-height: 500px; /* Prevent overflow with a max-height */
     overflow-y: auto; /* Enable vertical scrolling */
     transition: box-shadow 0.3s ease; /* Smooth hover transition */
 }
@@ -250,19 +250,178 @@ ul.menuLinks.open {
 .mission-box:hover, .weather-box:hover {
     box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), 
                 0 6px 12px rgba(255, 255, 150, 0.4); 
+    
 }
 
 /* Mission box h2 */
 .mission-box h2, .weather-box h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
 }
 
 /* Mission's Paragraph Text */
 .mission-box p, .weather-box p {
     color: var(--text-color-light); 
+
 }
 
+/* Weather Icon Styling */
+.weather-box figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#chamber-weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 150, 0.7));
+}
+
+#chamber-caption-desc {
+    color: var(--accent-text-color); /* Yellow for caption */
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* 3-Day Forecast Styling */
+#chamber-forecast {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(255, 255, 150, 0.3);
+}
+
+#chamber-forecast p {
+    color: var(--accent-text-color);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#chamber-forecast div {
+    color: var(--text-color-light);
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+
+/* ---------------------------Banner Section Styling ----------------------------------------*/
+
+/* Overlay background for blurred effect */
+.banner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(2, 2, 3, 0.6); /* Slightly darker overlay */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 999; /* Place it above page content */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+/* Base day banner styles */
+.day-banner {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background: var(--primary-gradient); /* Primary gradient */
+    color: var(--text-color-light); /* Light text color */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    padding: 20px;
+    z-index: 1000; /* Above overlay */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+/* Day banner pop-up animation */
+@keyframes popup {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover effect with subtle lift */
+.day-banner:hover {
+    box-shadow: 0 10px 25px rgba(255, 198, 27, 0.7), 0 4px 15px rgba(0, 0, 0, 0.3); /* Yellow glow and shadow */
+}
+
+/* Banner Content */
+.banner-content {
+    flex: 1;
+    padding-left: 20px;
+    color: var(--text-color-light); /* Light text color */
+}
+
+.banner-content h2 {
+    font-size: 1.6rem;
+    color: var(--accent-text-color); /* Yellow accent */
+    font-weight: 700;
+    margin: 0;
+}
+
+.banner-content p {
+    margin-top: 10px;
+    color: var(--text-color-light);
+    line-height: 1.5;
+}
+
+.banner-content .cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--dark-bg-gradient); /* Dark background gradient */
+    color: var(--text-color-light);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.banner-content .cta-button:hover {
+    background: var(--accent-gradient); /* Yellow accent gradient on hover */
+    color: var(--text-color-dark);
+}
+
+.close-banner {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text-color-light);
+    transition: color 0.3s ease;
+}
+
+.close-banner:hover {
+    color: var(--accent-text-color); /* Yellow accent on hover */
+}
+
+/* Fix position of close button on hover to keep it accessible */
+.day-banner:hover .close-banner {
+    position: absolute; /* Keep position fixed within banner to stay clickable */
+}
+
+
+/* ---------------------------Event Section Styling ----------------------------------------*/
 
 
 /* Style for event section */
@@ -478,10 +637,9 @@ ul.menuLinks.open {
 .company-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire box */
-    border-radius: 10px; /* Ensure the image follows the rounded corners */
-    
+    object-fit: contain; /* Show the entire logo without cropping */
 }
+
 
 /* Flip effect */
 .company-item .company-item-inner {
@@ -543,6 +701,7 @@ ul.menuLinks.open {
     padding: 0 10px;
     z-index: 2;
     display: block;
+    margin-top: -18px;
 }
 
 .company-item p {
@@ -552,12 +711,13 @@ ul.menuLinks.open {
     transform: translate(-50%, -50%);
     color: white; /* Ensure text color contrasts with the background */
     text-align: center;
-    font-size: 0.4rem; /* Slightly reduce font size */
+    font-size: 0.5rem; /* Slightly reduce font size */
     font-weight: 400; /* Use regular font weight for paragraphs */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
     padding: 0 10px;
     z-index: 2;
     display: block;
+ 
 }
 
 .visit-message-container {

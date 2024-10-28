@@ -119,7 +119,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('../images/hero.jpg'); /* Background hero image */
+        background-image: url('../images/hero1.webp'); /* Background hero image */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -177,7 +177,7 @@
                     0 4px 10px rgba(255, 255, 150, 0.4); /* Outer yellowish shadow */
         border-radius: 10px;
         height: auto; /* Adjust height based on content */
-        max-height: 400px; /* Prevent overflow by setting max-height */
+        max-height: 700px; /* Prevent overflow by setting max-height */
         text-align: left;
         overflow-y: auto; /* Enable vertical scrolling for long content */
         transition: box-shadow 0.3s ease; /* Smooth hover transition */
@@ -205,6 +205,107 @@
         box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), /* Stronger inner yellowish glow */
                     0 6px 12px rgba(255, 255, 150, 0.4); /* Stronger outer shadow */
     }
+
+        /* Weather Icon Styling */
+    .weather-box figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    #chamber-weather-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+        filter: drop-shadow(0 0 5px rgba(255, 255, 150, 0.7));
+    }
+    
+    #chamber-caption-desc {
+        color: var(--accent-text-color); /* Yellow for caption */
+        font-size: 1rem;
+        font-style: italic;
+    }
+    
+    /* 3-Day Forecast Styling */
+    #chamber-forecast {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+        border-radius: 8px;
+        box-shadow: 0 3px 8px rgba(255, 255, 150, 0.3);
+    }
+    
+    #chamber-forecast p {
+        color: var(--accent-text-color);
+        font-weight: bold;
+       
+    }
+    
+    #chamber-forecast div {
+        color: var(--text-color-light);
+        font-size: 0.95rem;
+        
+    }
+
+/* ---------------------------Banner Section Styling ----------------------------------------*/
+
+    /* Overlay background for blurred effect */
+.banner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(2, 2, 3, 0.6); /* Slightly darker overlay */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 999; /* Place it above page content */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.banner-overlay {
+    opacity: 1; /* Make it visible on larger screens if set to display */
+}
+
+/* Larger day banner adjustments */
+.day-banner {
+    top: 20%;
+    width: 60%;
+    max-width: 800px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Banner Content for larger screens */
+.banner-content h2 {
+    font-size: 2rem;
+}
+
+.banner-content p {
+    font-size: 1rem;
+}
+
+.banner-content .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+/* Close button on larger screens */
+.close-banner {
+    font-size: 1.5rem;
+}
+
+ /* Hover effect for more intense shadow, without using transform */
+ .day-banner:hover {
+    box-shadow: 0 15px 35px rgba(255, 198, 27, 0.7), 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+    
+
+    /* ---------------------------Event Section Styling ----------------------------------------*/
+
+    
 
     /* Events Section styling */
     .events-section {
@@ -326,6 +427,10 @@
                     0 6px 12px rgba(255, 255, 150, 0.4); /* Stronger outer shadow */
     }
 
+
+
+    /* ---------------------------Company Spotlight Section Styling ----------------------------------------*/
+
     /* Company Spotlight Section */
     .company-section {
         background: var(--dark-bg-gradient); /* Dark Gradient */
@@ -360,7 +465,7 @@
     .company-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Ensure the image fills the box */
+        object-fit: contain; 
         border-radius: 10px; /* Rounded corners */
     }
 
@@ -421,6 +526,7 @@
     padding: 0 10px;
     z-index: 2;
     display: block;
+    margin-top: -15px;
 }
 
 .company-item p {
@@ -430,7 +536,7 @@
     transform: translate(-50%, -50%);
     color: white; /* Ensure text color contrasts with the background */
     text-align: center;
-    font-size: 0.4rem; /* Slightly reduce font size */
+    font-size: 0.5rem; /* Slightly reduce font size */
     font-weight: 400; /* Use regular font weight for paragraphs */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
     padding: 0 10px;

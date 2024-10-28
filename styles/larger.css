@@ -193,6 +193,68 @@
         width: 60px;
     }
 
+    /* Forecast Container Styling for Larger Screens */
+.temperature-box #forecast {
+    background-color: var(--silver); /* Subtle background to highlight the section */
+    border-radius: 12px; /* Slightly more rounded for larger screens */
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Hover Effect for Forecast on Larger Screens */
+.temperature-box #forecast:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More lift for a refined look */
+}
+
+/* Forecast Title for Larger Screens */
+.temperature-box #forecast p {
+    font-size: 0.9rem;
+    color: var(--licorice); /* Bold contrast */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem; /* More spaced for elegance */
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--coffee); /* Underline effect */
+    padding-bottom: 0.5rem; /* Space below the title */
+}
+
+/* Forecast Days Styling for Larger Screens */
+.temperature-box #forecast div {
+    font-size: 0.5rem;
+    color: var(--beaver); /* Rich color to stand out */
+    background-color: var(--whiteish); /* Light background for contrast */
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Stronger shadow for each day */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Day Hover Effect */
+.temperature-box #forecast div:hover {
+    background-color: var(--silver); /* Highlight effect on hover */
+}
+
+/* Last Day Entry Adjustment */
+.temperature-box #forecast div:last-child {
+    margin-bottom: 0; /* Remove bottom margin from last day */
+}
+
+/* Icon Size for Weather Icon on Larger Screens */
+.temperature-box #weather-icon {
+    width: 70px;
+    height: auto;
+    margin-bottom: 1rem; /* Adds space below icon */
+}
+
+
 
 
     .map-container {

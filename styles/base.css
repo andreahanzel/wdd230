@@ -433,6 +433,51 @@ section.card2 h2 {
     margin-bottom: 0.8rem;
 }
 
+/* Forecast Container Styling for Small Screens */
+.temperature-box #forecast {
+    background-color: var(--whiteish); /* Light background to complement existing palette */
+    border-radius: 10px; /* Rounded corners for a polished look */
+    padding: 1rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Hover Effect for Forecast on Small Screens */
+.temperature-box #forecast:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Lift effect on hover */
+}
+
+/* Forecast Title for Small Screens */
+.temperature-box #forecast p {
+    font-size: 0.9rem;
+    color: var(--licorice); /* Strong contrast */
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.04rem; /* Gentle letter spacing */
+    text-transform: uppercase; /* Modern, bold feel */
+}
+
+/* Forecast Days Styling for Small Screens */
+.temperature-box #forecast div {
+    font-size: 0.8rem;
+    color: var(--coffee); /* Use color from palette */
+    background-color: var(--silver); /* Light background for separation */
+    padding: 0.5rem;
+    border-radius: 8px; /* Rounded corners for each day’s box */
+    margin-bottom: 0.6rem; /* Space between days */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for day boxes */
+}
+
+/* Last Day Entry Adjustment */
+.temperature-box #forecast div:last-child {
+    margin-bottom: 0; /* Removes extra space */
+}
+
+
+
 /* Visits Box */
 .visits-box {
     background-color: var(--whiteish);
