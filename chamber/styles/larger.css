@@ -222,7 +222,7 @@
     }
     
     #chamber-caption-desc {
-        color: var(--accent-text-color); /* Yellow for caption */
+        color: white;
         font-size: 1rem;
         font-style: italic;
     }
@@ -231,14 +231,14 @@
     #chamber-forecast {
         margin-top: 20px;
         padding: 15px;
-        background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+        background: var(--dark-bg-gradient); /* Dark background for better contrast */
         border-radius: 8px;
         box-shadow: 0 3px 8px rgba(255, 255, 150, 0.3);
     }
     
     #chamber-forecast p {
-        color: var(--accent-text-color);
-        font-weight: bold;
+        color: white;
+        
        
     }
     
