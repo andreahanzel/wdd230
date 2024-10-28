@@ -137,7 +137,7 @@
 
     .hero-text p {
         font-size: 1.5rem; /* Larger paragraph text for desktop */
-        color: var(--accent-text-color); /* Set the color to the accent text color */
+        color:  #f1f1f1;; /* Set the color to the accent text color */
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
         margin-top: 5px;
     }
@@ -834,7 +834,7 @@
     /* Button hover effect */
     .scholarship-container a:hover {
         background: var(--accent-gradient); /* Yellow gradient on hover */
-        color: var(--text-color-dark); /* Black text on hover */
+        color: black; /* Black text on hover */
         transform: scale(1.1); /* Slight pop-out effect */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
     }
@@ -883,7 +883,7 @@
 
     .membership-benefits h2 {
         margin-bottom: 1em;
-        color: var(--primary-color); /* Dark Blue */
+        color: var(--accent-text-color);
         
     }
 
@@ -904,7 +904,7 @@
 
     .membership-benefits li:hover {
         background: var(--accent-gradient);
-        color: var(--text-color-dark);
+        color: black;
         transform: translateX(10px); /* Moves list item slightly on hover */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }

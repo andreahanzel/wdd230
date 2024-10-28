@@ -1,41 +1,41 @@
-/* Root colors */
 :root {
-    --primary-gradient: linear-gradient(135deg, #36537D, #12141C); /* Blue to Dark Grey Gradient */
-    --accent-gradient: linear-gradient(135deg, #FFC61B, #FFE185); /* Yellow to Dark Grey Gradient */
-    --secondary-gradient: linear-gradient(135deg, #FFFFFF, #365582); /* White to Blue Gradient */
-    --dark-bg-gradient: linear-gradient(135deg, #020203, #1E272E); /* Black to Dark Grey Gradient */
-    --text-color-dark: #000000; /* Black */
-    --text-color-light: #FFFFFF; /* White */
-    --primary-color: #192941; /* Blue */
-    --accent-text-color: #FFC61B; /* Yellow */
+    --primary-gradient: linear-gradient(135deg, #36537D, #12141C); 
+    --accent-gradient: linear-gradient(135deg, #FFC61B, #FFE185); 
+    --secondary-gradient: linear-gradient(135deg, #FFFFFF, #365582); 
+    --dark-bg-gradient: linear-gradient(135deg, #020203, #1E272E); 
+    --text-color-dark: #000000; 
+    --text-color-light: #FFFFFF; 
+    --primary-color: #192941; 
+    --accent-text-color: #FFC61B; 
 }
 
-/* General body styles */
+
+/* ---------------------------Body Styling ----------------------------------------*/
+
 body {
     font-family: 'Roboto', sans-serif;
-    background: var(--dark-bg-gradient); /* Dark Gradient Background */
+    background: var(--dark-bg-gradient); 
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-/* Container responsiveness */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 
-/* Header for both mobile and desktop */
+/* ---------------------------Header Styling ----------------------------------------*/
+
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: var(--primary-gradient);
     padding: 15px 20px;
-   
 }
 
 .site-header .container {
@@ -44,7 +44,6 @@ header {
     justify-content: space-between;
 }
 
-
 .site-header .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -52,7 +51,9 @@ header {
     text-align: left;
 }
 
-/* Hamburger button */
+
+/* ---------------------------CTA Styling ----------------------------------------*/
+
 #myButton {
     font-size: 2rem;
     background: none;
@@ -61,21 +62,19 @@ header {
     cursor: pointer;
     padding: 0;
     margin-left: 10px;
-    display: none; /* Only show on smaller screens */
-    
+    display: none;
 }
 
-/* Active hamburger button */
 #myButton.open {
     color: #FFF;
 }
 
-/* Mobile navigation menu */
+
+/* ---------------------------Navigation Styling ----------------------------------------*/
 
 .main-nav {
-    flex-grow: 1; /* Takes up remaining space between logo and button */
+    flex-grow: 1;
     text-align: center;
-    
 }
 
 .main-nav ul {
@@ -96,15 +95,12 @@ header {
     text-decoration: none;
 }
 
-/* Hover effect with gradient box for nav items */
 .main-nav ul li a:hover {
     background: var(--primary-gradient); 
     border-radius: 5px;
-    padding: 10px 15px; /* Add some padding to enhance the box effect */
-    transition: background 0.3s ease; /* Smooth transition for the hover effect */
+    padding: 10px 15px;
+    transition: background 0.3s ease;
 }
-
-/* Active link styling */
 
 ul.menuLinks {
     display: none;
@@ -118,24 +114,21 @@ ul.menuLinks {
     z-index: 1000;
     padding: 0;
     margin: 0;
-    backdrop-filter: blur(30px); /* Exact blur effect */
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Exact shadow effect */
-    border: 2px solid rgba(255, 255, 255, 0.18); /* Exact border */
-    transition: all 1s ease-in-out; /* Smooth transition when menu opens */
-    margin: 5px 0; /* Increased vertical spacing between items */
-    font-size: 1rem; /* Larger font size for mobile menu */
-
+    backdrop-filter: blur(30px); 
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); 
+    border: 2px solid rgba(255, 255, 255, 0.18); 
+    transition: all 1s ease-in-out;
+    margin: 5px 0;
+    font-size: 1rem;
 }
 
 ul.menuLinks.open {
     display: flex;
-    opacity: 1; /* Make the menu visible */
-    transform: translateY(0); /* Bring the menu into view */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
-
-/* Apply faded background image using pseudo-element */
 .hero-section::before {
     content: "";
     position: absolute;
@@ -143,63 +136,77 @@ ul.menuLinks.open {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero1.webp'); /* Background hero image */
+    background-image: url('../images/hero1.webp'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.6; /* Fading effect */
-    z-index: -1; /* Keep the image behind the text */
-
+    opacity: 0.6;
+    z-index: -1;
 }
 
-/* Hero Section */
 .hero-section {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 50px 15px;
-    height: auto; /* Let the height adjust based on content */
-
+    height: auto;
 }
 
-/* Hero Text Styling */
 .hero-text h1 {
-    font-size: 1.8rem; /* Responsive font for mobile */
+    font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #f1f1f1; /* Lighter color for contrast */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-top: 10px;
 }
 
 .hero-text p {
-    font-size: 1.1rem; /* Responsive paragraph font for mobile */
-    color: var(--accent-text-color); 
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); 
+    font-size: 1.1rem;
+    color:  #f1f1f1;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
     margin-top: 3px;
 }
 
-/* Style the CTA Button */
+.hero-content {
+    background: var(--dark-bg-gradient);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block; /* Centers the box */
+    text-align: center;
+    margin-top: 20px; /* Adds space above the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.hero-content:hover {
+    transform: scale(1.05); /* Slightly enlarges the box */
+    box-shadow: 0px 6px 15px rgba(255, 255, 150, 0.5); /* Adds a glowing shadow */
+}
+
+.hero-content h1, .hero-content p {
+    margin: 0; /* Removes default margin */
+}
+
 .cta-button-hero {
-    background: var(--dark-bg-gradient); 
-    color: var(--text-color-light); 
-    padding: 10px 20px; /* Adjust padding for mobile */
-    font-size: 1rem; /* Responsive button text size */
+    background: var(--primary-gradient);
+    color: var(--text-color-light);
+    padding: 10px 20px;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px; /* Add space between the text and the button */
+    margin-top: 20px;
 }
 
-
-/* Hover Effect for the Button */
 .cta-button-hero:hover {
-    background: var(--accent-gradient); 
-    transform: scale(1.05); /* Slight pop-out effect */
+    background: var(--accent-gradient);
+    transform: scale(1.05);
     filter: drop-shadow(0 0 10px #fffdef);
     color: black;
 }
@@ -208,52 +215,43 @@ ul.menuLinks.open {
     outline-offset: 3px;
 }
 
-/* Mission Section Styling */
 .mission-section {
-    background-color: transparent; 
+    background-color: transparent;
     padding: 40px 0;
 }
 
-/* Grid Layout */
 .mission-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column on small screens */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-/* Our Mission and Weather boxes with scrollable content */
 .mission-box, .weather-box {
-    padding: 20px; /* Adjusted for small screens */
+    padding: 20px;
     border-radius: 10px;
-    background: var(--dark-bg-gradient); 
-    color: var(--text-color-light); 
-    box-shadow: inset 0 0 10px rgba(255, 255, 200, 0.5),
-                0 4px 8px rgba(255, 255, 150, 0.3); 
+    background: var(--dark-bg-gradient);
+    color: var(--text-color-light);
+    box-shadow: inset 0 0 10px rgba(255, 255, 200, 0.5), 0 4px 8px rgba(255, 255, 150, 0.3);
     text-align: left;
-    height: auto; /* Height based on content */
-    max-height: 500px; /* Prevent overflow with a max-height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    transition: box-shadow 0.3s ease; /* Smooth hover transition */
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+    transition: box-shadow 0.3s ease;
 }
 
-/* Headings */
 .mission-box h2, .weather-box h2 {
-    background-color: transparent; /* Blend with background */
-    color: var(--accent-text-color); 
+    background-color: transparent;
+    color: var(--accent-text-color);
     padding-top: 10px;
     padding-bottom: 10px;
-    z-index: 1; /* Ensure it stays on top */
+    z-index: 1;
     margin: 0;
 }
 
-/* Mission slight glow on hover */
 .mission-box:hover, .weather-box:hover {
-    box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), 
-                0 6px 12px rgba(255, 255, 150, 0.4); 
-    
+    box-shadow: inset 0 0 20px rgba(255, 255, 200, 0.7), 0 6px 12px rgba(255, 255, 150, 0.4);
 }
 
-/* Mission box h2 */
 .mission-box h2, .weather-box h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -261,13 +259,10 @@ ul.menuLinks.open {
     margin-bottom: 15px;
 }
 
-/* Mission's Paragraph Text */
 .mission-box p, .weather-box p {
-    color: var(--text-color-light); 
-
+    color: var(--text-color-light);
 }
 
-/* Weather Icon Styling */
 .weather-box figure {
     display: flex;
     flex-direction: column;
@@ -283,16 +278,15 @@ ul.menuLinks.open {
 }
 
 #chamber-caption-desc {
-    color: var(--accent-text-color); /* Yellow for caption */
+    color: var(--accent-text-color);
     font-size: 1rem;
     font-style: italic;
 }
 
-/* 3-Day Forecast Styling */
 #chamber-forecast {
     margin-top: 20px;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(255, 255, 150, 0.3);
 }
@@ -310,23 +304,22 @@ ul.menuLinks.open {
 }
 
 
+
 /* ---------------------------Banner Section Styling ----------------------------------------*/
 
-/* Overlay background for blurred effect */
 .banner-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(2, 2, 3, 0.6); /* Slightly darker overlay */
-    backdrop-filter: blur(10px); /* Apply blur effect */
-    z-index: 999; /* Place it above page content */
-    opacity: 0; /* Initially hidden */
+    background: rgba(2, 2, 3, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-/* Base day banner styles */
 .day-banner {
     position: fixed;
     top: 15%;
@@ -334,20 +327,19 @@ ul.menuLinks.open {
     transform: translateX(-50%);
     width: 80%;
     max-width: 600px;
-    background: var(--primary-gradient); /* Primary gradient */
-    color: var(--text-color-light); /* Light text color */
+    background: var(--primary-gradient);
+    color: var(--text-color-light);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    z-index: 1000; /* Above overlay */
+    z-index: 1000;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
 }
 
-/* Day banner pop-up animation */
 @keyframes popup {
     from {
         transform: scale(0.9);
@@ -359,21 +351,19 @@ ul.menuLinks.open {
     }
 }
 
-/* Hover effect with subtle lift */
 .day-banner:hover {
-    box-shadow: 0 10px 25px rgba(255, 198, 27, 0.7), 0 4px 15px rgba(0, 0, 0, 0.3); /* Yellow glow and shadow */
+    box-shadow: 0 10px 25px rgba(255, 198, 27, 0.7), 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Banner Content */
 .banner-content {
     flex: 1;
     padding-left: 20px;
-    color: var(--text-color-light); /* Light text color */
+    color: var(--text-color-light);
 }
 
 .banner-content h2 {
     font-size: 1.6rem;
-    color: var(--accent-text-color); /* Yellow accent */
+    color: var(--accent-text-color);
     font-weight: 700;
     margin: 0;
 }
@@ -388,7 +378,7 @@ ul.menuLinks.open {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: var(--dark-bg-gradient); /* Dark background gradient */
+    background: var(--dark-bg-gradient);
     color: var(--text-color-light);
     border-radius: 5px;
     text-decoration: none;
@@ -397,7 +387,7 @@ ul.menuLinks.open {
 }
 
 .banner-content .cta-button:hover {
-    background: var(--accent-gradient); /* Yellow accent gradient on hover */
+    background: var(--accent-gradient);
     color: var(--text-color-dark);
 }
 
@@ -412,26 +402,25 @@ ul.menuLinks.open {
 }
 
 .close-banner:hover {
-    color: var(--accent-text-color); /* Yellow accent on hover */
+    color: var(--accent-text-color);
 }
 
-/* Fix position of close button on hover to keep it accessible */
 .day-banner:hover .close-banner {
-    position: absolute; /* Keep position fixed within banner to stay clickable */
+    position: absolute;
 }
 
 
 /* ---------------------------Event Section Styling ----------------------------------------*/
 
 
-/* Style for event section */
 .events-section {
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
     color: var(--text-color-light);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 4rem;
 }
+
 
 .events-section ul {
     list-style: none;
@@ -442,7 +431,6 @@ ul.menuLinks.open {
     margin: 10px 0;
 }
 
-/* Wrapper for events */
 .event-wrapper {
     width: 90%;
     margin: 0 auto;
@@ -453,13 +441,10 @@ ul.menuLinks.open {
     gap: 20px;
 }
 
-/* Flip card styling */
 .event-card {
-    width: 200px; 
+    width: 200px;
     height: 150px;
-    perspective: 1000px; /* Enable 3D perspective */
- 
-
+    perspective: 1000px;
 }
 
 .event-card-inner {
@@ -469,7 +454,7 @@ ul.menuLinks.open {
     text-align: center;
     transition: transform 0.6s ease-in-out;
     transform-style: preserve-3d;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .event-card-front, .event-card-back {
@@ -482,24 +467,21 @@ ul.menuLinks.open {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37); /* Shadow effect */
-    border: 2px solid rgba(255, 255, 255, 0.18); /* Border */
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
-/* Front side: darker background and yellowish text */
 .event-card-front {
-    background: var(--dark-bg-gradient); 
-    color: var(--accent-text-color); 
+    background: var(--dark-bg-gradient);
+    color: var(--accent-text-color);
 }
-
 
 .event-card-back {
-    background-color: var(--primary-color); 
-    color: var(--text-color-light); 
-    transform: rotateY(180deg); /* Rotate the back side */
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    transform: rotateY(180deg);
 }
 
-/* Text inside the event cards */
 .event-card-front p, .event-card-back p {
     font-family: 'Roberto', sans-serif;
     font-weight: 300;
@@ -507,7 +489,6 @@ ul.menuLinks.open {
     margin-bottom: 2rem;
 }
 
-/* Decorative underline */
 .event-card-front p:after, .event-card-back p:after {
     content: '';
     width: 4rem;
@@ -520,86 +501,80 @@ ul.menuLinks.open {
     bottom: -0.75rem;
 }
 
-/* Flip on hover for desktop and on click for mobile */
 .event-card:hover .event-card-inner,
 .event-card.is-flipped .event-card-inner {
-    transform: rotateY(180deg); /* Flip effect */
+    transform: rotateY(180deg);
 }
 
-/* Focus Areas Section */
 
-/* Focus Section */
+/* ---------------------------Focus Area Section Styling ----------------------------------------*/
+
+
 .focus-areas {
-    background: var(--secondary-gradient); 
+    background: var(--secondary-gradient);
     color: var(--text-color-dark);
     padding: 40px 0;
     position: relative;
     margin-bottom: 40px;
-    top: -30px; /* Slightly raised */
+    top: -30px;
 }
 
-/* Grid Layout for small screens */
 .focus-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for small screens */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-/* Focus Items Styling */
 .focus-item {
-    background: var(--primary-gradient); 
-    color: var(--text-color-dark); 
+    background: var(--primary-gradient);
+    color: var(--text-color-dark);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    backdrop-filter: blur(30px); 
-    box-shadow: 0px 0px 30px rgba(255, 255, 237, 0.37); 
-    border: 2px solid rgba(255, 255, 255, 0.18); /* Subtle border */
-    margin-top: 2rem; /* Adds space between focus items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(255, 255, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    margin-top: 2rem;
 }
 
-/* Focus Item Headings */
 .focus-item h3 {
-    background-color: transparent; /* Transparent background */
-    color: var(--accent-text-color); 
+    background-color: transparent;
+    color: var(--accent-text-color);
     padding: 10px;
     border-radius: 5px;
 }
 
-/* Focus Item Paragraphs */
 .focus-item p {
-    color: var(--text-color-light); 
+    color: var(--text-color-light);
 }
 
-/* Hover effects for focus items */
 .focus-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 30px 10px rgba(255, 255, 200, 0.6); 
+    box-shadow: 0 0 30px 10px rgba(255, 255, 200, 0.6);
 }
 
-/* Scrollbars (WebKit browsers like Chrome, Safari) */
 .focus-item::-webkit-scrollbar {
     width: 8px;
 }
 
 .focus-item::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.2); /* Light track */
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
 .focus-item::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 80, 158, 0.5); 
+    background-color: rgba(0, 80, 158, 0.5);
     border-radius: 10px;
 }
 
-/* Hover Effect: Add a glow on hover */
 .focus-item:hover {
-    box-shadow: inset 0 0 20px rgba(255, 255, 150, 0.7), /* Stronger yellowish inner glow */
-                0 6px 12px rgba(255, 255, 150, 0.4); /* Stronger outer shadow */
+    box-shadow: inset 0 0 20px rgba(255, 255, 150, 0.7), 0 6px 12px rgba(255, 255, 150, 0.4);
 }
 
 
+
+/* ---------------------------Company Spotlight Section Styling ----------------------------------------*/
 
 /* Company Spotlight Section */
 .company-section {
@@ -720,48 +695,52 @@ ul.menuLinks.open {
  
 }
 
+
+/* ---------------------------Company Spotlight Section Styling ----------------------------------------*/
+
+
 .visit-message-container {
-    background: var(--dark-bg-gradient); /* Dark background gradient */
-    color: var(--text-color-light); /* White text */
+    background: var(--dark-bg-gradient); 
+    color: var(--text-color-light); 
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
     text-align: center;
-    border-left: 4px solid var(--accent-text-color); /* Yellow accent border on the left */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    border-left: 4px solid var(--accent-text-color); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .visit-message-container:hover {
-    transform: scale(1.03); /* Slight zoom on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+    transform: scale(1.03); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); 
 }
 
 .visit-message-container h2 {
-    color: var(--accent-text-color); /* Yellow accent for heading */
+    color: var(--accent-text-color); 
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 #visitMessage {
-    background: rgba(255, 198, 27, 0.2); /* Soft yellow background */
+    background: rgba(255, 198, 27, 0.2); 
     padding: 15px;
     border-radius: 5px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--text-color-light); /* White text */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: var(--text-color-light); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 
 /* ------------------------------ Footer Styling-----------------------------------------*/
-/* Footer Base Styles */
+
 .site-footer {
-    background: var(--primary-gradient); /* Gradient background for the footer */
-    color: var(--text-color-light); /* White text color */
-    padding: 40px 20px; /* Adequate padding for mobile */
-    font-size: 0.9rem; /* Base font size */
-    text-align: center; /* Center-align for mobile */
+    background: var(--primary-gradient); 
+    color: var(--text-color-light);
+    padding: 40px 20px; 
+    font-size: 0.9rem; 
+    text-align: center;
 }
 
 .site-footer .container {
@@ -771,15 +750,14 @@ ul.menuLinks.open {
 
 .footer-columns {
     display: flex;
-    flex-direction: column; /* Stack columns vertically on mobile */
-    gap: 30px; /* Add space between the sections */
+    flex-direction: column; 
+    gap: 30px; 
 }
 
-/* Branding Column */
 .footer-branding h3 {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--accent-text-color); /* Yellow accent for the brand name */
+    color: var(--accent-text-color); 
 }
 
 .footer-branding p {
@@ -787,7 +765,6 @@ ul.menuLinks.open {
     line-height: 1.6;
 }
 
-/* Contact & Additional Info Columns */
 .footer-location h4 {
     font-size: 1.2rem;
     font-weight: bold;
@@ -802,16 +779,15 @@ ul.menuLinks.open {
 .footer-location a {
     color: var(--text-color-light);
     text-decoration: none;
-    border-bottom: 1px solid var(--text-color-light); /* Underline effect */
+    border-bottom: 1px solid var(--text-color-light); 
     transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 .footer-location a:hover {
-    color: var(--accent-text-color); /* Change color on hover */
-    border-bottom-color: var(--accent-text-color); /* Accent underline on hover */
+    color: var(--accent-text-color); 
+    border-bottom-color: var(--accent-text-color);
 }
 
-/* Social Media Section */
 .footer-newsletter h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -820,7 +796,7 @@ ul.menuLinks.open {
 
 .social-media {
     display: flex;
-    justify-content: center; /* Center social icons on mobile */
+    justify-content: center;
     gap: 15px;
     margin-top: 20px;
 }
@@ -833,63 +809,58 @@ ul.menuLinks.open {
 }
 
 .social-media a:hover {
-    transform: scale(1.2); /* Slight zoom on hover */
+    transform: scale(1.2); 
 }
 
 .social-media img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Make icons fit within the container */
+    object-fit: cover; 
 }
 
+/* -------------------------------- DISCOVER PAGE ---------------------------------- */
 
-/* ------------------------- Discovery Page Addition ------------------------- */
-
-/* Global styling */
+/* ---------------------------Global styles ---------------------------------------- */
 * {
-    box-sizing: border-box; /* Ensure padding doesn't affect widths */
+    box-sizing: border-box; 
     padding: 0;
     margin: 0;
 }
 
-/* Basic body styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
     color: #ffffff;
 }
 
-
 /* ---------------------------Sidebar styles ---------------------------------------- */
 
-/* Sidebar styling */
 .sidebar {
     padding: 20px;
     border-radius: 10px;
     background-color: #1E1E1E;
-    width: 100%; /* Full width for mobile */
+    width: 100%; 
     margin-bottom: 20px;
 }
 
 /* ---------------------------Widget Containers styles ---------------------------------------- */
 
-/* Base styles for the widget container (mobile and small screens) */
 .widget-container {
-    background: var(--dark-bg-gradient); /* Dark gradient background */
-    color: var(--text-color-light); /* White text */
+    background: var(--dark-bg-gradient); 
+    color: var(--text-color-light); 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
     margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .widget-container h2 {
     font-size: 1.6rem;
-    color: var(--accent-text-color); /* Yellow accent for headings */
-    text-align: center; /* Center the heading */
+    color: var(--accent-text-color); 
+    text-align: center; 
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add some text shadow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 .widget-container p {
@@ -902,11 +873,8 @@ body {
 
 /* ---------------------------Applications Containers styles ---------------------------------------- */
 
-/* Base (Mobile-first) */
-
-/* Style for the entire dropdown container */
 .dropdown-container {
-    display: none; /* Initially hidden */
+    display: none; 
     margin-top: 20px;
     background: var(--dark-bg-gradient);
     border-radius: 10px;
@@ -914,119 +882,105 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-/* Show the dropdown when the 'open' class is added */
 .dropdown-container.open {
     display: block;
     opacity: 1;
-    transform: translateY(0); /* Smooth dropdown effect */
+    transform: translateY(0); 
 }
 
-/* Individual dropdown items */
 .dropdown-item {
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1); /* Subtle background */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     margin-bottom: 15px;
 }
 
-/* Heading inside each dropdown item */
 .dropdown-item h3 {
-    color: var(--accent-text-color); /* Yellow color for headings */
+    color: var(--accent-text-color); 
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-/* Paragraph inside each dropdown item */
 .dropdown-item p {
-    color: var(--text-color-light); /* White text for paragraphs */
+    color: var(--text-color-light); 
     line-height: 1.6;
     font-size: 1rem;
 }
 
-/* Styling the bullet points (unordered list) */
 .dropdown-item ul {
     margin-top: 10px;
-    padding-left: 20px; /* Adds some indentation to the bullets */
+    padding-left: 20px; 
 }
+
 
 .dropdown-item ul li {
     margin-bottom: 8px;
-    color: var(--text-color-light); /* White text for bullets */
-    font-size: 0.95rem; /* Slightly smaller font for the bullet points */
+    color: var(--text-color-light); 
+    font-size: 0.95rem; 
     list-style-type: disc;
 }
 
-/* Button style */
+/* ---------------------------Learn More Button styles ---------------------------------------- */
 .learn-more-btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 18px;
-    background: var(--accent-gradient); /* Yellow gradient */
-    color: var(--text-color-dark); /* Dark text for contrast */
+    background: var(--accent-gradient); 
+    color: var(--text-color-dark); 
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-align: center;
-    width: 100%; /* Full width button */
+    width: 100%; 
 }
 
-/* No hover effects on mobile */
 .learn-more-btn:focus {
     outline-offset: 2px;
 }
 
 /* ---------------------------Scholarship Container styles ---------------------------------------- */
 
-/* Base (Mobile-First) Styling for scholarship-container */
 .scholarship-container {
-    margin-top: 30px; /* Add space above */
+    margin-top: 30px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    background: rgba(255, 255, 255, 0.1); 
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
 
-/* Headings */
 .scholarship-container h2 {
-    color: var(--accent-text-color); /* Yellow heading color */
+    color: var(--accent-text-color); 
     font-size: 1.5rem;
     margin-bottom: 10px;
-    text-align: center; /* Center-align for mobile */
+    text-align: center; 
 }
 
-/* Paragraphs */
 .scholarship-container p {
-    color: var(--text-color-light); /* White text */
+    color: var(--text-color-light); 
     line-height: 1.6;
     font-size: 1rem;
     margin-bottom: 20px;
-    text-align: justify; /* Better readability on smaller screens */
+    text-align: justify; 
 }
 
-/* Button */
 .scholarship-container a {
     display: block;
-    background: var(--accent-gradient); /* Yellow gradient */
-    color: var(--text-color-dark); /* Dark text for contrast */
-    padding: 12px 20px;
+    background: var(--accent-gradient); 
+    color: var(--text-color-dark); 
     text-decoration: none;
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 100%; /* Full width button */
+    width: 100%; 
 }
 
-/* Remove hover effects for mobile */
 .scholarship-container a:focus {
-    outline: 2px solid var(--accent-text-color); /* Focus state */
+    outline: 2px solid var(--accent-text-color); 
     outline-offset: 3px;
 }
-
-
-
 
 /* ---------------------------Apply Container styles ---------------------------------------- */
 
@@ -1371,13 +1325,13 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: var(--secondary-gradient); /* Lightens the button color on hover */
+    background: var(--primary-color); /* Lightens the button color on hover */
     color: var(--text-color-light);
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .membership-benefits {
-    background: var(--secondary-gradient);
+    background: var(--dark-bg-gradient);
     padding: 1.5em;
     border-radius: 10px;
     margin-top: 2em;
@@ -1386,7 +1340,7 @@ input[type="submit"]:hover {
 
 .membership-benefits h2 {
     margin-bottom: 1em;
-    color: var(--primary-color); /* Dark Blue */
+    color: var(--accent-text-color)
     
 }
 

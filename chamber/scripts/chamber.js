@@ -81,17 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('mouseout', startAutoplay);
     });
 
-
-
-    // Dropdown menu functionality - Toggle the dropdown content
-    function toggleDropdown(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        const dropdownContent = document.getElementById('dropdownContent');
-
-        // Toggle the open class to show or hide the dropdown content
-        dropdownContent.classList.toggle('open');
-    }
-
     // Function to display the current timestamp in the form field
     let timestampField = document.getElementById("timestamp");
     if (timestampField) {
